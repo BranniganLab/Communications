@@ -1,0 +1,113 @@
+\begin{thebibliography}{10}
+
+\bibitem{Brooks2009}
+Brooks BR, et~al. (2009) {CHARMM: The biomolecular simulation program}.
+\newblock {\em Journal of Computational Chemistry} 30(10):1545--1614.
+
+\bibitem{Phillips2005a}
+Phillips JC, et~al. (2005) {Scalable molecular dynamics with NAMD.}
+\newblock {\em Journal of computational chemistry} 26(16):1781--802.
+
+\bibitem{Jo2009}
+Jo S, Lim JB, Klauda JB, Im W (2009) {CHARMM-GUI Membrane Builder for mixed
+  bilayers and its application to yeast membranes.}
+\newblock {\em Biophys J} 97(1):50--58.
+
+\bibitem{Brannigan2010a}
+Brannigan G, LeBard DN, H{\'{e}}nin J, Eckenhoff RG, Klein ML (2010) {Multiple
+  binding sites for the general anesthetic isoflurane identified in the
+  nicotinic acetylcholine receptor transmembrane domain.}
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America} 107(32):14122--7.
+
+\bibitem{Murlidaran2017}
+Murlidaran S, Salari R, Brannigan G (2017) {Affinity Calculations for
+  Lipophilic Modulators Binding to Isolated Sites on GABA(A) Receptors
+  (Manuscript in preparation).}
+
+\bibitem{Murail2011}
+Murail S, Wallner B, Trudell JR, Bertaccini E, Lindahl E (2011) {Microsecond
+  Simulations Indicate that Ethanol Binds between Subunits and Could Stabilize
+  an Open-State Model of a Glycine Receptor.}
+\newblock {\em Biophys J} 100(7):1642--1650.
+
+\bibitem{Raju2013}
+Raju SG, Barber AF, LeBard DN, Klein ML, Carnevale V (2013) {Exploring Volatile
+  General Anesthetic Binding to a Closed Membrane-Bound Bacterial Voltage-Gated
+  Sodium Channel via Computation}.
+\newblock {\em PLoS Computational Biology} 9(6):e1003090.
+
+\bibitem{Trott2010}
+Trott O, Olson AJ (2010) {AutoDock {\{}V{\}}ina: improving the speed and
+  accuracy of docking with a new scoring function, efficient optimization, and
+  multithreading}.
+\newblock {\em J Comput. Chem.} 31(2):455--461.
+
+\bibitem{Humphrey1996a}
+Humphrey W, Dalke A, Schulten K (1996) {VMD: visual molecular dynamics.}
+\newblock {\em Journal of molecular graphics} 14(1):33--8, 27--8.
+
+\bibitem{Jurd2002}
+Jurd R, et~al. (2002) {General anesthetic actions in vivo strongly attenuated
+  by a point mutation in the GABAA receptor {\&}beta;3 subunit}.
+\newblock {\em The FASEB Journal} 17(2):250--2.
+
+\bibitem{Stewart2014}
+Stewart DS, Pierce DW, Hotta M, Stern AT, Forman SA (2014) {Mutations at Beta
+  N265 in $\gamma$-Aminobutyric Acid Type A Receptors Alter Both Binding
+  Affinity and Efficacy of Potent Anesthetics}.
+\newblock {\em PLoS ONE} 9(10):e111470.
+
+\bibitem{Stern2016}
+Stern AT, Forman SA (2016) {A Cysteine Substitution Probes $\beta$3H267
+  Interactions with Propofol and Other Potent Anesthetics in
+  $\alpha$1$\beta$3$\gamma$2L $\gamma$-Aminobutyric Acid Type A Receptors.}
+\newblock {\em Anesthesiology} 124(1):89--100.
+
+\bibitem{Chiara2016a}
+Chiara DC, et~al. (2016) {General Anesthetic Binding Sites in Human
+  $\alpha$4$\beta$3$\delta$ $\gamma$-Aminobutyric Acid Type-A Receptors (GABA
+  {\textless}sub{\textgreater}A{\textless}/sub{\textgreater} R)}.
+\newblock {\em Journal of Biological Chemistry} p. jbc.M116.753335.
+
+\bibitem{Woll2016a}
+Woll KA, et~al. (2016) {A Novel Bifunctional Alkylphenol Anesthetic Allows
+  Characterization of GABAA Receptor Subunit Binding Selectivity in
+  Synaptosomes.}
+\newblock {\em The Journal of biological chemistry} 291(39):20473--20486.
+
+\bibitem{Zwanzig1954}
+Zwanzig RW (1954) {High-Temperature Equation of State by a Perturbation
+  Method. I. Nonpolar Gases}.
+\newblock {\em The Journal of Chemical Physics} 22(8):1420--1426.
+
+\bibitem{Beveridge1989}
+Beveridge DL, DiCapua FM (1989) {Free Energy Via Molecular Simulation:
+  Applications to Chemical and Biomolecular Systems}.
+\newblock {\em Annual Review of Biophysics and Biophysical Chemistry}
+  18(1):431--492.
+
+\bibitem{Mark2002}
+Mark AE, Mark, E. A (2002) {Free Energy Perturbation Calculations} in {\em
+  Encyclopedia of Computational Chemistry}.
+\newblock (John Wiley {\&} Sons, Ltd, Chichester, UK).
+
+\bibitem{Git---2017}
+Git V, et~al. (2017) {NAMD User ' s Guide}.
+
+\bibitem{LeBard2012a}
+LeBard DN, H{\'{e}}nin J, Eckenhoff RG, Klein ML, Brannigan G (2012) {General
+  anesthetics predicted to block the GLIC pore with micromolar affinity.}
+\newblock {\em PLoS computational biology} 8(5):e1002532.
+
+\bibitem{Chen2015}
+Chen Q, et~al. (2015) {Direct Pore Binding as a Mechanism for Isoflurane
+  Inhibition of the Pentameric Ligand-gated Ion Channel ELIC}.
+\newblock {\em Scientific Reports} 5(1):13833.
+
+\bibitem{Pohorille2010}
+Pohorille A, Jarzynski C, Chipot C (2010) {Good practices in free-energy
+  calculations.}
+\newblock {\em J Phys Chem B} 114(32):10235--10253.
+
+\end{thebibliography}

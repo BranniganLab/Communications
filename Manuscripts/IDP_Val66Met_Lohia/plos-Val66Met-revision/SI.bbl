@@ -1,0 +1,108 @@
+\begin{thebibliography}{10}
+
+\bibitem{Lindorff-Larsen2010a}
+Lindorff-Larsen K, Piana S, Palmo K, Maragakis P, Klepeis JL, Dror RO, et~al.
+\newblock {Improved side-chain torsion potentials for the Amber ff99SB protein
+  force field.}
+\newblock Proteins. 2010;78(8):1950--8.
+\newblock doi:{10.1002/prot.22711}.
+
+\bibitem{Hornak2006a}
+Hornak V, Abel R, Okur A, Strockbine B, Roitberg A, Simmerling C.
+\newblock {Comparison of multiple Amber force fields and development of
+  improved protein backbone parameters}.
+\newblock Proteins Struct Funct Bioinforma. 2006;65(3):712--725.
+\newblock doi:{10.1002/prot.21123}.
+
+\bibitem{Piana2015}
+Piana S, Donchev AG, Robustelli P, Shaw DE.
+\newblock {Water Dispersion Interactions Strongly Influence Simulated
+  Structural Properties of Disordered Protein States}.
+\newblock J Phys Chem B. 2015;119(16):5113--5123.
+\newblock doi:{10.1021/jp508971m}.
+
+\bibitem{Huang2016a}
+Huang J, Rauscher S, Nawrocki G, Ran T, Feig M, de~Groot BL, et~al.
+\newblock {CHARMM36m: an improved force field for folded and intrinsically
+  disordered proteins}.
+\newblock Nat Methods. 2017;14(1):71--73.
+\newblock doi:{10.1038/nmeth.4067}.
+
+\bibitem{Best2014}
+Best RB, Zheng W, Mittal J.
+\newblock {Balanced Protein–Water Interactions Improve Properties of
+  Disordered Proteins and Non-Specific Protein Association}.
+\newblock J Chem Theory Comput. 2014;10(11):5113--5124.
+\newblock doi:{10.1021/ct500569b}.
+
+\bibitem{Best2009}
+Best RB, Hummer G.
+\newblock {Optimized Molecular Dynamics Force Fields Applied to the
+  Helix−Coil Transition of Polypeptides}.
+\newblock J Phys Chem B. 2009;113(26):9004--9015.
+\newblock doi:{10.1021/jp901540t}.
+
+\bibitem{Jorgensen1981}
+Jorgensen WL.
+\newblock {Quantum and statistical mechanical studies of liquids. 10.
+  Transferable intermolecular potential functions for water, alcohols, and
+  ethers. Application to liquid water}.
+\newblock J Am Chem Soc. 1981;103(2):335--340.
+\newblock doi:{10.1021/ja00392a016}.
+
+\bibitem{Shen2010}
+Shen Y, Bax A.
+\newblock {SPARTA+: a modest improvement in empirical NMR chemical shift
+  prediction by means of an artificial neural network.}
+\newblock J Biomol NMR. 2010;48(1):13--22.
+\newblock doi:{10.1007/s10858-010-9433-9}.
+
+\bibitem{Anastasia2013}
+Anastasia A, Deinhardt K, Chao MV, Will NE, Irmady K, Lee FS, et~al.
+\newblock {Val66Met polymorphism of BDNF alters prodomain structure to induce
+  neuronal growth cone retraction.}
+\newblock Nat Commun. 2013;4:2490.
+\newblock doi:{10.1038/ncomms3490}.
+
+\bibitem{Flory1949}
+Flory PJ.
+\newblock {The Configuration of Real Polymer Chains}.
+\newblock J Chem Phys. 1949;17(3):303--310.
+\newblock doi:{10.1063/1.1747243}.
+
+\bibitem{Das2013a}
+Das RK, Pappu RV.
+\newblock {Conformations of intrinsically disordered proteins are influenced by
+  linear sequence distributions of oppositely charged residues.}
+\newblock Proc Natl Acad Sci U S A. 2013;110(33):13392--7.
+\newblock doi:{10.1073/pnas.1304749110}.
+
+\bibitem{Hofmann2012}
+Hofmann H, Soranno A, Borgia A, Gast K, Nettels D, Schuler B.
+\newblock {Polymer scaling laws of unfolded and intrinsically disordered
+  proteins quantified with single-molecule spectroscopy}.
+\newblock Proc Natl Acad Sci. 2012;109(40):16155--16160.
+\newblock doi:{10.1073/pnas.1207719109}.
+
+\bibitem{Zerze2015}
+Zerze GH, Best RB, Mittal J.
+\newblock {Sequence- and Temperature-Dependent Properties of Unfolded and
+  Disordered Proteins from Atomistic Simulations}.
+\newblock J Phys Chem B. 2015;119(46):14622--14630.
+\newblock doi:{10.1021/acs.jpcb.5b08619}.
+
+\bibitem{Meng2018}
+Meng F, Bellaiche MMJ, Kim JY, Zerze GH, Best RB, Chung HS.
+\newblock {Highly Disordered Amyloid-$\beta$ Monomer Probed by Single-Molecule
+  FRET and MD Simulation}.
+\newblock Biophys J. 2018;114(4):870--884.
+\newblock doi:{10.1016/j.bpj.2017.12.025}.
+
+\bibitem{Ahlstrom2013}
+Ahlstrom LS, Baker JL, Ehrlich K, Campbell ZT, Patel S, Vorontsov II, et~al.
+\newblock {Network visualization of conformational sampling during molecular
+  dynamics simulation.}
+\newblock J Mol Graph Model. 2013;46:140--9.
+\newblock doi:{10.1016/j.jmgm.2013.10.003}.
+
+\end{thebibliography}

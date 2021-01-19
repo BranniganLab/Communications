@@ -1,0 +1,16 @@
+
+@Article{ConchilloSole20074,
+  author    = {Conchillo-Sol{\'e}, Oscar and de Groot, Natalia S and Avil{\'e}s, Francesc X and Vendrell, Josep and Daura, Xavier and Ventura, Salvador},
+  journal   = {BMC bioinformatics},
+  title     = {AGGRESCAN: a server for the prediction and evaluation of" hot spots" of aggregation in polypeptides},
+  year      = {2007},
+  number    = {1},
+  pages     = {65},
+  volume    = {8},
+  doi       = {10.1186/1471-2105-8-65},
+  file      = {:ConchilloSole2007 - AGGRESCAN_ a Server for the Prediction and Evaluation Of_ Hot Spots_ of Aggregation in Polypeptides.PDF:PDF},
+  groups    = {Aggreagating_proteins},
+  keywords  = {rank5},
+  publisher = {Springer},
+  ranking   = {rank5},
+}

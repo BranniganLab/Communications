@@ -1,0 +1,113 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: IDP_Val66Met_Lohia.aux
+The style file: plos2015.bst
+I found no \bibdata command---while reading file IDP_Val66Met_Lohia.aux
+Warning--I didn't find a database entry for "Uversky2013a"
+Warning--I didn't find a database entry for "Panchenko2015"
+Warning--I didn't find a database entry for "Ward2004a"
+Warning--I didn't find a database entry for "Dyson2005a"
+Warning--I didn't find a database entry for "Ward2004b"
+Warning--I didn't find a database entry for "Dunker2005"
+Warning--I didn't find a database entry for "Habchi2014"
+Warning--I didn't find a database entry for "Babu2011"
+Warning--I didn't find a database entry for "Sickmeier2007a"
+Warning--I didn't find a database entry for "Das2015"
+Warning--I didn't find a database entry for "Das2013a"
+Warning--I didn't find a database entry for "Holehouse2017"
+Warning--I didn't find a database entry for "Vacic2012a"
+Warning--I didn't find a database entry for "Larini2013b"
+Warning--I didn't find a database entry for "Ganguly2015"
+Warning--I didn't find a database entry for "Viet2014a"
+Warning--I didn't find a database entry for "Viet2013"
+Warning--I didn't find a database entry for "Truong2014a"
+Warning--I didn't find a database entry for "Zhan2013a"
+Warning--I didn't find a database entry for "Xu2013a"
+Warning--I didn't find a database entry for "Bah2016"
+Warning--I didn't find a database entry for "He2015"
+Warning--I didn't find a database entry for "AlexanderConicella2016"
+Warning--I didn't find a database entry for "Iesmantavicius2013"
+Warning--I didn't find a database entry for "Mittag2007"
+Warning--I didn't find a database entry for "Stanley2015"
+Warning--I didn't find a database entry for "Ithuralde2016"
+Warning--I didn't find a database entry for "Knott2012c"
+Warning--I didn't find a database entry for "Invernizzi2013"
+Warning--I didn't find a database entry for "Abeln2008"
+Warning--I didn't find a database entry for "Yedvabny2014"
+Warning--I didn't find a database entry for "Levine2015"
+Warning--I didn't find a database entry for "Pappu2008"
+Warning--I didn't find a database entry for "Notaras2015"
+Warning--I didn't find a database entry for "Korte1995"
+Warning--I didn't find a database entry for "Autry2012"
+Warning--I didn't find a database entry for "Bjoerkholm2016"
+Warning--I didn't find a database entry for "Autry2011"
+Warning--I didn't find a database entry for "soliman2010"
+Warning--I didn't find a database entry for "Chen2008"
+Warning--I didn't find a database entry for "Verhagen2010"
+Warning--I didn't find a database entry for "Feng2010a"
+Warning--I didn't find a database entry for "Anastasia2013"
+Warning--I didn't find a database entry for "Yang2014"
+Warning--I didn't find a database entry for "Roy2010"
+Warning--I didn't find a database entry for "Bioinformatics"
+Warning--I didn't find a database entry for "Sali1993a"
+Warning--I didn't find a database entry for "Jorgensen1983"
+Warning--I didn't find a database entry for "Lindorff-Larsen"
+Warning--I didn't find a database entry for "Berendsen1995"
+Warning--I didn't find a database entry for "Abraham2015"
+Warning--I didn't find a database entry for "Sugita1999a"
+Warning--I didn't find a database entry for "Essmann1995"
+Warning--I didn't find a database entry for "Hess1997"
+Warning--I didn't find a database entry for "Humphrey1996"
+Warning--I didn't find a database entry for "Nodet"
+Warning--I didn't find a database entry for "Iglesias2013"
+Warning--I didn't find a database entry for "Ahlstrom2013"
+Warning--I didn't find a database entry for "Shen2009"
+Warning--I didn't find a database entry for "Marsh2006a"
+Warning--I didn't find a database entry for "Sormanni2015"
+Warning--I didn't find a database entry for "Shen2010"
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 0 entries,
+            3058 wiz_defined-function locations,
+            747 strings with 5631 characters,
+and the built_in function-call counts, 27 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 16
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 3
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 2
+(There was 1 error message)

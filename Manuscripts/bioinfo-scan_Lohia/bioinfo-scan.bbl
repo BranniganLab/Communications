@@ -1,0 +1,445 @@
+\begin{thebibliography}{10}
+
+\bibitem{Hecht2015}
+Hecht M, Bromberg Y, Rost B.
+\newblock Better prediction of functional effects for sequence variants.
+\newblock {BMC} Genomics. 2015;16(S8).
+\newblock doi:{10.1186/1471-2164-16-s8-s1}.
+
+\bibitem{Mir2017}
+Mir S, Alhroub Y, Anyango S, Armstrong DR, Berrisford JM, Clark AR, et~al.
+\newblock {PDBe}: towards reusable data delivery infrastructure at protein data
+  bank in Europe.
+\newblock Nucleic Acids Research. 2017;46(D1):D486--D492.
+\newblock doi:{10.1093/nar/gkx1070}.
+
+\bibitem{Rose2016}
+Peter W~Rose AACBARBCHCLDCJMDSDZFRKGDSGBHTKRLEPCRASRCSYPTYVMVJDWJWHYJYYCZHMBSKB
+  Andreas~Prlić.
+\newblock The RCSB protein data bank: integrative view of protein, gene and 3D
+  structural information.
+\newblock Nucleic Acids Research. 2016;doi:{10.1093/analys/anz030}.
+
+\bibitem{Prlic2016}
+Prli{\'{c}} A, Kalro T, Bhattacharya R, Christie C, Burley SK, Rose PW.
+\newblock Integrating genomic information with protein sequence and 3D atomic
+  level structure at the {RCSB} protein data bank.
+\newblock Bioinformatics. 2016;32(24):3833--3835.
+\newblock doi:{10.1093/bioinformatics/btw547}.
+
+\bibitem{Uverskya}
+Uversky VN, Iakoucheva LM, Dunker AK. Protein Disorder and Human Genetic
+  Disease;.
+
+\bibitem{Deiana2016}
+Deiana A, Giansanti A.
+\newblock Variants of intrinsic disorder in the human proteome;.
+
+\bibitem{Patel2015}
+Patel A, Lee HO, Jawerth L, Maharana S, Jahnel M, Hein MY, et~al.
+\newblock A Liquid-to-Solid Phase Transition of the {ALS} Protein {FUS}
+  Accelerated by Disease Mutation.
+\newblock Cell. 2015;162(5):1066--1077.
+\newblock doi:{10.1016/j.cell.2015.07.047}.
+
+\bibitem{Uversky2015}
+Uversky VN.
+\newblock Intrinsically disordered proteins and their (disordered) proteomes in
+  neurodegenerative disorders.
+\newblock Frontiers in Aging Neuroscience. 2015;7.
+\newblock doi:{10.3389/fnagi.2015.00018}.
+
+\bibitem{Weinreb1996}
+Weinreb PH, Zhen W, Poon AW, Conway KA, Lansbury PT.
+\newblock {NACP}, A Protein Implicated in Alzheimer{\textquotesingle}s Disease
+  and Learning, Is Natively Unfolded{\textdagger}.
+\newblock Biochemistry. 1996;35(43):13709--13715.
+\newblock doi:{10.1021/bi961799n}.
+
+\bibitem{CuanaloContreras2013}
+Cuanalo-Contreras K, Mukherjee A, Soto C.
+\newblock Role of Protein Misfolding and Proteostasis Deficiency in Protein
+  Misfolding Diseases and Aging.
+\newblock International Journal of Cell Biology. 2013;2013:1--10.
+\newblock doi:{10.1155/2013/638083}.
+
+\bibitem{Uversky2013a}
+Uversky VN.
+\newblock {Unusual biophysics of intrinsically disordered proteins.}
+\newblock Biochim Biophys Acta. 2013;1834(5):932--51.
+\newblock doi:{10.1016/j.bbapap.2012.12.008}.
+
+\bibitem{Panchenko2015}
+Panchenko AR, Babu MM.
+\newblock {Editorial overview: Linking protein sequence and structural changes
+  to function in the era of next-generation sequencing}.
+\newblock Curr Opin Struct Biol. 2015;32:viii--x.
+\newblock doi:{10.1016/j.sbi.2015.06.005}.
+
+\bibitem{Ward2004a}
+Ward JJ, Sodhi JS, McGuffin LJ, Buxton BF, Jones DT.
+\newblock {Prediction and Functional Analysis of Native Disorder in Proteins
+  from the Three Kingdoms of Life}.
+\newblock J Mol Biol. 2004;337(3):635--645.
+\newblock doi:{10.1016/j.jmb.2004.02.002}.
+
+\bibitem{Dyson2005a}
+Dyson HJ, Wright PE.
+\newblock {Intrinsically unstructured proteins and their functions}.
+\newblock Nat Rev Mol Cell Biol. 2005;6(3):197--208.
+\newblock doi:{10.1038/nrm1589}.
+
+\bibitem{Uversky2019}
+Uversky VN.
+\newblock {Intrinsically Disordered Proteins and Their “Mysterious”
+  (Meta)Physics}.
+\newblock Front Phys. 2019;7:10.
+\newblock doi:{10.3389/fphy.2019.00010}.
+
+\bibitem{Brown2011}
+Brown CJ, Johnson AK, Dunker AK, Daughdrill GW.
+\newblock Evolution and disorder.
+\newblock Current opinion in structural biology. 2011;21(3):441--446.
+
+\bibitem{Lohia2019}
+Lohia R, Salari R, Brannigan G.
+\newblock Sequence specificity despite intrinsic disorder: how a
+  disease-associated Val/Met polymorphism rearranges tertiary interactions in a
+  long disordered protein;doi:{10.26434/chemrxiv.8135777}.
+
+\bibitem{ConchilloSole2007}
+Conchillo-Sol{\'e} O, de~Groot NS, Avil{\'e}s FX, Vendrell J, Daura X, Ventura
+  S.
+\newblock AGGRESCAN: a server for the prediction and evaluation of" hot spots"
+  of aggregation in polypeptides.
+\newblock BMC bioinformatics. 2007;8(1):65.
+\newblock doi:{10.1186/1471-2105-8-65}.
+
+\bibitem{Fang2013}
+Fang Y, Gao S, Tai D, Middaugh CR, Fang J.
+\newblock Identification of properties important to protein aggregation using
+  feature selection. 2013;14.
+\newblock doi:{10.1186/1471-2105-14-314}.
+
+\bibitem{Tartaglia2008}
+Tartaglia GG, Vendruscolo M.
+\newblock The Zyggregator method for predicting protein aggregation
+  propensities. 2008;37:1395.
+\newblock doi:{10.1039/b706784b}.
+
+\bibitem{Pallares2019}
+Pallar{\'{e}}s I, Ventura S.
+\newblock Advances in the Prediction of Protein Aggregation Propensity.
+\newblock Current Medicinal Chemistry. 2019;26(21):3911--3920.
+\newblock doi:{10.2174/0929867324666170705121754}.
+
+\bibitem{MaurerStroh2010}
+Maurer-Stroh S, Debulpaep M, Kuemmerer N, de~la Paz ML, Martins IC, Reumers J,
+  et~al.
+\newblock Exploring the sequence determinants of amyloid structure using
+  position-specific scoring matrices.
+\newblock Nature Methods. 2010;7(3):237--242.
+\newblock doi:{10.1038/nmeth.1432}.
+
+\bibitem{Tartaglia2005}
+Tartaglia GG, Cavalli A, Pellarin R, Caflisch A.
+\newblock Prediction of aggregation rate and aggregation-prone segments in
+  polypeptide sequences.
+\newblock Protein Science. 2005;14(10):2723--2734.
+\newblock doi:{10.1110/ps.051471205}.
+
+\bibitem{Pawar2005}
+Pawar AP, DuBay KF, Zurdo J, Chiti F, Vendruscolo M, Dobson CM.
+\newblock Prediction of
+  {\textquotedblleft}Aggregation-prone{\textquotedblright} and
+  {\textquotedblleft}Aggregation-susceptible{\textquotedblright} Regions in
+  Proteins Associated with Neurodegenerative Diseases.
+\newblock Journal of Molecular Biology. 2005;350(2):379--392.
+\newblock doi:{10.1016/j.jmb.2005.04.016}.
+
+\bibitem{Dobson2002}
+Dobson CM.
+\newblock Protein-misfolding diseases: Getting out of shape.
+\newblock Nature. 2002;418(6899):729--730.
+
+\bibitem{Cohen2003}
+Cohen F.
+\newblock Kelly, JW".
+\newblock Therapeutic approaches to protein-misfolding diseases Nature.
+  2003;426:905--909.
+
+\bibitem{Stone2005}
+Stone EA.
+\newblock Physicochemical constraint violation by missense substitutions
+  mediates impairment of protein function and disease severity.
+\newblock Genome Research. 2005;15(7):978--986.
+\newblock doi:{10.1101/gr.3804205}.
+
+\bibitem{Chen2006}
+Chen K, Kurgan L, Ruan J.
+\newblock Optimization of the Sliding Window Size for Protein Structure
+  Prediction.
+\newblock In: 2006 {IEEE} Symposium on Computational Intelligence and
+  Bioinformatics and Computational Biology. {IEEE}; 2006.
+
+\bibitem{Schlessinger2005}
+Schlessinger A, Rost B.
+\newblock Protein flexibility and rigidity predicted from sequence.
+\newblock Proteins: Structure, Function, and Bioinformatics.
+  2005;61(1):115--126.
+\newblock doi:{10.1002/prot.20587}.
+
+\bibitem{Sander2006}
+Sander O, Sommer I, Lengauer T.
+\newblock Local protein structure prediction using discriminative models.
+\newblock {BMC} Bioinformatics. 2006;7(1):14.
+\newblock doi:{10.1186/1471-2105-7-14}.
+
+\bibitem{Park2007}
+Park Y, Hayat S, Helms V.
+\newblock Prediction of the burial status of transmembrane residues of helical
+  membrane proteins.
+\newblock {BMC} Bioinformatics. 2007;8(1):302.
+\newblock doi:{10.1186/1471-2105-8-302}.
+
+\bibitem{Tzotzos2010}
+Tzotzos S, Doig AJ.
+\newblock {Amyloidogenic sequences in native protein structures}.
+\newblock Protein Science. 2010;19(2):327--348.
+\newblock doi:{10.1002/pro.314}.
+
+\bibitem{Abskharon2019}
+Abskharon R, Wang F, Wohlkonig A, Ruan J, Soror S, Giachin G, et~al.
+\newblock {Structural evidence for the critical role of the prion protein
+  hydrophobic region in forming an infectious prion}.
+\newblock PLOS Pathogens. 2019;15(12):e1008139.
+\newblock doi:{10.1371/journal.ppat.1008139}.
+
+\bibitem{DuBay2004}
+DuBay KF, Pawar AP, Chiti F, Zurdo J, Dobson CM, Vendruscolo M.
+\newblock {Prediction of the Absolute Aggregation Rates of Amyloidogenic
+  Polypeptide Chains}.
+\newblock Journal of Molecular Biology. 2004;341(5):1317--1326.
+\newblock doi:{10.1016/j.jmb.2004.06.043}.
+
+\bibitem{Claussnitzer2020}
+Claussnitzer M, Cho JH, Collins R, Cox NJ, Dermitzakis ET, Hurles ME, et~al.
+\newblock A brief history of human disease genetics.
+\newblock Nature. 2020;577(7789):179--189.
+\newblock doi:{10.1038/s41586-019-1879-7}.
+
+\bibitem{Buniello2019}
+Buniello A, MacArthur JA, Cerezo M, Harris LW, Hayhurst J, Malangone C, et~al.
+\newblock The NHGRI-EBI GWAS Catalog of published genome-wide association
+  studies, targeted arrays and summary statistics 2019. 2019;47:D1005--D1012.
+\newblock doi:{10.1093/nar/gky1120}.
+
+\bibitem{Gallagher2018}
+Gallagher MD, Chen-Plotkin AS.
+\newblock The Post-GWAS Era: From Association to Function. 2018;102:717--730.
+\newblock doi:{10.1016/j.ajhg.2018.04.002}.
+
+\bibitem{Tam2019}
+Tam V, Patel N, Turcotte M, Bossé Y, Paré G, Meyre D.
+\newblock Benefits and limitations of genome-wide association studies.
+  2019;20:467--484.
+\newblock doi:{10.1038/s41576-019-0127-1}.
+
+\bibitem{Boyle2017}
+Boyle EA, Li YI, Pritchard JK.
+\newblock An Expanded View of Complex Traits: From Polygenic to Omnigenic.
+  2017;169:1177--1186.
+\newblock doi:{10.1016/j.cell.2017.05.038}.
+
+\bibitem{Goldstein2009}
+Goldstein DB.
+\newblock Common Genetic Variation and Human Traits. 2009;360:1696--1698.
+\newblock doi:{10.1056/nejmp0806284}.
+
+\bibitem{McClellan2010}
+McClellan J, King MC.
+\newblock Genetic Heterogeneity in Human Disease. 2010;141:210--217.
+\newblock doi:{10.1016/j.cell.2010.03.032}.
+
+\bibitem{MacArthur2014}
+MacArthur DG, Manolio TA, Dimmock DP, Rehm HL, Shendure J, Abecasis GR, et~al.
+\newblock Guidelines for investigating causality of sequence variants in human
+  disease.
+\newblock Nature. 2014;508(7497):469--476.
+\newblock doi:{10.1038/nature13127}.
+
+\bibitem{Niroula2015}
+Niroula A, Urolagin S, Vihinen M.
+\newblock {PON}-P2: Prediction Method for Fast and Reliable Identification of
+  Harmful Variants.
+\newblock {PLOS} {ONE}. 2015;10(2):e0117380.
+\newblock doi:{10.1371/journal.pone.0117380}.
+
+\bibitem{LopezFerrando2017}
+L{\'{o}}pez-Ferrando V, Gazzo A, de~la Cruz X, Orozco M, Gelp{\'{\i}} JL.
+\newblock {PMut}: a web-based tool for the annotation of pathological variants
+  on proteins, 2017 update.
+\newblock Nucleic Acids Research. 2017;45(W1):W222--W228.
+\newblock doi:{10.1093/nar/gkx313}.
+
+\bibitem{Popov2019}
+Popov P, Bizin I, Gromiha M, A K, Frishman D.
+\newblock Prediction of disease-associated mutations in the transmembrane
+  regions of proteins with known 3D structure.
+\newblock {PLOS} {ONE}. 2019;14(7):e0219452.
+\newblock doi:{10.1371/journal.pone.0219452}.
+
+\bibitem{Thomas2004}
+Thomas PD, Kejariwal A.
+\newblock Coding single-nucleotide polymorphisms associated with complex vs.
+  Mendelian disease: Evolutionary evidence for differences in molecular
+  effects.
+\newblock Proceedings of the National Academy of Sciences.
+  2004;101(43):15398--15403.
+\newblock doi:{10.1073/pnas.0404380101}.
+
+\bibitem{Ng2001}
+Ng PC, Henikoff S.
+\newblock Predicting Deleterious Amino Acid Substitutions.
+\newblock Genome Research. 2001;11(5):863--874.
+\newblock doi:{10.1101/gr.176601}.
+
+\bibitem{Choi2012}
+Choi Y, Sims GE, Murphy S, Miller JR, Chan AP.
+\newblock Predicting the Functional Effect of Amino Acid Substitutions and
+  Indels.
+\newblock {PLoS} {ONE}. 2012;7(10):e46688.
+\newblock doi:{10.1371/journal.pone.0046688}.
+
+\bibitem{Capriotti2006}
+Capriotti E, Calabrese R, Casadio R.
+\newblock Predicting the insurgence of human genetic diseases associated to
+  single point protein mutations with support vector machines and evolutionary
+  information.
+\newblock Bioinformatics. 2006;22(22):2729--2734.
+\newblock doi:{10.1093/bioinformatics/btl423}.
+
+\bibitem{Iqbal2019}
+Iqbal S, Jespersen JB, Perez-Palma E, May P, Hoksza D, Heyne HO, et~al.
+\newblock {Insights into protein structural, physicochemical, and functional
+  consequences of missense variants in 1,330 disease-associated human genes}.
+\newblock bioRxiv. 2019; p. 693259.
+\newblock doi:{10.1101/693259}.
+
+\bibitem{Ittisoponpisan2019}
+Ittisoponpisan S, Islam SA, Khanna T, Alhuzimi E, David A, Sternberg MJE.
+\newblock Can Predicted Protein 3D Structures Provide Reliable Insights into
+  whether Missense Variants Are Disease Associated?
+\newblock Journal of Molecular Biology. 2019;431(11):2197--2212.
+\newblock doi:{10.1016/j.jmb.2019.04.009}.
+
+\bibitem{Capriotti2004}
+Capriotti E, Fariselli P, Casadio R.
+\newblock A neural-network-based method for predicting protein stability
+  changes upon single point mutations.
+\newblock Bioinformatics. 2004;20(Suppl 1):i63--i68.
+\newblock doi:{10.1093/bioinformatics/bth928}.
+
+\bibitem{Capriotti2005}
+Capriotti E, Fariselli P, Casadio R.
+\newblock I-Mutant2.0: predicting stability changes upon mutation from the
+  protein sequence or structure.
+\newblock Nucleic Acids Research. 2005;33(Web Server):W306--W310.
+\newblock doi:{10.1093/nar/gki375}.
+
+\bibitem{Parthiban2006}
+Parthiban V, Gromiha MM, Schomburg D.
+\newblock {CUPSAT}: prediction of protein stability upon point mutations.
+\newblock Nucleic Acids Research. 2006;34(Web Server):W239--W242.
+\newblock doi:{10.1093/nar/gkl190}.
+
+\bibitem{Wainreb2010}
+Wainreb G, Ashkenazy H, Bromberg Y, Starovolsky-Shitrit A, Haliloglu T, Ruppin
+  E, et~al.
+\newblock {MuD}: an interactive web server for the prediction of non-neutral
+  substitutions using protein structural data.
+\newblock Nucleic Acids Research. 2010;38(suppl{\_}2):W523--W528.
+\newblock doi:{10.1093/nar/gkq528}.
+
+\bibitem{Yang2018}
+Yang Y, Gao J, Wang J, Heffernan R, Hanson J, Paliwal K, et~al.
+\newblock Sixty-five years of the long march in protein secondary structure
+  prediction: the final stretch? 2018; p. bbw129.
+\newblock doi:{10.1093/bib/bbw129}.
+
+\bibitem{Zhang2018a}
+Zhang B, Li J, Lü Q.
+\newblock Prediction of 8-state protein secondary structures by a novel deep
+  learning architecture. 2018;19.
+\newblock doi:{10.1186/s12859-018-2280-5}.
+
+\bibitem{Wang2017}
+Wang Y, Mao H, Yi Z.
+\newblock Protein secondary structure prediction by using deep learning method.
+  2017;118:115--123.
+\newblock doi:{10.1016/j.knosys.2016.11.015}.
+
+\bibitem{Aydin}
+Aydin Z, Altunbasak Y, Borodovsky M. Protein secondary structure prediction
+  with semi Markov HMMs;.
+
+\bibitem{Ma2018}
+Ma Y, Liu Y, Cheng J.
+\newblock Protein Secondary Structure Prediction Based on Data Partition and
+  Semi-Random Subspace Method. 2018;8.
+\newblock doi:{10.1038/s41598-018-28084-8}.
+
+\bibitem{Bromberg2007}
+Bromberg Y, Rost B.
+\newblock {SNAP}: predict effect of non-synonymous polymorphisms on function.
+\newblock Nucleic Acids Research. 2007;35(11):3823--3835.
+\newblock doi:{10.1093/nar/gkm238}.
+
+\bibitem{Shihab2012}
+Shihab HA, Gough J, Cooper DN, Stenson PD, Barker GLA, Edwards KJ, et~al.
+\newblock Predicting the Functional, Molecular, and Phenotypic Consequences of
+  Amino Acid Substitutions using Hidden Markov Models.
+\newblock Human Mutation. 2012;34(1):57--65.
+\newblock doi:{10.1002/humu.22225}.
+
+\bibitem{Yue2005}
+Yue P, Li Z, Moult J.
+\newblock Loss of Protein Structure Stability as a Major Causative Factor in
+  Monogenic Disease.
+\newblock Journal of Molecular Biology. 2005;353(2):459--473.
+\newblock doi:{10.1016/j.jmb.2005.08.020}.
+
+\bibitem{Rentzsch2018}
+Rentzsch P, Witten D, Cooper GM, Shendure J, Kircher M.
+\newblock {CADD}: predicting the deleteriousness of variants throughout the
+  human genome.
+\newblock Nucleic Acids Research. 2018;47(D1):D886--D894.
+\newblock doi:{10.1093/nar/gky1016}.
+
+\bibitem{Calabrese2009}
+Calabrese R, Capriotti E, Fariselli P, Martelli PL, Casadio R.
+\newblock Functional annotations improve the predictive score of human
+  disease-related mutations in proteins.
+\newblock Human Mutation. 2009;30(8):1237--1244.
+\newblock doi:{10.1002/humu.21047}.
+
+\bibitem{Yip2008}
+Yip YL, Famiglietti M, Gos A, Duek PD, David FPA, Gateau A, et~al.
+\newblock {Annotating single amino acid polymorphisms in the UniProt/Swiss-Prot
+  knowledgebase}.
+\newblock Hum Mutat. 2008;29(3):361--366.
+\newblock doi:{10.1002/humu.20671}.
+
+\bibitem{Chiti2006}
+Chiti F, Dobson CM.
+\newblock {Protein Misfolding, Functional Amyloid, and Human Disease}.
+\newblock Annual Review of Biochemistry. 2006;75(1):333--366.
+\newblock doi:{10.1146/annurev.biochem.75.101304.123901}.
+
+\bibitem{Kyte1982a}
+Kyte J, Doolittle RF.
+\newblock {A simple method for displaying the hydropathic character of a
+  protein.}
+\newblock J Mol Biol. 1982;157(1):105--32.
+
+\end{thebibliography}

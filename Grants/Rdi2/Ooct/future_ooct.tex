@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{Proposal.bib}
+\usepackage[margin=.5in]{geometry}
+\usepackage{setspace}
+\linespread{2}
+\begin{document}
+
+
+Coarse-grained simulations of multiple subtypes of mammalian pentameric ligand gated ion channels in quasi-physiological membranes\\
+
+Pentameric ligand gated ion channels (pLGICs) have complex gating behavior and structural requirements, and nicotinic acetylcholine receptors (nAChRs) are some of the most complex pLGICs. One of the most poorly understood components of nAChR is its unpredictable functional sensitivity to slight changes in its lipid environment, a property shared to a lesser extent by other pLGICs \cite{M.CriadoH.Eibl1982,Conti2013}. Considerable experimental effort \cite{Fong_Correlation_1986,Sunshine_Lipid_1992,Hamouda_Assessing_2006,Butler_FTIR_1993,Bhushan_Correlation_1993,Fong_Stabilization_1987,Corrie_Lipid_2002} was expended, primarily in the 1980s and 1990s, to understand the underlying mechanism of nAChR lipid sensitivity, including identifying the likelihood of specific boundary lipids. Experimental studies focused primarily on cholesterol, which were required in native membranes (20-40\% of lipid composition) to support native levels of ion flux in purified and reconstituted nAChR \cite{Fong_Correlation_1986,Fong_Stabilization_1987}.% Further experiments showed that while cholesterol could be depleted from the bulk membrane, a second pool of cholesterol could not be removed from nAChR-containing membranes by depletion \cite{Leibel1987}. However, results were inconclusive regarding whether cholesterol was sufficient to restore nAChR function. Interestingly, soybean lipids (which are also high in n-3 PUFAs) \cite{Yoshida1986,Regost2003,Olsen2003} are more effective at restoring ion flux than cholesterol alone \cite{Morales2006}.
+The working assumption in the time of most of those experiments was that the membrane was randomly mixed in the absence of protein, although lipid sorting by proteins was considered likely; there was little evidence available then that cholesterol by itself can induce non-random mixing and even domain formation in just a ternary lipid mixture. %We are now also aware of the critical role of acyl chain unsaturation in this process, but previous experiments focused primarily on the role of cholesterol and phospholipid headgroup without including the lipids with n-3 PUFA chains that are so abundant in both the fish electric organ and the postsynaptic membrane.
+
+It is still unknown what factors determine the lipids interacting directly with pLGICs , leading to a substantial source of uncertainty in present-day experiments and introducing a divergence between simulations and experiments that cannot be reasonably estimated. Ionic flux of reconstituted neuronal $\alpha$3$\beta$4nAChR expressed in Xenopus oocytes is less than 50\% of those expressed in mouse-fibroblasts, with neither consistently reproducing native behavior \cite{Fong_Correlation_1986,Sunshine_Lipid_1992,Hamouda_Assessing_2006,Butler_FTIR_1993,Bhushan_Correlation_1993,Fong_Stabilization_1987,Bednarczyk_Transmembrane_2002,Corrie_Lipid_2002}. However, results were inconclusive regarding whether cholesterol was sufficient to restore nAChR function. Interestingly, soybean lipids (which are also high polyunsaturated fatty acids (PUFAs)) \cite{Yoshida1986,Regost2003,Olsen2003} are more effective at restoring ion flux than cholesterol alone \cite{Morales2006}.%Contrasts in membrane lipids may contribute significantly to these differences, and specific lipid incorporation may bypass the need for microtransplantation of entire sections of neuronal membranes \cite{Conti2013} into oocytes to achieve native function. 
+%It is still unknown what factors determine the lipids interacting directly with pLGICs , leading to a substantial source of uncertainty in present-day experiments and introducing a disparity between simulations and experiments that cannot be reasonably estimated. Conductance of recombinant neuronal a3b4nAChR expressed in Xenopus oocytes is less than 50\% of those expressed in mouse-fibroblasts, with neither consistently reproducing native behavior. [34] Differences in membrane lipids may contribute significantly to these differences, and rational lipid supplementation may forgo the need for microtransplantation of entire sections of neuronal membranes[35] into oocytes to achieve native function.
+
+%\subsection{Innovation of Research}
+
+%A large number of experiments, ranging from the straightforward to the particularly sophisticated, have been carried out to investigate the mechanisms underlying cholesterol modulation of pLGICs. The proposed studies involve investigation of lipid interactions with nAChR via coarse grained molecular dynamics. Numerous simulations of nAChR and other pLGICs with atomic resolution, powerful methods for investigating direct interactions of receptors with small molecules, are also reported in the literature. In the absence of realistic estimates for the protein-local lipid composition, most such simulations embed the receptor in a model membrane composed of DOPC or POPC, with occasional inclusion of cholesterol.
+
+%My 
+Preliminary studies, which use coarse grained molecular dynamics simulations capable of equilibrating a quasi-native membrane, indicate that nAChR has a surprisingly strong preference for PUFAs as boundary lipids, (especially n-3 PUFAs). These n-3 PUFAs form a cholesterol depleted domain around the annulus of the protein. While n-3 PUFAs are abundant in most native nAChR membranes, including the electric organ of the \textit{torpedo} rays, they had not been commonly included in experiments (except via an abundance in soybean lipids). This surprising observation, if true, offers possible explanations for limited success of many previous experiments.
+
+%It further suggests that regardless of the bulk membrane composition, nAChR functions natively in a homogeneous local environment of n-3 PUFAs. Our proposal for reproducing native boundary lipids within an oocyte relies on both this simplicity and the large difference in abundance of n-3 PUFAs between the oocyte and the neuron, which suggests there is a qualitative difference in lipid environment. Microtransplantation of neuronal cell membranes into oocytes \cite{Conti2013} has been carried out and shown to improve ion flux through nAChRs embedded in oocyte membranes, but I will run calculations to inform an approach which restricts supplementation to a few species of preferred boundary lipid, and would substantially improves experimental control. 
+
+%\subsection{Approach of Research}
+
+Our preliminary quasi-neuronal simulations indicate that n-3 lipids, particularly DHA, are highly enriched among boundary lipids (both annular and non-annular). We observe the annular ring of n-3 lipids to be surrounded by an outer ring of n-6 lipids, and an even more distant ring of n-9 lipids at the interface with the cholesterol rich phase.
+
+We propose a series of coarse grained simulations characterizing the boundary lipids surrounding nAChR embedded within various cell cultures including post-synaptic membranes, and \textit{Xenopus} oocytes \cite{Lindi2001,Gamba2005}. Differences in the local lipid environments surrounding pLGIC when expressed in common lines for cultured cells will be obtained by computational microscopy. These simulations have the potential to inform pLGIC researchers how to best dope their membranes with appropriate lipid species and lipid concentrations to promote native-like ion flux.
+
+
+
+The anticipated simulations will be run using GROMACS for 10 to 20 $\mu s$ are as follows:
+
+\begin{itemize}
+
+	\item  3 replicas of quasi-neuronal, -\textit{torpedo} ray electric organ, and -\textit{Xenopus} oocyte membranes without proteins. With a box size of $50x50x30$$nm^3$. 
+	
+	\item 3 replicas for each of the following:
+	\begin{itemize}
+		\item 1-6 nAChR molecules embedded in a quasi-neuronal membrane. Box size $\geq$$50x50x30$$nm^3$
+		\item 1-6 nAChR molecules embedded in a quasi-\textit{torpedo} ray electric organ membrane Box size $\geq$$50x50x30$$nm^3$
+		\item 1-6 nAChR molecules embedded in a quas-\textit{Xenopus} oocyte membrane Box size $\geq$$50x50x30$$nm^3$
+	\end{itemize}
+	\item 3 replicas of 6 proteins in 5 to 10 modified \textit{Xenopus} oocyte membrane. Each modified iteration will adjust the concentration of PUFAs.
+
+\end{itemize} 
+
+%We propose a series of coarse grained simulations characterizing the boundary lipids surrounding nAChR embedded within a modified oocyte membranes, with the aim of finding the modifications which will reproduce native boundary lipids. These proposed simulations will involve quasi-Oocyte lipid membranes and supplementing them with boundary lipids found in neuronal membranes. 
+
+%Differences in the local lipid environments surrounding pLGIC when expressed in common lines for cultured cells will be obtained by computational microscopy; embedding nAChRs in membranes approximating various cell lines including post-synaptic membranes, and \textit{Xenopus} oocytes \cite{Lindi2001,Gamba2005}. 
+%Must be a better way to write this..
+%Differences in the local  environment of the pLGIC when expressed in common lines for cultured cells will be obtained by computational microscopy of nAChRs in membranes approximating native membranes, including post-synaptic membranes, as well as common expression systems including Xenopus oocytes[57]. 
+
+%It is possible (especially if elastic effects are essential) that increasing the number of receptors or the system size will modify these distributions. Therefore, the first step of this aim is improving realism of the simulations of nAChR in the neuronal membrane, by increasing the number of receptors to around ten, enforcing realistic leaflet asymmetry, and incorporating the newer $\alpha$4$\beta$2 nAChR structure \cite{Morales-Perez_X_2016}. 
+
+%Assuming differences in boundary lipids are maintained, the expression system membrane will have its composition iteratively adjusted to mimic supplementation via liposomes, then allowed to re-equilibrate the local lipid concentration around the receptor.
+
+%Currently, I envision an initial analysis of these simulations by calculating membrane mixing, boundary lipid composition, and lipid-protein non-annular binding. Due to the variety of lipid species involved, calculations will be grouped into two sets: lipid head group (i.e. PC, PE, PS...), and acyl chain saturation (i.e. sat, n-1, n-2, n-3, n-6). Preliminary simulations show n-3 dominate the boundary lipids when lipids with n-3 acyl chains are increased by concentrations as low as $\sim$5\%. These initial simulations, quasi-ooctyes with DHA increased to 15$\%$, show DHA to make the dominant boundary lipid. Figure \ref{fig:ooct} shows two of these simulations, using five proteins in quasi-neuronal and quasi-oocyte membranes, and composition asymmetry (albeit mammalian concentration asymmetry). While I have focused on DHA, both n-3 PUFAs, Eicosapentaenoic acid (EPA) and $\alpha$-Linolenic acid (ALA), should also be considered for oocyte modulation.
+
+%Once a prediction has been developed for supplementation that would preserve boundary lipids, it will be shared with an experimental collaborator of Dr Brannigan’s, Dr. John Baenziger, to be tested for improved nAChR function. If differences in boundary lipids are not observed, an enrichment protocol will be predicted for shifting the membrane viscoelastic properties to that of the native system.
+
+
+
+\printbibliography
+\end{document}

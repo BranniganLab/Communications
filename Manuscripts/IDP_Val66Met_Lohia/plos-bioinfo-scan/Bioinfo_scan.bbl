@@ -1,0 +1,180 @@
+\begin{thebibliography}{10}
+
+\bibitem{Uversky2013a}
+Uversky VN.
+\newblock {Unusual biophysics of intrinsically disordered proteins.}
+\newblock Biochim Biophys Acta. 2013;1834(5):932--51.
+\newblock doi:{10.1016/j.bbapap.2012.12.008}.
+
+\bibitem{Panchenko2015}
+Panchenko AR, Babu MM.
+\newblock {Editorial overview: Linking protein sequence and structural changes
+  to function in the era of next-generation sequencing}.
+\newblock Curr Opin Struct Biol. 2015;32:viii--x.
+\newblock doi:{10.1016/j.sbi.2015.06.005}.
+
+\bibitem{Ward2004a}
+Ward JJ, Sodhi JS, McGuffin LJ, Buxton BF, Jones DT.
+\newblock {Prediction and Functional Analysis of Native Disorder in Proteins
+  from the Three Kingdoms of Life}.
+\newblock J Mol Biol. 2004;337(3):635--645.
+\newblock doi:{10.1016/j.jmb.2004.02.002}.
+
+\bibitem{Dyson2005a}
+Dyson HJ, Wright PE.
+\newblock {Intrinsically unstructured proteins and their functions}.
+\newblock Nat Rev Mol Cell Biol. 2005;6(3):197--208.
+\newblock doi:{10.1038/nrm1589}.
+
+\bibitem{Dunker2005}
+Dunker AK, Cortese MS, Romero P, Iakoucheva LM, Uversky VN.
+\newblock {Flexible nets. The roles of intrinsic disorder in protein
+  interaction networks}.
+\newblock FEBS J. 2005;272(20):5129--5148.
+\newblock doi:{10.1111/j.1742-4658.2005.04948.x}.
+
+\bibitem{Habchi2014}
+Habchi J, Tompa P, Longhi S, Uversky VN.
+\newblock {Introducing Protein Intrinsic Disorder}.
+\newblock Chem Rev. 2014;114(13):6561--6588.
+\newblock doi:{10.1021/cr400514h}.
+
+\bibitem{Babu2011}
+Babu MM, van~der Lee R, de~Groot NS, Gsponer J.
+\newblock {Intrinsically disordered proteins: regulation and disease.}
+\newblock Curr Opin Struct Biol. 2011;21(3):432--40.
+\newblock doi:{10.1016/j.sbi.2011.03.011}.
+
+\bibitem{Sickmeier2007a}
+Sickmeier M, Hamilton JA, LeGall T, Vacic V, Cortese MS, Tantos A, et~al.
+\newblock {DisProt: the Database of Disordered Proteins}.
+\newblock Nucleic Acids Res. 2007;35(Database):D786--D793.
+\newblock doi:{10.1093/nar/gkl893}.
+
+\bibitem{Das2015}
+Das RK, Ruff KM, Pappu RV.
+\newblock {Relating sequence encoded information to form and function of
+  intrinsically disordered proteins}.
+\newblock Curr Opin Struct Biol. 2015;32:102--112.
+\newblock doi:{10.1016/j.sbi.2015.03.008}.
+
+\bibitem{Das2013a}
+Das RK, Pappu RV.
+\newblock {Conformations of intrinsically disordered proteins are influenced by
+  linear sequence distributions of oppositely charged residues.}
+\newblock Proc Natl Acad Sci U S A. 2013;110(33):13392--7.
+\newblock doi:{10.1073/pnas.1304749110}.
+
+\bibitem{Vacic2012a}
+Vacic V, Markwick PRL, Oldfield CJ, Zhao X, Haynes C, Uversky VN, et~al.
+\newblock {Disease-associated mutations disrupt functionally important regions
+  of intrinsic protein disorder.}
+\newblock PLoS Comput Biol. 2012;8(10):e1002709.
+\newblock doi:{10.1371/journal.pcbi.1002709}.
+
+\bibitem{Larini2013b}
+Larini L, Gessel MM, LaPointe NE, Do TD, Bowers MT, Feinstein SC, et~al.
+\newblock {Initiation of assembly of tau(273-284) and its $\Delta$K280 mutant:
+  an experimental and computational study}.
+\newblock Phys Chem Chem Phys. 2013;15(23):8916.
+\newblock doi:{10.1039/c3cp00063j}.
+
+\bibitem{Ganguly2015}
+Ganguly D, Chen J, Dyson H, Wright P, Uversky V, Oldfield C, et~al.
+\newblock {Modulation of the Disordered Conformational Ensembles of the p53
+  Transactivation Domain by Cancer-Associated Mutations}.
+\newblock PLOS Comput Biol. 2015;11(4):e1004247.
+\newblock doi:{10.1371/journal.pcbi.1004247}.
+
+\bibitem{Viet2014a}
+Viet MH, Nguyen PH, Derreumaux P, Li MS.
+\newblock {Effect of the English Familial Disease Mutation (H6R) on the
+  Monomers and Dimers of A$\beta$40 and A$\beta$42}.
+\newblock ACS Chem Neurosci. 2014;5(8):646--657.
+\newblock doi:{10.1021/cn500007j}.
+
+\bibitem{Viet2013}
+Viet MH, Nguyen PH, Ngo ST, Li MS, Derreumaux P.
+\newblock {Effect of the Tottori Familial Disease Mutation (D7N) on the
+  Monomers and Dimers of A$\beta$ 40 and A$\beta$ 42}.
+\newblock ACS Chem Neurosci. 2013;4(11):1446--1457.
+\newblock doi:{10.1021/cn400110d}.
+
+\bibitem{Truong2014a}
+Truong PM, Viet MH, Nguyen PH, Hu CK, Li MS.
+\newblock {Effect of Taiwan Mutation (D7H) on Structures of Amyloid-$\beta$
+  Peptides: Replica Exchange Molecular Dynamics Study}.
+\newblock J Phys Chem B. 2014;118(30):8972--8981.
+\newblock doi:{10.1021/jp503652s}.
+
+\bibitem{Zhan2013a}
+Zhan YA, Wu H, Powell AT, Daughdrill GW, Ytreberg FM.
+\newblock {Impact of the K24N mutation on the transactivation domain of p53 and
+  its binding to murine double-minute clone 2}.
+\newblock Proteins Struct Funct Bioinforma. 2013;81(10):1738--1747.
+\newblock doi:{10.1002/prot.24310}.
+
+\bibitem{Xu2013a}
+Xu L, Shan S, Wang X.
+\newblock {Single Point Mutation Alters the Microstate Dynamics of Amyloid
+  $\beta$-Protein A$\beta$42 as Revealed by Dihedral Dynamics Analyses}.
+\newblock J Phys Chem B. 2013;117(20):6206--6216.
+\newblock doi:{10.1021/jp403288b}.
+
+\bibitem{Bah2016}
+Bah A, Forman-Kay JD.
+\newblock {Modulation of Intrinsically Disordered Protein Function by
+  Post-translational Modifications}.
+\newblock J Biol Chem. 2016;291(13):6696--6705.
+\newblock doi:{10.1074/jbc.R115.695056}.
+
+\bibitem{He2015}
+He Y, Chen Y, Mooney SM, Rajagopalan K, Bhargava A, Sacho E, et~al.
+\newblock {Phosphorylation-induced Conformational Ensemble Switching in an
+  Intrinsically Disordered Cancer/Testis Antigen}.
+\newblock J Biol Chem. 2015;290(41):25090--25102.
+\newblock doi:{10.1074/jbc.M115.658583}.
+
+\bibitem{AlexanderConicella2016}
+Conicella AE, Zerze GH, Mittal J, Fawzi NL, {Alexander Conicella} AE, Zerze GH,
+  et~al.
+\newblock {ALS Mutations Disrupt Phase Separation Mediated by $\alpha$-Helical
+  Structure in the TDP-43 Low-Complexity C-Terminal Domain}.
+\newblock Struct Des. 2016;24(9):1537--1549.
+\newblock doi:{10.1016/j.str.2016.07.007}.
+
+\bibitem{Iesmantavicius2013}
+Ie{\v{s}}mantavi{\v{c}}ius V, Jensen MR, Ozenne V, Blackledge M, Poulsen FM,
+  Kjaergaard M.
+\newblock {Modulation of the Intrinsic Helix Propensity of an Intrinsically
+  Disordered Protein Reveals Long-Range Helix–Helix Interactions}.
+\newblock J Am Chem Soc. 2013;135(27):10155--10163.
+\newblock doi:{10.1021/ja4045532}.
+
+\bibitem{Yip2008a}
+Yip YL, Famiglietti M, Gos A, Duek PD, David FPA, Gateau A, et~al.
+\newblock {Annotating single amino acid polymorphisms in the UniProt/Swiss-Prot
+  knowledgebase}.
+\newblock Hum Mutat. 2008;29(3):361--366.
+\newblock doi:{10.1002/humu.20671}.
+
+\bibitem{Suzek2015}
+Suzek BE, Wang Y, Huang H, McGarvey PB, Wu CH.
+\newblock {UniRef clusters: a comprehensive and scalable alternative for
+  improving sequence similarity searches}.
+\newblock Bioinformatics. 2015;31(6):926--932.
+\newblock doi:{10.1093/bioinformatics/btu739}.
+
+\bibitem{Oates2012}
+Oates ME, Romero P, Ishida T, Ghalwash M, Mizianty MJ, Xue B, et~al.
+\newblock {D2P2: database of disordered protein predictions}.
+\newblock Nucleic Acids Res. 2012;41(D1):D508--D516.
+\newblock doi:{10.1093/nar/gks1226}.
+
+\bibitem{Kyte1982a}
+Kyte J, Doolittle RF.
+\newblock {A simple method for displaying the hydropathic character of a
+  protein.}
+\newblock J Mol Biol. 1982;157(1):105--32.
+
+\end{thebibliography}

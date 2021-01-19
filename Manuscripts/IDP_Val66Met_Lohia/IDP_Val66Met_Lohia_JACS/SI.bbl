@@ -1,0 +1,94 @@
+\providecommand{\latin}[1]{#1}
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{10}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
+
+\bibitem[Lindorff-Larsen \latin{et~al.}(2010)Lindorff-Larsen, Piana, Palmo,
+  Maragakis, Klepeis, Dror, and Shaw]{Lindorff-Larsen2010a}
+Lindorff-Larsen,~K.; Piana,~S.; Palmo,~K.; Maragakis,~P.; Klepeis,~J.~L.;
+  Dror,~R.~O.; Shaw,~D.~E. \emph{Proteins} \textbf{2010}, \emph{78},
+  1950--8\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hornak \latin{et~al.}(2006)Hornak, Abel, Okur, Strockbine, Roitberg,
+  and Simmerling]{Hornak2006a}
+Hornak,~V.; Abel,~R.; Okur,~A.; Strockbine,~B.; Roitberg,~A.; Simmerling,~C.
+  \emph{Proteins Struct. Funct. Bioinforma.} \textbf{2006}, \emph{65},
+  712--725\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piana \latin{et~al.}(2015)Piana, Donchev, Robustelli, and
+  Shaw]{Piana2015}
+Piana,~S.; Donchev,~A.~G.; Robustelli,~P.; Shaw,~D.~E. \emph{J. Phys. Chem. B}
+  \textbf{2015}, \emph{119}, 5113--5123\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Best \latin{et~al.}(2014)Best, Zheng, and Mittal]{Best2014}
+Best,~R.~B.; Zheng,~W.; Mittal,~J. \emph{J. Chem. Theory Comput.}
+  \textbf{2014}, \emph{10}, 5113--5124\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Best and Hummer(2009)Best, and Hummer]{Best2009}
+Best,~R.~B.; Hummer,~G. \emph{J. Phys. Chem. B} \textbf{2009}, \emph{113},
+  9004--9015\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jorgensen(1981)]{Jorgensen1981}
+Jorgensen,~W.~L. \emph{J. Am. Chem. Soc.} \textbf{1981}, \emph{103},
+  335--340\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Shen and Bax(2010)Shen, and Bax]{Shen2010}
+Shen,~Y.; Bax,~A. \emph{J. Biomol. NMR} \textbf{2010}, \emph{48}, 13--22\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Anastasia \latin{et~al.}(2013)Anastasia, Deinhardt, Chao, Will,
+  Irmady, Lee, Hempstead, and Bracken]{Anastasia2013}
+Anastasia,~A.; Deinhardt,~K.; Chao,~M.~V.; Will,~N.~E.; Irmady,~K.; Lee,~F.~S.;
+  Hempstead,~B.~L.; Bracken,~C. \emph{Nat. Commun.} \textbf{2013}, \emph{4},
+  2490\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ahlstrom \latin{et~al.}(2013)Ahlstrom, Baker, Ehrlich, Campbell,
+  Patel, Vorontsov, Tama, and Miyashita]{Ahlstrom2013}
+Ahlstrom,~L.~S.; Baker,~J.~L.; Ehrlich,~K.; Campbell,~Z.~T.; Patel,~S.;
+  Vorontsov,~I.~I.; Tama,~F.; Miyashita,~O. \emph{J. Mol. Graph. Model.}
+  \textbf{2013}, \emph{46}, 140--9\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

@@ -1,0 +1,476 @@
+% Template for Biophysics paper in LaTeX
+%
+% To compile into a document, run
+% latex biophys_latex_template
+% bibtex biophys_latex_template (if bib file and bst file is included in TeX file)
+% latex biophys_latex_template (run 2-3 times repeatedly)
+% dvips biophys_latex_template.dvi
+%
+% or replace the latex command by the pdflatex command in the lines above to
+% generate a PDF file and use acroread or xpdf for viewing and
+% printing instead of the postscript generating program dvips
+
+% Use standard biophys document class with default font size
+% and typeset in one column. If you need to typeset in two column
+% then give the option "twocolumn" ie \documentclass[twocolumn]{biophys}
+\documentclass{biophys}
+\usepackage{helvet,times}
+\usepackage{bm,textcomp}
+
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{caption}
+\usepackage{xspace}
+%\usepackage{amsmath}
+\usepackage{multirow}
+
+\jno{kxl014} %journal number
+\gridframe{N}%option for grid around the text "Y" or "N"
+\cropmark{N}%option for cropmark around the text "Y" or "N"
+
+\doi{doi: 10.1529/biophysj.106.090944}% DOI number in the copyright line
+
+%The first page number and last page number automatically generated.
+%To change the page number \setcounter{page}{10} automatically reset
+%the first and last page number but two times compilation required.
+%If you want to edit the page range in catch line
+% then edit the below two lines
+%\fpage{}
+%\lpage{}
+%For update volume number, activate below command
+%\volume{00}
+%For update issue number, activate below command
+%\issue{00}
+%For update Month, activate below command
+%\Month{Month}
+%For update Year, activate below command
+%\Year{Year}
+
+
+% Packages to load (all standard on a modern LaTeX system on Linux)
+
+% Make doublespaced ugly typography required for mysterious
+% reasons by most journals - comment out for normal output
+%\usepackage{setspace}
+%\doublespacing
+% AMS-Math package to have nice multi-line equations and other goodies
+\usepackage{amsmath}
+% Show labels for easy orientation, comment out for final version
+% \usepackage{showlabels}
+
+% EPS/PDF graphics
+% Place figures in the document directory in both the EPS and PDF
+% formats, e.g., fig_1.eps and fig_1.pdf. Use the includegraphics
+% command without file extension, e.g. \includegraphics*[width=3.25in]{fig_1}
+% The pdflatex or latex programs then work automagically with the
+% appropriate formats.  EPS figures can be converted to PDF using
+% the epstopdf program present on most Linux disributions. Epstopdf and graphicx
+% are included in biophys class file.
+% \usepackage{graphicx}
+
+% Citation style in the text: numbers in parenthesis, sorted by their
+% order in the list of references.
+% Uses a range if possible: (1-3), not (1,2,3)
+
+\usepackage[round,numbers,sort&compress]{natbib}
+
+% Bibliography style (requires the style file biophysj.bst in the
+% document directory)
+
+%\bibliographystyle{biophysj}
+
+% Numbering style in the list of references: a number followed by a period
+
+\renewcommand{\bibnumfmt}[1]{#1.}
+
+% Examples of special definitions (amsmath package required)
+\newcommand{\erf}{\operatorname{erf}}        % error function
+\newcommand{\erfc}{\operatorname{erfc}}      % complementary error function
+\newcommand{\BibTeX}{\textsc{Bib}\TeX}   
+
+% Running head
+
+
+\markboth{Biophysical Journal: Biophysical Letters}{Biophysical Journal: Biophysical Letters} %for running head
+
+% We are done with the headers, the actual document starts here
+
+\begin{document}
+\newcommand{\GABAA}{GABA\textsubscript{A}R\xspace}
+\newcommand{\gb}{$\gamma$ - $\beta$\textsubscript{$\gamma$}\xspace}
+\newcommand{\gba}{$\beta$\textsubscript{$\gamma$} - $\alpha$\textsubscript{$\beta$}\xspace}
+\newcommand{\ab}{$\alpha$\textsubscript{$\beta$} - $\beta$\textsubscript{$\alpha$}\xspace}
+\newcommand{\bag}{$\beta$\textsubscript{$\alpha$} - $\alpha$\textsubscript{$\gamma$}\xspace}
+\newcommand{\ag}{{$\alpha$\textsubscript{$\gamma$} - $\gamma$}\xspace}
+\newcommand{\Ps}{\textit{Propofol}-$\alpha$\textsubscript{1}$\beta$\textsubscript{3}$\gamma$\textsubscript{2}\xspace}
+\newcommand{\Ss}{\textit{Sevoflurane}-$\alpha$\textsubscript{1}$\beta$\textsubscript{3}$\gamma$\textsubscript{2}\xspace}
+\setcounter{page}{1} %first page number
+
+\title{Relative affinities of general anesthetics for pseudo-symmetric intersubunit
+binding sites of heteromeric GABA(A) receptors}
+
+\section{Abstract}
+GABA(A), a pentameric ligand gated ion channel is critical for regulating neuronal excitability. These inhibitory receptors, gated by $\gamma$-amino butyric acid (GABA), can be potentiated and also directly activated by intravenous and inhalational anesthetics. Although this receptor is a widely-studied target for general anesthetics, the mechanism of receptor modulation remains unclear. These receptors are predominantly found in 2$\alpha$:
+2$\beta$:1$\gamma$ stoichiometry, with four unique inter-subunit interfaces.  Here we use thermodynamically rigorous free energy perturbation (AFEP) techniques and Molecular Dynamics simulations to rank the different intersubunit sites by affinity. AFEP calculations predicted selective propofol binding to interfacial
+sites, with higher affinities for  $\alpha$\textsubscript{$\beta$} - $\beta$\textsubscript{$\alpha$} and $\beta$\textsubscript{$\gamma$} - $\alpha$\textsubscript{$\beta$}, $\gamma$ - $\beta$\textsubscript{$\gamma$}, and is equivalent to propofol EC50. Propofol is predicted to have 10-fold lower affinity at the other identical site, $\beta$\textsubscript{$\alpha$} - $\alpha$\textsubscript{$\gamma$}.The simulations revealed the key interactions leading to propofol selective binding within GABAA receptor subunit interfaces, with stable hydrogen bonds observed between propofol and  $\beta$ subunit at  $\alpha$\textsubscript{$\beta$} - $\beta$\textsubscript{$\alpha$} and $\gamma$ - $\beta$\textsubscript{$\gamma$} sites. Varying number of water and lipid molecules flooding the site along with multiple hydrogen bonding partners, causes some differences in affinities among the 5 intersubunit sites. Propofol competes with water and lipid molecules for hydrogen bonding in the more amphiphilic and less tight binding site, $\alpha$\textsubscript{$\beta$}- $\gamma$ due to the lack of bulky residues at 15'M3-$\alpha$ and 15'M1-$\gamma$ thus resulting in a lower affinity. 
+ 
+Weaker affinities were measured for sevoflurane, consistent with its greater EC50. 'Flooding' molecular dynamics simulations identified stable binding modes in the accessible $\gamma$ - $\beta$\textsubscript{$\gamma$},  $\alpha$\textsubscript{$\beta$} - $\beta$\textsubscript{$\alpha$} and $\beta$\textsubscript{$\alpha$} - $\alpha$\textsubscript{$\gamma$}sites. Flooding simulation also reveals sites that show prefer lipid binding over Sevoflurane and site with multiple occupancy.AFEP calculations predicted Sevoflurane to have affinity equivalent to its EC50 in all intersubunit sites and show no specificity to any particular site. Flooding simulation also reveals a site with multiple occupancy.
+
+
+\section{Introduction}
+
+%General Anesthetics are small molecules that induce immobilization, unconsciousness and amnesia by depressing neuronal signaling \citep{Collins1995}. During general anesthesia, myriad of events alter cognition , sensation and causes unconsciousness. This complicated process has made it difficult to reach consensus on defining what an anesthetized state is.  Anesthetics, initially thought to bind only to the lipid membrane (Meyer 1899, Overton 1901), later, based on x-ray and neutron diffraction studies, were also found to bind to proteins \citep{Franks1984}. 
+
+%Multiple studies have shown that anesthetics have multiple sites of action in the ion channel and its mechanism depends on the cell type of the target and the concentration applied to the target \citep{Harris1995a,Belelli1999a,Belelli1999b}. Following this , experimental approaches were used to identify molecular targets for anesthetics at ligand-gated ion channels, especially, \GABAA , major inhibitory anion channel, was considered as one of the important targets \citep{,Tanelian1993,Krasowski1999}.
+
+General anesthetics has been shown to have act at multiple targets, ligand-gated ion channels \citep{Harris1995a,Belelli1999a,Belelli1999b}, and in particular, GABA(A) receptors, have been identified as primary targets for widely-used general anesthetics like propofol and sevoflurane.\citep{,Tanelian1993,Krasowski1999}.
+
+The $\gamma$-amino butyric acid type A (\GABAA) receptor is an ionotropic receptor critical for inhibitory signaling in the central nervous system. \GABAA\/s exists as heteropentamers, predominantly in the 2$\alpha$:2$\beta$:1$\gamma$ stoichiometry \citep{Chang1996,Farrar1999a,Baumann2002}. Each subunit consists of 4 helices (M1-M4) in the transmembrane domain, with M2 lining the pore and M4 facing the lipid membrane. Numerous molecules with sedative, anxiolytic, and anesthetic properties are positive modulators or agonists of the GABAA receptor, including neurosteroids \citep{Belelli2005a}, benzodiazepines \citep{Sigel1997b, Sigel2011} and inhalational anesthetics such as sevoflurane \citep{Nakahiro1989a,Wu1996,Jenkins1999} and intravenous general anesthetics \citep{Franks1994,Krasowski1999}like propofol \citep{Sanna1995}.
+
+Propofol has been a predominantly used general anesthetic since its discovery in 1980. Propofol has been shown to potentiate \GABAA \citep{Krasowski2001a} and even directly activate the channel at higher concentrations \citep{Hales1991,Orser1994}. With the lack of anesthetic bound crystal structure of \GABAA, identifying binding sites has been  mainly through indirect means of mutagenesis and photolabelling. While certain studies have suggested sites involving $\alpha$ or $\gamma$ subunit, extensive site-directed mutagenesis and photo-labelling indicates a compulsory presence of $\beta$ subunits in the binding sites \citep{Jurd2003a,Siegwart2003a,Krasowski2001,Bali2004,Yip2013,Jayakar2014}. With the surge of efficient photo-analogs developed in the recent times for multiple anesthetics that target \GABAA, studies have been able to find relative affinities for specific binding sites \citep{Chiara2013}.  This study further indicates the presence of atleast 4 distinct binding sites ($\beta$\textsubscript{+} -$\alpha$\textsubscript{-}; $\alpha$\textsubscript{+}/$\gamma$\textsubscript{+} - $\beta$\textsubscript{-}) for propofol with varying affinities. 
+%(SCAM experiment by \citep{Stew} )
+
+Among the inhaled anesthetics, isoflurane was the first anesthetic shown to enhance GABA induced currents\citep{Nakahiro1989a}, following which most volatile anesthetics have been shown to positively modulate \GABAA at a concentration($\approx$ 300$\mu$M) much lower than that of intravenous anesthetics\citep{Franks1996}. Mutagenesis and electrophysiology studies have identified  $\alpha$ subunit to be more significant for potentiation by sevoflurane than $\beta$ subunit\citep{Nishikawa2003b}. 
+%A through experiments that show propofol and sevoflurane are additive in their actions, thus indicating that they have different binding sites with similar mechanism of causing anesthesia\citep{Sebel2006a}. 
+Mutagenesis studies usually suffers the disadvantage of misinterpreting the results from allosteric conformational change and developing a photoaffinity analogue closely resembling the parent compound has been very challenging. Computational approaches can complement the experimental data, and can be useful in analyzing protein-ligand interactions. Although docking has been used to approximate the location of the binding site, the docking algorithm does not account for desolvation, rotational and translational entropy of the bound ligand and the protein dynamics\citep{Murlidaran2018}. In contrast, MD simulations involve simulating the anesthetic-bound receptor along with the lipid membrane and explicit water, allowing the ligand to explore the binding site. A recent study involved using a novel photoaffinity analog of Propofol, showed selectivity to sites, $\beta$\textsubscript{+} -$\alpha$\textsubscript{-} or $\alpha$\textsubscript{+} - $\beta$\textsubscript{-} and this was further substantiated using MD simulations to identify key interactions mediating the binding of the ligand and obtain KD values explaining the affinity differences between $\alpha$/$\beta$ sites and sites involving $\gamma$ subunits.
+%%%%%%%%%%
+
+
+\section{Methods}
+
+
+%All the systems were energy minimized for 10000 steps, then simulated for 5 ns with restraints of 1 kcal/mol/\AA\ applied to the C\textsubscript{\(\alpha\)} atoms of the protein. Restraints were then removed and 195 ns of nearly unrestrained simulation was carried out in all four systems. During this period of the simulation, only harmonic restraints (force constant 0.4 kcal/mol/\AA) between the intracellular ends of the M3 and M4 helices were used, to mimic the effects of the intracellular domain and prevent separation of the M4 helix from the rest of the bundle.  High temperature (315K) simulations were run for 500 ns following the 200 ns simulations at lower temperature (300K). 
+ 
+
+\textit{Simulations}: The manuscript contains data from four systems; 
+$\alpha$\textsubscript{1}$\beta$\textsubscript{3}$\gamma$\textsubscript{2} apo receptor ; 
+These simulations, run for 120ns, were used to understand the nature of the binding sites in the absence of the ligands. These simulations served as a control for the measuring the convergence of the Free energy perturbation simulations.
+
+Anesthetic bound $\alpha$\textsubscript{1}$\beta$\textsubscript{3}$\gamma$\textsubscript{2}; 
+Two separate  system were setup; \Ps and  \Ss, with propofol and sevoflurane docked to the transmembrane domain of the receptor, respectively, using the Autodock software\cite{Trott}. The search space for docking were chosen based on the binding site residues identified in previous experimental studies and as detailed in the book chapter\cite{Murlidaran2018}. \Ps system were run for $\approx$600ns and \Ss system were run for $\approx$150ns.
+
+Sevoflurane flooded  $\alpha$\textsubscript{1}$\beta$\textsubscript{3}$\gamma$\textsubscript{2} system;
+Sevoflurane was inserted randomly into the water surrounding the protein, with an sevoflurane-to-lipid ratio of about 1?3. The simulation was run for $\approx$1.7$\mu$s.
+
+\GABAA receptor, in this study, is modelled based on the GluCl crystal structure(4RHW) with the ivermectin, a positive modulator, bound to the TMD (M2-15') of the channel \citep{Hibbs2011}. This confirms the presence of 5 distinct binding clefts at inter-subunit sites in the TMD region.The \GABAA receptor is arranged clockwise with two $\alpha$1, two $\beta$3, and one $\gamma$2 subunit arranged $\beta$$\alpha$$\beta$$\alpha$$\gamma$ counterclockwise. This creates 5 intersubunit sites, $\beta$\textsubscript{$\gamma$} - $\alpha$\textsubscript{$\beta$}, $\alpha$\textsubscript{$\beta$} - $\beta$\textsubscript{$\alpha$}, $\beta$\textsubscript{$\alpha$} - $\alpha$\textsubscript{$\gamma$}, $\alpha$\textsubscript{$\gamma$} - $\gamma$,  $\gamma$ - $\beta$\textsubscript{$\gamma$} (Figure \ref{fig:dockPic} B).
+
+\textit{System setup}: The systems were prepared as in Ref\cite{Henin2014}, by embedding the protein in a lipid bilayer composed of  phosphatidylcholine, built using CHARMM Membrane builder, with the final system containing 268 POPC  molecules. The systems were solvated using the SOLVATE plugin in VMD\cite{Humphrey1996a} and neutralizing ions were added to bring the system to a 0.15M salt concentration using the AUTOIONIZE plugin. The final system contained about 160,000 atoms.
+
+All simulations used the CHARM22-CMAP\cite{MacKerell1998a} force field with torsional corrections for proteins. The CHARMM36 model\cite{Klauda2010,Pitman2004} was used for phospholipids, ions, water and cholesterol molecules. Energy minimization and MD simulations were conducted using the NAMD2.11 package\cite{Phillips2005a}. All simulations employed periodic boundary conditions, long-ranged electrostatics were handled with smooth particle mesh Ewald method, and a cutoff of 1.2 nm was used for Lennard-Jones potentials with a switching function starting at 1.0 nm. All simulations were run in the NPT ensemble with weak coupling to Langevin thermostat and a barostat at a respective 300 K/315 K and 1 atm. All bonds to the hydrogen atoms were constrained using the SHAKE/RATTLE algorithm. A multiple time-step rRESPA method was used, and controlled with a high frequency time-step of 2fs and low frequency time-step of 4fs.
+
+All standard MD simulations with bound anesthetic were energy minimized for 10000 steps. Harmonic restraints of 0.5 kcal/mol/$\AA$ were used on the backbone of the protein to restraint the system in a open conformation.
+
+\textit{Free energy perturbation simulations} were performed on \Ps and \Ss systems, with starting configurations obtained from running standard MD simulations. The force constants for binding site restraints were on the order of 5 kcal/mol/$\AA$ 
+The movement of ligand was confined to 5$\AA$ of the binding site by using a spherical flat-bottom restraint. The decoupling of the ligand was performed over a series of windows. Perturbation parameter $\lambda$ was sampled with a step size equal to 0.025 between 0<$\lambda$<0.1 and 0:9<$\lambda$<1, and 0.05 otherwise. Each step in l started with a 4 ps equilibration period followed by a 5 ns run for data collection. Free energy of binding was calculated as in Ref \cite{LeBard2012}
+
+\textit{Images}: All the images were created using VMD\cite{Humphrey1996a}. The VOLMAP plug-in was used to create an image depicting the average density of sevoflurane near the TM of the channel. Tcl and Python scripts were used to depict the correlation between binding affinity and water/lipid displacement from binding sites.
+
+
+
+%%%Figures%%%
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[width = 0.8\textwidth]{./pics/fig_1_dock.pdf}
+\caption[\bf View of the TMD of \GABAA  from the ECD]{{\bf View of the TMD of \GABAA  from the ECD} \GABAA  is colored by subunit (A) Propofol binding site residues identified through photolabelling using AziPM are shown in orange; o-PD are shown in Gray and residues identified through mutagenesis are shown in red; (B) View of the TMD of \GABAA  from the ECD; Starting conformation of propofol in the intersubunit sites are shown in licorice form; (C) Cross-section view of the channel showing the starting conformation of PFL bound to TMD of \GABAA.}
+\label{fig:dockPic}
+\end{center}
+\end{figure}
+
+\begin{table}[htp]
+\caption{Experimentally identified binding site residues of propofol and sevoflurane\cite{Woll2018} in \GABAA . The first column indicates the location of the residue in the receptor; second column  indicates the subunit, helix, resname and resid of the residue; third column indicates average distance over 600ns, between center of mass of  binding site residue and the nearest propofol; distances from last frame of flooding simulations, between center of mass of binding site residue and the nearest sevoflurane.}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Propofol binding site & Helix/Residue & distance($\AA$) \\
+\hline
+\multirow{2}{*}{\gb;\ab} & $\beta$ M1 M227 \cite{Jayakar2014a} & 7;7 \\
+                                           & $\beta$ M2 H267 \cite{Yip2013a} & 10;12 \\ 
+\hline
+\multirow{4}{*}{\gba; \bag }& \emph{$\beta$ M2 N265} \cite{Jurd2002} & 5;6\\
+                                                & $\beta$ M3 M286  \cite{Jayakar2014a}& 6;7\\
+                                                & $\alpha$ M1 M236 \cite{Jayakar2014a} & 7;7\\
+                                                & $\alpha$ M1 I239 \cite{Jayakar2014a} & 13;12\\
+\hline
+Sevoflurane binding site & Helix/Residue & distance($\AA$) \\
+\hline
+%\gba; \ab & $\alpha$ M1 234 & 12;9\\
+%\gba; \ab & $\alpha$ 253 & 19;17\\
+%\gba; \ab & $\alpha$ 257 & 14;15\\
+%\gba; \ab & $\alpha$ M1 241 & 13;10\\
+%\gba; \ab & $\alpha$ 255 & 13;14\\
+%\gba; \ab & $\alpha$ 260 & 13;13\\
+%\gba; \ab & $\alpha$ 261 & 10;11\\
+%\gba; \ab & $\alpha$ 265 & 9;10\\
+%\gba; \bag & $\beta$ 241 & 4;9\\
+%\gba; \bag & $\beta$ 255 & 12;12\\
+%\gba; \bag & $\beta$ 249 & 14;20\\
+%\gba; \bag & $\beta$ 248 & 17;20\\
+%\gb;\ag & $\gamma$ 268 & 12\\
+%\gb;\ag & $\gamma$ 269 & 15\\
+
+\multirow{4}{*}{intrasubunit} & $\alpha$ M1 C234 & 12;9\\
+ 						& $\alpha$ M2 R255 & 13;14\\
+						 & $\gamma$ M2 G269 & 15\\	
+ 						& $\alpha$ M1 S241 & 13;10\\
+\hline
+
+\multirow{4}{*}{pore facing} & $\alpha$ M2 P253 & 19;17\\
+ 						& $\alpha$ M2 V257 & 14;15\\
+						& $\alpha$ M2 T261 & 10;11\\
+ 						& $\beta$ M2 A248 & 17;20\\
+\hline
+						
+Lipid facing & $\beta$ M1 W241 & 4;9\\
+\hline
+
+\multirow{2}{*}{\gb; \ab} & $\alpha$ M2 V260 & 13;13\\
+                                            & $\beta$ M2 A249 & 14;20\\
+\hline
+
+\multirow{2}{*}{\gba; \bag} & $\alpha$ M2 T265 & 9;10\\
+					& $\beta$ M2 I255 & 12;12\\
+\hline
+
+\ag & $\gamma$ M2 L268 & 12\\
+\hline
+%pore & 4.0\\
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}%
+
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[width = 1\textwidth]{./pics/fig_pfl_phtLabel.pdf}
+\caption[\bf Trajectory of propofol at subunit interface.]{{\bf Trajectory of propofol at subunit interface.} Individual subunit interface, with view from ECD(top) and view along TMD(below); Licorice residues colored by subunit are the residues identified through previous experimental studies; Blue dots represent the center of mass of propofol throughout the simulation(A) \gb ,(B) \gba ,(C) \ab , (D) \bag , (E) \ag ; (E) No residues have been reported in this site; Residues in licorice form are residues homologous to other sites.}
+\label{fig:PFL_exp}
+\end{center}
+\end{figure}
+
+
+
+
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[width = 1\textwidth]{./pics/Sevo_flood_img.pdf}
+\caption[\bf Flooding simulation of \GABAA with sevoflurane.]{{\bf Flooding simulation of \GABAA with sevoflurane.} (A) \GABAA system flooded with sevoflurane in the water box. (B)  \GABAA system after the sevoflurane partitions into the lipid membrane;(C) fraction of sevoflurane molecules in each phase; (D) Different intersubunit sites viewed from the TMD, depicting the binding sites and orientation of sevoflurane identified through flooding simulation(red) and standard MD simulation(orange);(E) View of the TMD of \GABAA  from the ECD at the final frame of the flooding simulation, displaying the average density of sevoflurane molecules and lipids bound to the TMD of the channel; (F) Number of water(red) molecules, lipid(blue) and Sevoflurane(cyan) atoms that enter intersubunit cavity in the course of the simulation.}
+\label{fig:SevFlood}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[width = 1\textwidth]{./pics/PFL_hbond.pdf}
+\caption[bf Protein-anesthetic interactions in intersubunit sites.]{{\bf Protein-anesthetic interactions in intersubunit sites.} (A) Percentage of H-bonds between protein or water and  (Top) Propofol and (Bottom) Sevoflurane. The protein residues that H-bond with PFL(top) and SEV(Bottom) are shown in licorice and colored by the percentage of the hydrogen bonds formed in the course of the simulations, with red denoting residues that forms least number of Hydrogen bonds with the ligand and blue denoting the residues forming the highest number of hydrogen bonds. }
+\label{fig:pflSevHbond}
+\end{center}
+\end{figure}
+
+%\begin{figure}
+%\begin{center}
+%\centering
+%\includegraphics[width = 1\textwidth]{./pics/PFL_SEV_fep_comb.pdf}
+%\caption[\bf Free energy of binding for Propofol and sevoflurane.]{{\bf Free energy of binding for Propofol and sevoflurane.} Free energy calculation for propofol bound to \GABAA(A) Plot depicting the number of water(red) molecules and the lipid(blue) atoms that enter the binding site through the course of the FEP simulation of Propofol and (B) Sevoflurane.(C) Dissociation constant (K\textsubscript{D}) values  of Propofol and Sevoflurane at different intersubunit sites.}
+%\label{fig:PFL_SEV_fep}
+%\end{center}
+%\end{figure}
+%  table
+
+
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[width = 0.8\textwidth]{./pics/PFL_openVscloseCav.pdf}
+\caption[\bf Open and closed cavities]{{\bf Open and closed cavities} (A) Plot depicting the number of water or lipid molecules in Apo and propofol bound receptor. (B,C) and (D,E) shows a snap-shot of the open and closed cavity in Apo (B,D) and propofol-bound receptor(C,E), viewed from the ECD. The methionine residue forming the closed cavity is colored in yellow; the isoleucine residue forming the open cavity is colored in pink.}
+\label{fig:PFL_openClose}
+\end{center}
+\end{figure}
+
+
+\begin{table}[htp]
+\caption{Binding affinities of propofol and sevoflurane bound to five \GABAA receptor interfacial sites, calculated using AFEP}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+Binding site &  Propofol - $K_\mathrm{D}$ ($\mu$M) &  Sevoflurane - $K_\mathrm{D}$ ($\mu$M)\\
+\hline
+\ab & 0.2 (0.1) & 14 $\pm$ 6\\
+\gba & 0.2 & 6  $\pm$ 4\\
+\gb & 0.6 (200) & 215  $\pm$ 54\\
+\bag & 20 (2) & 145  $\pm$ 103\\
+\ag & 60 (27) & 116  $\pm$ 68\\
+%pore & 4.0\\
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}%
+
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[width = 0.8\textwidth]{./pics/PFL_SEV_hbond.pdf}
+\caption[\bf Water, lipid interactions at intersubunit sites.]{{\bf Water, lipid interactions at intersubunit sites.}(A),(B) Correlation between binding site affinity and average no. of water or lipid atoms displaced in the respective sites in propofol bound receptor system. (C), (D) Correlation between binding site affinity and average no. of water or lipid atoms displaced in the respective sites in sevoflurane bound receptor system.(E),(F) Comparison of correlation between, displacement of water(E) and lipids(F) by sevoflurane/propofol, and their respective binding affinity.(G),(H)  Correlation between binding site affinity and hydrogen bonding between propofol/sevoflurane and protein. }
+%\caption[\bf Water, lipid interactions at intersubunit sites.]{{\bf Water, lipid interactions at intersubunit sites.} (A)Comparisons of the Number of water molecules and Lipid atoms at the different intersubunit site in Apo receptor system and  propofol bound receptor system; (B) Correlation between binding site affinity and average no. of water or lipid atoms in the specific sites in propofol bound receptor system.(C) A, five propofol molecules (colored surfaces) docked in the \GABAA receptor subunit interfaces ( \bag and \gba  ( 2 sites)) are as follows: cyan,   \ab ; violet,  \ag ; orange,  \gb ; yellow.}
+\label{fig:PFL_int}
+\end{center}
+\end{figure}
+
+
+
+
+\section{Results}
+%\subsection{Experimental results compared with computational results}
+\subsubsection{Persistent interactions observed between anesthetics and residues from photolabeling}
+
+Various residues in the intersubunit sites of \GABAA  have been identified, experimentally, as possible binding sites for propofol \cite{Jayakar2014}and sevoflurane \cite{Woll2018a}, as shown in Figure \ref{fig:dockPic} A and Table 1. Propofol bound \GABAA simulations revealed how propofol interacts these residues ((Figure \ref{fig:PFL_exp}). Table 1 further indicates the average distance of the residues from the bound propofol in the course of the simulation. Sites, \gb,\gba,\ab,\bag have two photolabelled residues, in addition to a residue identified though mutagenesis in site \bag. No residue has been identified in the \ag site.
+Of all the experimentally identified residues,  $\beta$M227, $\beta$M286, $\alpha$M236,  $\beta$N265, are in close proximity to the bound propofol (Table 1). $\beta$N265 is the only residue that shows possibility of hydrogen bond formation with propofol (Figure \ref{fig:pflSevHbond}B,D)
+
+All of the photolabelled residues for sevoflurane , with AziSEVO\cite{Woll2018a}, are part of the lower TM region of the channel. Flooding simulation with sevoflurane revealed the proximity of the photolabelled residues with sevoflurane. Most of the photolabelled residues face into pore , while some residues face into the lipid membrane (Figure \ref{fig:SevFlood} E). While majority of the sevoflurane molecules, flooding the system, bound to the upper TM of the channel, some of the molecules also bound to periphery of the channel (Figure \ref{fig:SevFlood}E). As shown in Table 1, $\beta$W241, which faces the lipids, comes in close proximity to sevoflurane molecules, flooding the peripheral of the protein.
+
+% Subsequently, multiple residues have been photolabelled in this region with photo analogs of etomidate, barbiturate , propofol etc\cite{Jayakar2014}. 
+
+%	Site  $\alpha$\textsubscript{$\beta$} - $\beta$\textsubscript{$\alpha$} has residues identified  as being part of the binding site through various experimental techniques. One of the residues  identified through experimental studies, in this site is the (15'M1)$\beta$M227. Propofol inhibitable photolabelling of the residue  $\beta$M227 with AziPm was evident in $\alpha$1$\beta$3 receptors\citep{Jayakar2014a}. MD simulations also revealed the residue $\beta$H267, that was photolabelled using propofol analog o-PD \citep{Yip2013}, occasionally facing the propofol in this site (Figure \ref{fig:PFL_exp} C). 
+%	Sites $\beta$\textsubscript{$\gamma$} - $\alpha$\textsubscript{$\beta$} and $\beta$\textsubscript{$\alpha$} - $\alpha$\textsubscript{$\gamma$} are two identical interfaces among the five inter-subunit sites. Most of the residues identified experimentally are found in this interface. The 15'M2 $\beta$N265, a residue that has seldom been photolabelled, has been shown to weaken propofol effects, when mutated to methionine\citep{Siegwart2003a}\citep{Stew} and is seen to form hydrogen bond with propofol during our MD run (Figure \ref{fig:pflSevHbond} B,D). Remaining but reduced propofol effects despite the N265M mutation, further indicates presence of other binding sites for propofol\citep{Stew}.
+%The residues M3-$\beta$M286 and M1-$\alpha$M236 identified through photolabelling\citep{Chiara2013}, forms the lipid facing residues, while also being in close proximity to the bound propofol in our simulations  (Figure \ref{fig:pflSevHbond} B,D). Various mutations to the residue M286 has revealed that when mutated to $\beta$\textsubscript{2}-M286W, this reduces the binding site volume and thus does not allow potentiation of \GABAA by propofol(\citep{Krasowski2001}). Mutation and SCAMP studies further provide definite evidence of the presence of $\alpha$M236 in this binding site \citep{Stew}. In accordance with these results, through the course of the MD simulations, we see that propofol slides between two regions in the site, one being near $\beta$ M286-N265 region and other being near $\alpha$-M236. This behavior is evident in both the $\beta$\textsubscript{$\gamma$} - $\alpha$\textsubscript{$\beta$} , $\beta$\textsubscript{$\alpha$} - $\alpha$\textsubscript{$\gamma$} sites. 
+%Although a recent experimental study has indicated that the two identical sites differentially affect modulation by etomidate and not propofol  \citep{Maldifassi2016b}, the affinity of propofol, calculated for the two sites, in this study, are certainly different. This behavior in addition to the difference in number of water flooding these sites could explain the dissimilarity in the behavior of propofol in this site  (Figure \ref{fig:PFL_exp} B,D). 
+%
+%         A recent work of involving photolabelling protection experiments (ABPP) of propofol along with our simulations, revealed the high affinity sites as the ones involving $\alpha$ and $\beta$ subunits\citep{Woll2016}. Despite the comparatively polar interface of $\gamma$ - $\beta$\textsubscript{$\gamma$}, this site has the same $\beta$\textsubscript{-} side as the highest affinity site $\alpha$\textsubscript{$\beta$} - $\beta$\textsubscript{$\alpha$}, with the propofol consistently hydrogen bonding with $\beta$L223. But the weak hydrogen bonding and low affinity reported in the previous study\citep{Woll2016} could stem from the fact the bound propofol in the site did not have a low energy conformation \citep{Murlidaran2018}. With low energy propofol configuration, our current FEP calculation, suggests that the $\gamma$ - $\beta$\textsubscript{$\gamma$} has an affinity for propofol that is equivalent to the highest affinity site.Although no residues on $\gamma$ has been reported to be present in the binding site, the residue $\beta$M227 is part of this interface as well  (Figure \ref{fig:PFL_exp} A).
+%
+%$\alpha$\textsubscript{$\gamma$} - $\gamma$ is the only site that does not have any propofol binding site residues identified experimentally. In accordance with this, our FEP simulations also identifies this site to have a comparatively lower affinity. MD simulations further reveal an increased amount of lipid interference as compared to other sites. Lack of a bulky Methionine residue at the 4' location, unlike the other sites, could provide more room for lipid penetration (Figure \ref{fig:PFL_exp} E).
+
+%\subsection{Flooding Simulations}
+\subsubsection{Flooding with sevoflurane suggests multiple occupancy for some sites, as well as exchange with lipid.}
+As shown in Figure \ref{fig:SevFlood}(E,F), we observe sevoflurane flooded in the system to occupy three of the five intersubunit sites, \gb, \ab, \bag. Specifically in site, \ab, we see two sevoflurane bind the site (\ref{fig:SevFlood}(E)), with one of the sevoflurane molecule, entering from the pore, while the other entering from the lipid membrane.
+%Sevoflurane was docked to $\GABAA$ using the docking software, with the search space focussing on the TMD. Autodock returned a binding mode for sevoflurane that was closer to the lower TMD , far from ECD. In the course of the simulation(~50ns), we found the sevoflurane to reliably migrate to a site much more similar to that for propofol(Figure \ref{fig:SevMD}). 
+Sevoflurane being a small-molecule anesthetic, with higher solubility in water  is well suited for a flooding simulation. 
+%low affinity and less lipophilic(LogP 2.4)  compared to other intravenous anesthetic like propofol (LogP 3.79) is well suited for a flooding simulation. 
+In $\approx$ 300 ns we see that almost all of the sevoflurane molecules partition into the lipid membrane, leaving the aqueous environment  as shown in Figure (\ref{fig:SevFlood} A,B, C) . Following this we observed sevoflurane to bind inter-, intra-subunit and pore sites (Figure \ref{fig:SevFlood} E).
+All the intersubunit sites identified were in the upper TMD , closer to ECD, similar to sites identified through standard MD simulations . The different inter-subunit sites were occupied by water , lipids or sevoflurane molecules as described in the Figure (\ref{fig:SevFlood} F).
+As evident in Figure (\ref{fig:SevFlood} F) , sevoflurane temporarily occupies \gb at  $\approx$ 200ns , for $\approx$150ns before re-entering the site at $\approx$ 600ns. We see \ab site gets occupied at $\approx$ 600ns as well. While the \gb site appears to have about 5-8 molecules of water  until occupied by sevoflurane , the \ab has only about 2-5 molecules of water indicating the more hydrophobic nature of the site. Subsequently, another sevoflurane molecule enters the \ab site at  $\approx$1$\mu$s thus revealing a possibility of multiple occupancy at this site. The \bag was the last to get filled in the course of the simulation at $\approx$1.3$\mu$s. 
+Sites \gba and \ag remained unoccupied in the course of 2$\mu$s simulation and is instead occupied by lipids and water molecules thus prohibiting sevoflurane from binding(Figure \ref{fig:SevFlood} E,F) .
+All the Sevoflurane molecules bind the inter-subunit sites by entering the lipid membrane except the site  $\alpha$\textsubscript{+} - $\beta$\textsubscript{-} in proximity to the pore, which is bound by a sevoflurane initially present in the pore. This pathway gives us a clear indication of how a ligand entering the pore could end up occupying an inter-subunit site, instead of blocking the pore \citep{Adodra1995}.
+% Increased lipid interference at this site, was also observed in the FEP simulations , following the unbinding of PFL. The absence of bulky residues at the 22' position, could possibly create an opening for lipids to interact.
+%Figure \ref{fig:SevMD};  \ref{fig:SevFlood}
+
+
+\subsubsection{Spontaneous binding is observed for intrasubunit, pore, sites from flooding.}
+ As shown in Figure (\ref{fig:SevFlood} E) $\beta$ subunit is the only subunit that favored intra-subunit sevoflurane binding , at a height similar to that of the inter-subunit sites. While the site between the M1 and M4 helix is occupied by sevoflurane, a lipid tail is seen to penetrate the subunit between the M3 and M4 helix. This interactions occur at identical spots in both the $\beta$ subunits. 
+We see three Sevoflurane molecules enter the pore one after the other through the ECD. While two sevoflurane molecules remain very mobile within the upper-TMD of the channel, a third Sevoflurane entering the site leads to it being forced to enter a intersubunit site. In the course of the simulation, one of the sevoflurane molecule enters the inter-subunit site $\alpha$\textsubscript{+} - $\beta$\textsubscript{-} site from the pore thus revealing another binding site at this cavity. 
+
+%\subsection{Molecular Dynamics simulations of Propofol and Sevoflurane in \GABAA}
+%Based on the parameterization of Propofol, bonds were restrained to remain in its least energy conformation prior to docking \citep{Murlidaran2018}. Previously we had identified that the  propofol affinity depends on the likelihood of hydrogen bond formation at the protein cavity\citep{Woll2016a}. In addition, sequence variation in the interfacial binding sites were analyzed to explain the affinity of the propofol to the respective site.  Here we present MD simulations of low-energy conformations of PFL docked to \GABAA , followed by FEP simulations at each individual site, with longer sampling time per window. Analyzing  and comparing water and lipid interactions at the different subunit interface further depicts the hydrophilicity or hydrophobicity of the  micro-environment within each binding site.
+
+
+
+\subsubsection{Propofol but not sevoflurane persistently hydrogen-bonds with backbone.}
+
+As shown in Figure \ref{fig:pflSevHbond} (A,B) , Propofol forms Hydrogen bonds with the backbone carbonyl oxygen in each of the interface, more persistently ($\approx$80-90$\%$) in sites with Propofol facing $\beta$\textsubscript{-}and $\gamma$ subunit than  $\alpha$\textsubscript{-}. In comparison, Sevoflurane, a less potent anesthetic,  forms hydrogen bonds transiently ($\approx$30$\%$) than propofol, with having strongest interaction at \gb \gba (Figure \ref{fig:pflSevHbond} (C,D) . 
+Due to the presence of a conserved proline residue at the 13` position on all M1 transmembrane helix,  a break in the helix is formed at 16` position, thus causing the carbonyl oxygen to be available for hydrogen-bonding with the ligand. This behavior  is also observed in crystal structures of GluCL and GABA $\beta$\textsubscript{3} homopentamer.
+
+As illustrated in Figure \ref{fig:pflSevHbond} (B)  at the interfaces, \gb, \ab and \ag, the propofol interacts solely with the backbone carbonyl oxygen of $\beta$L223, $\gamma$I238 respectively. In the two identical \bag and \gba sites, propofol behaves differently, with forming highly transient hydrogen bonds with $\alpha$L228 in  \gba and weak hydrogen bonds with multiple residue such as ,$\beta$N265, $\beta$N262, and $\alpha$L228 in \bag.
+
+Figure \ref{fig:pflSevHbond}(D), sevoflurane forms most consistent hydrogen bond at the \gb site, with residues $\beta$L223 and $\gamma$301.At the \ag, sevoflurane shows strong interaction with $\alpha$S270 and weak interactions with the $gamma$ interface, Q238, I239. In the \gba site, sevoflurane interacts with the residue homologous to $\alpha$S270, $\beta$N265, more consistently  than \bag. Sevoflurane form weakest interactions at the \ab site with the $\beta$L223. The general presence of multiple hydrogen-bonding partners makes the Sevoflurane very mobile in the site.
+
+%While sevoflurane majorly hydrogen bonds with $\beta Figure (\ref{fig:PFL_SEV_int A}. In case of sevoflurane, at the \gb site, sevoflurane forms hydrogen bonds with both \beta$L223 and $\gamma$301.
+
+%\subsection{FEP results}
+%\subsubsection{Propofol but not sevoflurane shows site specificity.}
+%We identified $\beta$\textsubscript{+} -$\alpha$\textsubscript{-} and $\alpha$\textsubscript{+} - $\beta$\textsubscript{-} to have the highest affinity followed by $\gamma$\textsubscript{-} - $\beta$\textsubscript{+} and $\alpha$\textsubscript{+} - $\gamma$\textsubscript{-} as tabulated in Table 1. The  number of water/lipid molecules that bind the site after the unbinding of Propofol reaching the average number of water/lipid occupying the site, indicates the convergence of the free energy calculation (Figure (\ref{fig:PFL_SEV_fep} A, B , C)).
+%The two identical $\beta$\textsubscript{+} -$\alpha$\textsubscript{-} having weak and multiple hydrogen-bonding residues , in addition to different number of water molecules could lead to propofol behaving differently in the sites.
+
+\subsubsection{Different binding sites are hydrated differently.}
+Figure \ref{fig:PFL_openClose} conveys that the different inter-subunit binding sites differ in the number of water/lipid molecules occupying the site in Apo receptor and the number of molecules displaced by binding of propofol to receptors. One of the key observations is that the \ag site has significantly more lipid occupancy as compared to the other sites. On close observation and as depicted in figure \ref{fig:PFL_openClose} (B) and (C) , presence of a smaller ILE residue at the \ag (') as compared to presence of a bulkier Methionine residue at other interfaces, leads to increased exposure of the site to lipids, thus making it an open cavity.
+
+%\subsubsection{Differences in affinities across sites for Propofol and sevoflurane tend to reflect distinct interactions of the sites with lipid or water rather than anesthetics.}
+\subsubsection{Binding affinity directly correlates with increased water displacement in site.}
+Figure \ref{fig:PFL_int} (A) A depicts the direct correlation between the number of water displaced and binding affinity for propofol. In the apo receptor,  the sites containing $\alpha$ and $\beta$ subunits have similar number of water molecules. \gb site has slightly more number of water molecules compared to the other sites due to the additional polar residue in site as shown in our previous study \citep{Woll2016a}. Simulations reveal some water molecules being replaced due lipid binding in site \ag. In order for an Anesthetic to bind the intersubunit sites, it would have to replace the water/lipid residues in site. Therefore the affinity of particular site would depend on the number of water/lipid residues removed or existing in that site following the binding of propofol. Figure  \ref{fig:PFL_int} (B), shows the correlation between the affinity and the number of water/lipid atoms existing in site. We see the affinity increases with ability of propofol being able replace all the water molecules in site.
+%\subsubsection{Binding affinity directly correlates with increased water displacement in site.}
+%Figure \ref{fig:PFL_int}
+
+
+%\subsubsection*{$\alpha$\textsubscript{+} - $\beta$\textsubscript{-}}
+%From observing the Figures, \ref{fig:pflSevHbond}and Figure \ref{fig:PFL_SEV_int}B,C, interactions at this interface indicates that the strong hydrogen bonding of  PFL at this site does not allow water molecules to enter the site, that are generally present in the apo system. Further, the number of polar residues facing the site reduces as the PFL binds the site thus creating a hydrophobic binding site
+%Further, it is observed that lesser water molecules flood the site due to having one lesser hydrophilic residue in the extracellular side of TMD, as compared to the $\alpha$\textsubscript{+} - $\beta$\textsubscript{-} or $\gamma$\textsubscript{-} - $\beta$\textsubscript{+} site \citep{Woll2016a}. Consistent and strong hydrogen-bonding interaction with PFL in a comparatively hydrophobic site, makes it a more favorable binding site for propofol with high affinity (Figure \ref{fig:PFL_SEV_fep} C)
+
+%The simulations with Sevoflurane in the \ab invites comparatively more water molecules, due to more polar residues facing the site. This also explains the increase in number of hydrogen bonds between sevoflurane and water molecules.
+
+%\subsubsection*{\gba}
+%Despite the high number of water molecules at this site in the apo system, with Propofol binding the site , makes the site more hydrophobic with more non-polar residues facing the site. Even though Propofol does not show string hydrogen bonding interactions at this site, propofol has higher affinity owing to its hydrophobic environment.
+%In comparisons, the systems with sevoflurane reveal more polar residues facing the site and therefore drawing more water molecules to this site. Sevoflurane shows comparatively stronger interactions with the protein and also hydrogen bonds with the water in the site (Figure \ref{fig:PFL_SEV_int}D).
+
+%\subsubsection*{\bag}
+%This is the intersubunit site that is identical to \gba and yet both propofol and sevoflurane has different affinity to these sites. While the Apo system has similar number of water molecules in both the sites despite the slightly high number of polar residues facing the \bag site, as propofol binds, the site doesn't lose as much water as the \gba site and thus remains as a comparatively hydrophilic site. This hydrophilic site, causes propofol behave differently in the site and have lower affinity.
+
+%Sevoflurane system shows the site to have almost similar number of water molecules and has similar number of polar residues face the site.
+%\subsubsection*{$\gamma$\textsubscript{-} - $\beta$\textsubscript{+}}
+%This is the second most hydrophilic site as compared to the other intersubunit cavity. In addition to a polar residue on 16' position on the M2 helix of $\beta$ subunit, it has another polar residue at the 19' position on the M3 helix of $\gamma$ subunit\citep{Woll2016a}. Despite the high number of polar residues facing the site in the apo system, the Propofol-protein system has more hydrophobic residues face the site, allowing propofol to consistently interact with the protein. This consistent interaction of propofol in a hydrophobic site causes the anesthetic to have higher affinity. at this site.
+
+%Sevoflurane shows highest percentage of protein interaction in this site (Figure \ref{fig:PFL_SEV_int}D), with  more water molecules filing the site as compared to propofol system.
+
+
+%\subsubsection{$\alpha$\textsubscript{+} - $\gamma$\textsubscript{-}}
+
+%In spite of the similarity in residues  between $\alpha$\textsubscript{+} - $\gamma$\textsubscript{-} and the highest affinity site {Woll2016a}, it has low affinity for propofol. Unlike the other sites, this interfacial cavity lacks the presence of a bulky methionine residue in 22' position thus making it more likely for water molecules to push the ligand out of the site. 
+%This is the only site that reveals lipid interaction in the Apo system, despite having the highest number of polar residues facing the site. Binding of propofol, makes the site less polar compared to apo system, but still more  polar compared to other propofol binding sites.   
+
+%Sevoflurane strongly H-bonds with Ser-270 on $\alpha$ subunit and weak hydrogen bonds with I238 and I239 on $\beta$ subunit.
+
+
+
+
+\section{Conclusion}
+
+%Propofol bound to the different intersubunit sites show persistent interactions with the backbone carbonyl oxygen on M1 helix in interface containing $\beta$\textsubscript{-}or $\gamma$\textsubscript{-} subunit.
+%Despite Propofol showing very transient hydrogen bonding at the \gba interface, this site has a higher affinity due to ability of propofol to displace water/lipid molecules originally occupying the site in Apo receptor. In a similar trend sites, Propofol shows a higher affinity for sites \ab, \gb and \gba. With comparatively higher amount of water/lipid molecules in the presence propofol makes these sites have weaker affinity for propofol.
+%For sevoflurane, flooding simulations reveal various inter and intra-subunit sites. Sevoflurane was observed to bind both the $\beta$ intrasubunit , \gb, \bag and \ab intersubunit sites, with multiple occupancy in \ab site. FEP simulations showed that sevoflurane showed no specificity to any particular site with affinity values for all sites below its EC$\textsubscript{50}
+
+Molecular dynamics simulations of \Ps identified stable Propofol binding conformations in \GABAA.Flooding simulations revealed intrasubunit sites and multiple occupancy in intersubunit site for Sevoflurane. Based on the EC$\textsubscript{50}$ and calculated affinity of propofol and sevoflurane,3 intersubunit sites, \ab, \gb and \gba, would be occupied by propofol at clinical concentration; 3-5 intersubunit sites being occupied by Sevoflurane at clinical concentration. From calculating the correlation between the binding affinity was water/lipid displacement, binding is most favorable when water is displaced and least favorable when lipid is displaced by the anestheticContrary to expectations, persistent hydrogen bonding between propofol and receptor is not necessary or sufficient for a higher affinity site, although we do observe a weak trend.
+
+
+
+
+%\GABAA receptor in this study, was modelled based on the GluCl crystal structure(4RHW) with the ivermectin bound, a positive modulator to the M2-15' in the channel \citep{Hibbs2011}. This confirms the presence of 5 distinct binding clefts at inter-subunit sites in the TMD region. Furthermore, multiple residues have been photolabelled in this region with photo analogs of etomidate, barbiturate , propofol etc. 
+%The \GABAA receptor homolog model is arranged clockwise with two $\alpha$1, two $\beta$3, and one $\gamma$2 subunit arranged $\beta$$\alpha$$\beta$$\alpha$$\gamma$ counterclockwise. This creates 5 intersubunit sites, $\beta$\textsubscript{$\gamma$} - $\alpha$\textsubscript{$\beta$}, $\alpha$\textsubscript{$\beta$} - $\beta$\textsubscript{$\alpha$}, $\beta$\textsubscript{$\alpha$} - $\alpha$\textsubscript{$\gamma$}, $\alpha$\textsubscript{$\gamma$} - $\gamma$,  $\gamma$ - $\beta$\textsubscript{$\gamma$}.
+%
+%Site  $\alpha$\textsubscript{$\beta$} - $\beta$\textsubscript{$\alpha$}, identified as one of the highest affinity site for propofol, has residues identified  as being part of the binding site through various experimental techniques. One of the residues  identified through experimental studies, in this site is the (15'M1)$\beta$M227. Propofol inhibitable photolabelling of the residue  $\beta$M227 with AziPm was evident in $\alpha$1$\beta$3 receptors\citep{Jayakar2014a}. Tryptophan mutation at this residue reduced the anesthetic action on the receptor and the covalent modification of the cystine substitution was also inhibited on propofol application. Although MD simulations do not reveal direct interaction of propofol to this residue, it is in close proximity of the residue $\beta$L223 that propofol stable hydrogen bonds\citep{Acid2017}. Interestingly, propofol hydrogen-bonding to the carbonyl oxygen of  $\beta$LEU is also observed in the high-affinity binding site in the crystal structure of HSA\citep{Bhattacharya2000a}. MD simulations also revealed the residue $\beta$H267, that was photolabelled using propofol analog o-PD \citep{Yip2013}, occasionally facing the propofol in the site (\ref{fig:PFL_exp} C).
+%
+%Sites $\beta$\textsubscript{$\gamma$} - $\alpha$\textsubscript{$\beta$} and $\beta$\textsubscript{$\alpha$} - $\alpha$\textsubscript{$\gamma$} are two identical interfaces among the five inter-subunit sites. Most of the residues identified experimentally are found in this interface. The 15'M2 $\beta$N265 ,a residue that has seldom been photolabelled, has been shown to weaken propofol effects, when mutated to methionine\citep{Siegwart2003a}\citep{Stew} and is seen to form hydrogen bond with propofol during our MD run. Remaining but reduced propofol effects despite the N265M mutation, further indicates presence of other binding sites for propofoll\citep{Stew}.
+%The residues M3 $\beta$M286 and M1$\alpha$M236 identified through photolabelling\citep{Chiara2013}, forms the lipid facing residues, while also being in close proximity to the bound Propofol in our simulations. Various mutations to the residue M286 has revealed that when mutated to $\beta$\textsubscript{2}-M286W, this reduces the binding site volume and thus does not allow potentiation of \GABAA by propofol(\citep{Krasowski2001}). Mutation and SCAMP studies further provide definite evidence of the presence of $\alpha$M236 in this binding site \citep{Stew}. In accordance with these results, through the course of the MD simulations, we see that propofol slides between two regions in the site, one being near $\beta$ M286-N265 region and other being near $\alpha$-M236. This behavior is evident in both the $\beta$\textsubscript{$\gamma$} - $\alpha$\textsubscript{$\beta$} , $\beta$\textsubscript{$\alpha$} - $\alpha$\textsubscript{$\gamma$} sites. 
+%Although a recent experimental study has indicated that the two identical sites differentially affect modulation by etomidate and not propofol  \citep{Maldifassi2016b}, the affinity of propofol, calculated for the two sites, in this study, are certainly different. This behavior in addition to the difference in number of water flooding these sites could explain the dissimilarity in the behavior of propofol in this site  (Figure \ref{fig:PFL_exp} B,D). 
+%
+%A recent work of involving photolabelling protection experiments (ABPP) of propofol along with our simulations, revealed the high affinity sites as the ones involving $\alpha$ and $\beta$ subunits\citep{Woll2016}. Despite the comparatively polar interface of $\gamma$ - $\beta$\textsubscript{$\gamma$}, this site has the same $\beta$\textsubscript{-} side as the highest affinity site $\alpha$\textsubscript{$\beta$} - $\beta$\textsubscript{$\alpha$}, with the propofol consistently hydrogen bonding with $\beta$L223. But the weak hydrogen bonding and low affinity reported in the previous study\citep{Woll2016} could stem from the fact the bound propofol in the site did not have a low energy conformation \citep{Murlidaran2018}. With low energy propofol configuration, our current FEP calculation, suggests that the $\gamma$ - $\beta$\textsubscript{$\gamma$} has an affinity for propofol that is equivalent to the highest affinity site.Although no residues on $\gamma$ has been reported to be present in the binding site, the residue $\beta$M227 is part of this interface as well  (Figure \ref{fig:PFL_exp} A).
+%
+%$\alpha$\textsubscript{$\gamma$} - $\gamma$ is the only site that does not have any propofol binding site residues identified experimentally. In accordance with this, our FEP simulations also identifies this site to have a comparatively lower affinity. MD simulations further reveal an increased amount of lipid interference as compared to other sites. Lack of a bulky Methionine residue at the 4' location, unlike the other sites, could provide more room for lipid penetration (Figure \ref{fig:PFL_exp} E).
+%\bibliographystyle{apj}
+%\bibliography{GABAa_anes}
+%\end{document}
+
+\bibliography{GABAa_anes}
+
+% Bibliography style (requires the style file biophysj.bst in the
+% document directory)
+\bibliographystyle{biophysj}
+
+% Figure legends
+%%Automatically it will add the figure legends  and table legends as a list by below command
+
+\newpage
+
+\listoffigures
+
+\newpage
+
+\listoftables
+
+% Figures and Tables coding should be placed where the
+% first reference in the text.
+% All the Figure files should be placed same working directory,
+% for example (fig_1.eps and fig_1.pdf files must be present
+% in the document directory)
+
+% closing statement, nothing below matters
+
+\end{document}

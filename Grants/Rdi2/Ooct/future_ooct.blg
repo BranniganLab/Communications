@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: future_ooct.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: future_ooct-blx.bib
+Database file #2: Proposal.bib
+Biblatex version: 3.8
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 19 entries,
+            6268 wiz_defined-function locations,
+            1369 strings with 35088 characters,
+and the built_in function-call counts, 131515 in all, are:
+= -- 9447
+> -- 2163
+< -- 470
++ -- 3519
+- -- 1027
+* -- 10730
+:= -- 14475
+add.period$ -- 0
+call.type$ -- 19
+change.case$ -- 174
+chr.to.int$ -- 30
+cite$ -- 36
+duplicate$ -- 13961
+empty$ -- 11991
+format.name$ -- 1534
+if$ -- 26092
+int.to.chr$ -- 0
+int.to.str$ -- 38
+missing$ -- 0
+newline$ -- 916
+num.names$ -- 744
+pop$ -- 6396
+preamble$ -- 1
+purify$ -- 326
+quote$ -- 0
+skip$ -- 3051
+stack$ -- 0
+substring$ -- 17105
+swap$ -- 3359
+text.length$ -- 550
+text.prefix$ -- 33
+top$ -- 1
+type$ -- 634
+warning$ -- 0
+while$ -- 1795
+width$ -- 0
+write$ -- 898

@@ -1,0 +1,80 @@
+\providecommand{\latin}[1]{#1}
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{8}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
+
+\bibitem[Korte \latin{et~al.}(1995)Korte, Carroll, Wolf, Brem, Thoenen, and
+  Bonhoeffer]{Korte1995}
+Korte,~M.; Carroll,~P.; Wolf,~E.; Brem,~G.; Thoenen,~H.; Bonhoeffer,~T.
+  \emph{Proc. Natl. Acad. Sci.} \textbf{1995}, \emph{92}, 8856--8860\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Soliman \latin{et~al.}(2010)Soliman, Glatt, Bath, Levita, Jones,
+  Pattwell, Jing, Tottenham, Amso, Somerville, Voss, Glover, Ballon, Liston,
+  Teslovich, {Van Kempen}, Lee, and Casey]{soliman2010}
+Soliman,~F. \latin{et~al.}  \emph{Science} \textbf{2010}, \emph{327},
+  863--6\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chen \latin{et~al.}(2008)Chen, Bath, McEwen, Hempstead, and
+  Lee]{Chen2008}
+Chen,~Z.-Y.; Bath,~K.; McEwen,~B.; Hempstead,~B.; Lee,~F. \emph{Novartis Found.
+  Symp.} \textbf{2008}, \emph{289}, 180--8; discussion 188--95\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Verhagen \latin{et~al.}(2010)Verhagen, van~der Meij, van Deurzen,
+  Janzing, Arias-V{\'{a}}squez, Buitelaar, and Franke]{Verhagen2010}
+Verhagen,~M.; van~der Meij,~A.; van Deurzen,~P. A.~M.; Janzing,~J. G.~E.;
+  Arias-V{\'{a}}squez,~A.; Buitelaar,~J.~K.; Franke,~B. \emph{Mol. Psychiatry}
+  \textbf{2010}, \emph{15}, 260--71\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sugita and Okamoto(1999)Sugita, and Okamoto]{Sugita1999a}
+Sugita,~Y.; Okamoto,~Y. \emph{Chem. Phys. Lett.} \textbf{1999}, \emph{314},
+  141--151\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Anastasia \latin{et~al.}(2013)Anastasia, Deinhardt, Chao, Will,
+  Irmady, Lee, Hempstead, and Bracken]{Anastasia2013}
+Anastasia,~A.; Deinhardt,~K.; Chao,~M.~V.; Will,~N.~E.; Irmady,~K.; Lee,~F.~S.;
+  Hempstead,~B.~L.; Bracken,~C. \emph{Nat. Commun.} \textbf{2013}, \emph{4},
+  2490\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Das and Pappu(2013)Das, and Pappu]{Das2013a}
+Das,~R.~K.; Pappu,~R.~V. \emph{Proc. Natl. Acad. Sci. U. S. A.} \textbf{2013},
+  \emph{110}, 13392--7\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: GABAa_K289M.aux
+The style file: ieeetr.bst
+Database file #1: GABAa_K289M.bib
+You've used 59 entries,
+            1876 wiz_defined-function locations,
+            922 strings with 18150 characters,
+and the built_in function-call counts, 21086 in all, are:
+= -- 2198
+> -- 894
+< -- 0
++ -- 320
+- -- 261
+* -- 1634
+:= -- 2899
+add.period$ -- 59
+call.type$ -- 59
+change.case$ -- 59
+chr.to.int$ -- 0
+cite$ -- 59
+duplicate$ -- 999
+empty$ -- 1659
+format.name$ -- 261
+if$ -- 5061
+int.to.chr$ -- 0
+int.to.str$ -- 59
+missing$ -- 59
+newline$ -- 180
+num.names$ -- 59
+pop$ -- 70
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 947
+stack$ -- 0
+substring$ -- 1838
+swap$ -- 575
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 221
+width$ -- 61
+write$ -- 594

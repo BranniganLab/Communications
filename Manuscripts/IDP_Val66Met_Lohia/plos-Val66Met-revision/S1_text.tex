@@ -1,0 +1,18 @@
+\documentclass{article}
+\bibliographystyle{plos2015}
+\begin{document}
+\subsection*{Heterogeneous behavior of individual blobs}
+
+We also calculated the polymer properties of each blob. Disordered proteins can be well-described by Flory scaling theory $\langle R_{|i-j|}\rangle = A|i-j|^{\nu}$, where $\langle R_{|i-j|}\rangle$ is the ensemble-averaged internal distance, $|$i-j$|$ is residue separation along the chain, and $\nu$ is the Flory scaling coefficient~\cite{Flory1949}. Larger values of $\nu$ correspond to swollen coils, while smaller values correspond to compact globules~\cite{Das2013}. In particular, when $\nu$=0.6 (``good solvent") the protein maximizes its interaction with solvent, and for $\nu$=0.33 (``poor solvent"), the protein maximizes self-interactions. The special intermediate case of $\nu$=0.5 is called a ``theta solvent"~\cite{Flory1949}. Most IDPs that obey this scaling behavior have $\nu$$>$0.5~\cite{Hofmann2012,Das2013,Zerze2015,Meng2018}. 
+
+As shown in S5 Fig the prodomain as a whole is not well fit by a single power law: for separations of 15 or fewer residues the prodomain falls in the ``theta solvent" regime, while for separations of 20 or more residues it falls in the ``poor solvent" regime. Each identified individual blob does obey a power law, and we calculated A and $\nu$ for each blob as if it was isolated from rest of the protein (S5 Fig). The highest observed value of $\nu$ was in blob h2b and h3c. This is in agreement with strong polyelectrolyte nature of h2b and high content of Proline residue (20\%) in h3c.
+
+\textbf{Method:} We calculated the average distance between the first atom (N) and last atom (O) for all residue pairs of a given sequence as a function of sequence separation $|i-j|$ using $g_{-}traj$. Errors before fitting were calculated as the standard error in the mean, where $n = 1088$ is the product of the total number of replicas simulated (64) and the average number of roundtrips per replica (17). $\nu$ was calculated by linear fit of ln($\langle R_{|i-j|}\rangle)$ vs ln$(|i-j|)$ weighted by each point's pre fit error with fixed A of 0.59 nm. To exclude the short-range backbone rigidity, distances with $|i-j|$ $<$ 3 were not fit.
+
+\bibliography{IDP_Val66Met_Lohia}
+
+\end{document}
+
+
+
+

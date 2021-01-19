@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{Flory1949}
+Flory PJ.
+\newblock {The Configuration of Real Polymer Chains}.
+\newblock J Chem Phys. 1949;17(3):303--310.
+\newblock doi:{10.1063/1.1747243}.
+
+\bibitem{Das2013}
+Das RK, Pappu RV.
+\newblock {Conformations of intrinsically disordered proteins are influenced by
+  linear sequence distributions of oppositely charged residues}.
+\newblock Proc Natl Acad Sci. 2013;110(33):13392--13397.
+\newblock doi:{10.1073/pnas.1304749110}.
+
+\bibitem{Hofmann2012}
+Hofmann H, Soranno A, Borgia A, Gast K, Nettels D, Schuler B.
+\newblock {Polymer scaling laws of unfolded and intrinsically disordered
+  proteins quantified with single-molecule spectroscopy}.
+\newblock Proc Natl Acad Sci. 2012;109(40):16155--16160.
+\newblock doi:{10.1073/pnas.1207719109}.
+
+\bibitem{Zerze2015}
+Zerze GH, Best RB, Mittal J.
+\newblock {Sequence- and Temperature-Dependent Properties of Unfolded and
+  Disordered Proteins from Atomistic Simulations}.
+\newblock J Phys Chem B. 2015;119(46):14622--14630.
+\newblock doi:{10.1021/acs.jpcb.5b08619}.
+
+\bibitem{Meng2018}
+Meng F, Bellaiche MMJ, Kim JY, Zerze GH, Best RB, Chung HS.
+\newblock {Highly Disordered Amyloid-$\beta$ Monomer Probed by Single-Molecule
+  FRET and MD Simulation}.
+\newblock Biophys J. 2018;114(4):870--884.
+\newblock doi:{10.1016/j.bpj.2017.12.025}.
+
+\end{thebibliography}

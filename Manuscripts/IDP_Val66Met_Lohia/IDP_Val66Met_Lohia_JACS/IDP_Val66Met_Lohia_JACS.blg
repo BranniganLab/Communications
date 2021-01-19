@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: IDP_Val66Met_Lohia_JACS.aux
+The style file: achemso.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: acs-IDP_Val66Met_Lohia_JACS.bib
+Database file #2: Jacs_ref.bib
+achemso 2016/05/10 v3.10c
+You've used 101 entries,
+            2514 wiz_defined-function locations,
+            1611 strings with 44562 characters,
+and the built_in function-call counts, 45309 in all, are:
+= -- 3274
+> -- 3577
+< -- 29
++ -- 1348
+- -- 1247
+* -- 5226
+:= -- 6189
+add.period$ -- 199
+call.type$ -- 101
+change.case$ -- 4
+chr.to.int$ -- 2
+cite$ -- 101
+duplicate$ -- 2234
+empty$ -- 2546
+format.name$ -- 1384
+if$ -- 8391
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 622
+num.names$ -- 300
+pop$ -- 188
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 101
+stack$ -- 0
+substring$ -- 2445
+swap$ -- 3191
+text.length$ -- 201
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 701
+warning$ -- 0
+while$ -- 388
+width$ -- 0
+write$ -- 1317

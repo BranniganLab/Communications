@@ -1,0 +1,92 @@
+% !TEX root = main.tex
+\subsubsection{System Composition}
+
+All simulations were built with Martini's martinize.py to coarse grain the PDB structure and insane.py to embed the protein within a coarse grained membrane \cite{martini}. nAChR coordinates came from PDB 2BG9 derived by Unwin et al. 2005 \cite{Unwin_Refined_2005}. 
+
+The lipids used are Dipalmitoylphosphatidylcholine (DPPC), Dipalmitoylphosphatidylethanolamine(DPPE), Didocosahexaenoylphosphatidylethanolamine (DHA-PE), Didocosahexaenoylphosphatidylcholine (DHA-PC), Dilinoleoylphosphatidylcholine (DLiPC), Dilinoleoylphosphatidylethanolamine (DLiPE) and cholesterol (Chol).
+
+Simulations were deigned to be composed of a saturated lipid, a PUFA, and Chol over concentrational three space. We focused on primarily two series of simulations: 1) systems with DPPC, DHA-PE, and Chol, and 2) DPPC, DLiPC, and Chol, with a small sub set of systems of only DPPC and Chol  used as controls. 
+
+\subsubsection{Simulations}
+
+Martini determined and maintained secondary structures. Ternary structures were initially maintained using Gromac's \cite{grom} position restrains at 1000 $kJ\cdot mol^{-1}$. Later elastic restraints based on Martini's \cite{martini} ElNeDyn algorithm \cite{Periole_Combining_2009} were implemented. Elastic restraints were held at 750 $kJ\cdot mol^{-1}$ using cutoff lengths between 1.0 nm to 1.5 nm. Measuring the rmsd of nAChR's transmembrane back bone averaged at $\sim 2.5$ \r{A}.  
+
+%%Liam Translate gromacs mdp "code" to real words
+
+Molecular dynamics were carried out using the Martini 2.2 force field \cite{martini} and Gromacs 5.0.6 \cite{grom}. Energy minimization was performed at 0.001 $ps$ using 10000 steps. However most energy minimizations finished within $\sim$ 1700 to 3000 steps. Molecular dynamics were run using a time step 0.025 $ps$ for 2 $\mu$s. Simulations used  NPT ensembles. We used Berendsen thermostat with an isotropic pressure couple. The reference temperature was set to 323 Kelvin with temperature coupling constant set to  1 $ps$. The system's compressibility is set to $3e^{-5}$ $bar^{-1}$ with a pressure coupling constant set to 3.0 $ps$. All systems were run using van der Waals (vdW) and Electrostatics in shifted form with a dielectric constant of 15. vdW cutoff lengths were between 0.9 and 1.2 nm, with electrostatic cutoff lengths between 0.0 and 1.2 nm.
+
+The majority of simulations have a box size between $22x22x20$ $nm^3$ and $25x25x25$ $nm^3$, run with Gromacs 5.0.6 \cite{grom}. Systems on the membrane size of $75x75x35$ $nm^3$ were run with Gromacs 5.1.2 \cite{grom}. The z dimension does not vary significantly from simulation box sizes to reduce the number of water beads and decrease computational expense. 
+
+nAChR is held under position restraints in simulations, unless stated other wise.
+
+\subsubsection{Analysis}
+
+\newcommand{\bsat}{b_{\mathrm{sat}}}
+\newcommand{\qsat}{Q_{\mathrm{sat}}}
+\newcommand{\xsat}{x_{\mathrm{sat}}}
+\newcommand{\nbound}{b_{\mathrm{tot}}}
+\newcommand{\lo}{l_{\mathrm{o}}}
+\newcommand{\ldo}{l_{\mathrm{do}}}
+
+Extent of domain formation within the membrane was tracked by 
+    \begin{equation}
+    \begin{aligned}
+      M_{A, B} = \frac{\langle \eta_{A,B} \rangle} {x_{B}} - 1
+    \end{aligned}
+    \label{eq:M}
+  \end{equation}
+ where $\eta_{A,B}$ is the fraction of the 6 nearest neighbors around a given molecule of species type A, that are of species type B, and the average is over time and all molecules of type $A$. For a random mixture, $\langle \eta_{A,B} \rangle = x_{B}$, where $x_{B}$ is the fraction of overall bulk lipids that are of type B. $M_{A,B}>0$ indicates demixing while $M_{A,B}<0$.  
+
+%	$M_{a,b}$ compares measured and expected mixing, where $a$ and $b$ represent a reference and a local lipid species respectively, equation \ref{eq:M}. 
+%    \begin{equation}
+%    \begin{aligned}
+%      M_{a,b} = \frac{\langle \eta_{a,b} \rangle} {\langle \eta_{a,b} \rangle_{rand}} - 1
+%    \end{aligned}
+%    \label{eq:M}
+%  \end{equation}
+%  We define $\eta_{a,b}$ as the percentage of lipid species $b$ in contact with lipid species $a$. $M_{a,b}$ is subtracted by one to include all points.
+
+Extent of receptor partitioning within the $\lo$ or $\ldo$ domain was tracked by counting the number $\bsat$ of saturated boundary lipids and comparing with the expectation for a random mixture, via the order parameter $\qsat$:
+  \begin{equation}
+    \begin{aligned}
+      \qsat\equiv \frac{1}{\xsat}\left\langle\frac{  \bsat }{\nbound }\right\rangle-1,\\
+    \end{aligned}
+    \label{eq:Q}
+  \end{equation}
+  where $\nbound$ is the total number of lipids in the boundary region and $\xsat$ is the fraction of overall bulk lipids that are saturated phospholipids. $\qsat <0$ indicates depletion of saturated lipids among boundary lipids, as expected for partitioning into an $\ldo$ phase, while $\qsat>1$ indicates enrichment and likely partitioning into an $\lo$ phase. Each frame, $\nbound$ and $\bsat$ were calculated by counting the number of total and saturated lipids, respectively, for which the phosphate bead fell within a distance of 10~\AA~ to 35~\AA~ from the M2 helices, projected onto the membrane plane. 
+  
+  Two-dimensional distribution of a specific lipid of species $B$ around the protein was calculated using both Cartesian and Polar bins: %$\rho_a$ (\r{A}$^{-2}$) is the density of lipid $a$ within a given bin equations \ref{eq:R}.
+  \begin{equation}
+    \begin{aligned}
+      \rho_{B,i}=\left\langle \frac{n_{B,i}}{A_{i}}\right\rangle \\        
+    \end{aligned}
+    \label{eq:R}
+  \end{equation}
+  where $n_B,i$ is the number of lipid species $B$ found within a given bin $i$ and $A$ is the area of a bin. In the case of Cartesian bins, $A = \Delta{x} \Delta{y}$ where the bin widths $\Delta{x} = \Delta{y} = 10$\AA, while for Polar bins, $A = r \Delta{r}\Delta{\theta}$ where $r$ is the projected distance of the bin center from the protein center, $\Delta{r}$= 10\AA~ and $\Delta{\theta} = \frac{\pi}{5}$ radians.
+  
+%  $Q$ is defined as a metric given by equation \ref{eq:Q} to measure the boundary lipid concentration of a specific lipid species; in this case DPPC. $Q$ can be values between -1 to 1; -1 species $a$ is depleted, 0 species $a$ is randomly mixed, and 1 species $a$ is enriched within the boundary lipids.  
+%  \begin{equation}
+%    \begin{aligned}
+%      Q= \langle\frac{ B_{DPPC}}{N_B \cdot x_{DPPC}}\rangle-1\\
+%    \end{aligned}
+%    \label{eq:Q}
+%  \end{equation}
+%  Lipids were measure within a ring of $r>10$ \r{A}   but $r<35$ \r{A}   from the M2 helices. $B_{DPPC}$ is the number of DPPC within ring, where $N_B$ is the total number of boundary lipids. $x_{DPPC}$ is the expected fraction of DPPC if the membrane was randomly mixed. $Q$ is subtracted by one to adjust the metric range from -1 to 1.
+%
+%	$M_{a,b}$ compares measured and expected mixing, where $a$ and $b$ represent a reference and a local lipid species respectively, equation \ref{eq:M}. 
+%    \begin{equation}
+%    \begin{aligned}
+%      M_{a,b} = \frac{\langle \eta_{a,b} \rangle} {\langle \eta_{a,b} \rangle_{rand}} - 1
+%    \end{aligned}
+%    \label{eq:M}
+%  \end{equation}
+%  We define $\eta_{a,b}$ as the percentage of lipid species $b$ in contact with lipid species $a$. $M_{a,b}$ is subtracted by one to include all points.
+%
+%	$\rho_a$ (\r{A}$^{-2}$) is the density of lipid $a$ within a given bin equations \ref{eq:R}.
+%  \begin{equation}
+%    \begin{aligned}
+%      \rho_{a}=\langle \frac{n_{a}}{A}\rangle \\        
+%    \end{aligned}
+%    \label{eq:R}
+%  \end{equation}
+%  $n_a$ is the number of lipid species $a$ found within a given bin and $A$ is the area of a bin. Data was collected with $dx$, $dy$ both equal to 10\r{A} bins for Cartesian coordinates and $dr$ and $d \theta$ as 10\r{A} and $\frac{\pi}{5}$ radians respectively for Polar coordinates.

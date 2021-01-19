@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: IDP_Val66Met_Lohia_JACS.aux
+The style file: achemso.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: acs-IDP_Val66Met_Lohia_JACS.bib
+Database file #2: Jacs_ref.bib
+Warning--I didn't find a database entry for "Lindorff-Larsen"
+achemso 2016/05/10 v3.10c
+You've used 79 entries,
+            2514 wiz_defined-function locations,
+            1438 strings with 38033 characters,
+and the built_in function-call counts, 35516 in all, are:
+= -- 2330
+> -- 3091
+< -- 19
++ -- 1158
+- -- 1079
+* -- 4209
+:= -- 4897
+add.period$ -- 78
+call.type$ -- 79
+change.case$ -- 4
+chr.to.int$ -- 2
+cite$ -- 79
+duplicate$ -- 1699
+empty$ -- 1819
+format.name$ -- 1180
+if$ -- 6357
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 490
+num.names$ -- 234
+pop$ -- 150
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 79
+stack$ -- 0
+substring$ -- 1896
+swap$ -- 2621
+text.length$ -- 156
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 550
+warning$ -- 0
+while$ -- 303
+width$ -- 0
+write$ -- 954
+(There was 1 warning)
