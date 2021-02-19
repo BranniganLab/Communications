@@ -1,0 +1,748 @@
+% Template for PLoS
+% Version 3.5 March 2018
+%
+% % % % % % % % % % % % % % % % % % % % % %
+%
+% -- IMPORTANT NOTE
+%
+% This template contains comments intended 
+% to minimize problems and delays during our production 
+% process. Please follow the template instructions
+% whenever possible.
+%
+% % % % % % % % % % % % % % % % % % % % % % % 
+%
+% Once your paper is accepted for publication, 
+% PLEASE REMOVE ALL TRACKED CHANGES in this file 
+% and leave only the final text of your manuscript. 
+% PLOS recommends the use of latexdiff to track changes during review, as this will help to maintain a clean tex file.
+% Visit https://www.ctan.org/pkg/latexdiff?lang=en for info or contact us at latex@plos.org.
+%
+%
+% There are no restrictions on package use within the LaTeX files except that 
+% no packages listed in the template may be deleted.
+%
+% Please do not include colors or graphics in the text.
+%
+% The manuscript LaTeX source should be contained within a single file (do not use \input, \externaldocument, or similar commands).
+%
+% % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- FIGURES AND TABLES
+%
+% Please include tables/figure captions directly after the paragraph where they are first cited in the text.
+%
+% DO NOT INCLUDE GRAPHICS IN YOUR MANUSCRIPT
+% - Figures should be uploaded separately from your manuscript file. 
+% - Figures generated using LaTeX should be extracted and removed from the PDF before submission. 
+% - Figures containing multiple panels/subfigures must be combined into one image file before submission.
+% For figure citations, please use "Fig" instead of "Figure".
+% See http://journals.plos.org/plosone/s/figures for PLOS figure guidelines.
+%
+% Tables should be cell-based and may not contain:
+% - spacing/line breaks within cells to alter layout or alignment
+% - do not nest tabular environments (no tabular environments within tabular environments)
+% - no graphics or colored text (cell background color/shading OK)
+% See http://journals.plos.org/plosone/s/tables for table guidelines.
+%
+% For tables that exceed the width of the text column, use the adjustwidth environment as illustrated in the example table in text below.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- EQUATIONS, MATH SYMBOLS, SUBSCRIPTS, AND SUPERSCRIPTS
+%
+% IMPORTANT
+% Below are a few tips to help format your equations and other special characters according to our specifications. For more tips to help reduce the possibility of formatting errors during conversion, please see our LaTeX guidelines at http://journals.plos.org/plosone/s/latex
+%
+% For inline equations, please be sure to include all portions of an equation in the math environment. For example, x$^2$ is incorrect; this should be formatted as $x^2$ (or $\mathrm{x}^2$ if the romanized font is desired).
+%
+% Do not include text that is not math in the math environment. For example, CO2 should be written as CO\textsubscript{2} instead of CO$_2$.
+%
+% Please add line breaks to long display equations when possible in order to fit size of the column. 
+%
+% For inline equations, please do not include punctuation (commas, etc) within the math environment unless this is part of the equation.
+%
+% When adding superscript or subscripts outside of brackets/braces, please group using {}. For example, change "[U(D,E,\gamma)]^2" to "{[U(D,E,\gamma)]}^2". 
+%
+% Do not use \cal for caligraphic font. Instead, use \mathcal{}
+%
+% % % % % % % % % % % % % % % % % % % % % % % % 
+%
+% Please contact latex@plos.org with any questions.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
+
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+
+% Use Unicode characters when possible
+\usepackage[utf8x]{inputenc}
+
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+% color can be used to apply background shading to table cells only
+\usepackage[table]{xcolor}
+
+% array package and thick rules for tables
+\usepackage{array}
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+% create \thickcline for thick horizontal lines of variable length
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+ \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+ \cline{#1}%
+ \noalign{\vskip\arrayrulewidth}%
+ \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+% \thickhline command for thick horizontal lines that span the table
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+
+% Remove comment for double spacing
+%\usepackage{setspace} 
+%\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in 
+\textheight 8.75in
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2015}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+%\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+%\setlength{\headheight}{27.023pt}
+%\lhead{\includegraphics[width=2.0in]{PLOS-submission.eps}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\today}
+
+%% Include all macros below
+
+\newcommand{\sticky}{proglobular~}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{hhline}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+\newcommand{\revised}[1]{\textcolor{blue}{#1}}
+\newcommand{\grace}[1]{\textcolor{red}{#1}}
+\newcommand{\ruchi}[1]{\textcolor{orange}{#1}}
+%% END MACROS SECTION
+
+
+
+\begin{document}
+\vspace*{0.2in}
+
+% Title must be 250 characters or less.
+\begin{flushleft}
+{\Large
+\textbf\newline{Sequence specificity despite intrinsic disorder: how a disease-associated Val/Met polymorphism rearranges tertiary interactions in a long disordered protein} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
+}
+\newline
+% Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
+\\
+Ruchi Lohia\textsuperscript{1},
+Reza Salari\textsuperscript{1,a},
+Grace Brannigan\textsuperscript{1,2*},
+\\
+\bigskip
+\textbf{1} Center for Computational and Integrative Biology, Rutgers University, Camden, NJ, USA
+\\
+\textbf{2} Department of Physics, Rutgers University, Camden, NJ, USA
+\\
+\bigskip
+
+% Insert additional author notes using the symbols described below. Insert symbol callouts after author names as necessary.
+% 
+% Remove or comment out the author notes below if they aren't used.
+%
+% Primary Equal Contribution Note
+%\Yinyang These authors contributed equally to this work.
+
+% Additional Equal Contribution Note
+% Also use this double-dagger symbol for special authorship notes, such as senior authorship.
+%\ddag These authors also contributed equally to this work.
+
+% Current address notes
+%\textcurrency Current Address: Dept/Program/Center, Institution Name, City, State, Country % change symbol to "\textcurrency a" if more than one current address note
+\textcurrency a Current Address: Department of Radiology, Washington University School of Medicine, St. Louis, MO, USA
+% \textcurrency b Insert second current address 
+% \textcurrency c Insert third current address
+
+% Deceased author note
+%\dag Deceased
+
+% Group/Consortium Author Note
+%\textpilcrow Membership list can be found in the Acknowledgments section.
+
+% Use the asterisk to denote corresponding authorship and provide email address in note below.
+* grace.brannigan@rutgers.edu(GB)
+
+\end{flushleft}
+
+
+% Please keep the abstract below 300 words
+\section*{Abstract}
+The role of electrostatic interactions and mutations that change charge states in intrinsically disordered proteins (IDPs) is well-established, but many disease-associated mutations in IDPs are charge-neutral. The Val66Met single nucleotide polymorphism (SNP) in precursor brain-derived neurotrophic factor (BDNF) is one of the earliest SNPs to be associated with neuropsychiatric disorders, and the underlying molecular mechanism is unknown. Here we report on over 250 $\mu$s of fully-atomistic, explicit solvent, temperature replica-exchange molecular dynamics (MD) simulations of the 91 residue BDNF prodomain, for both the V66 and M66 sequence. The simulations were able to correctly reproduce the location of both local and non-local secondary structure changes due to the Val66Met mutation, when compared with NMR spectroscopy. We find that the change in local structure is mediated via entropic and sequence specific effects. We developed a hierarchical sequence-based framework for analysis and conceptualization, which first identifies ``blobs'' of 4-15 residues representing local globular regions or linkers. We use this framework within a novel test for enrichment of higher-order (tertiary) structure in disordered proteins; the size and shape of each blob is extracted from MD simulation of the real protein (RP), and used to parameterize a self-avoiding heterogenous polymer (SAHP). The SAHP version of the BDNF prodomain suggested a protein segmented into three regions, with a central long, highly disordered polyampholyte linker separating two globular regions. This effective segmentation was also observed in full simulations of the RP, but the Val66Met substitution significantly increased interactions across the linker, as well as the number of participating residues. The Val66Met substitution replaces $\beta$-bridging between V66 and V94 (on either side of the linker) with specific side-chain interactions between M66 and M95. The protein backbone in the vicinity of M95 is then free to form $\beta$-bridges with residues 31-41 near the N-terminus, which condenses the protein. A significant role for Met/Met interactions is consistent with previously-observed non-local effects of the Val66Met SNP, as well as established interactions between the Met66 sequence and a Met-rich receptor that initiates neuronal growth cone retraction. 
+% Please keep the Author Summary between 150 and 200 words
+% Use first person. PLOS ONE authors please skip this step. 
+% Author Summary not valid for PLOS ONE submissions.  
+\section*{Author summary}
+Intrinsically disordered proteins are proteins that have no well-defined structure in at least one functional form. Mutations in one amino acid may still affect their function significantly, especially in subtle ways with cumulative adverse effects on health. Here we report on molecular dynamics simulations of a protein that is critical for neuronal health throughout adulthood (brain-derived neurotrophic factor). We investigate the effects of a mutation carried by 30\% of human population, which has been widely studied for its association with aging-related and stress-related disorders, reduced volume of the hippocampus, and variations in episodic memory. We identify a molecular mechanism in which the mutation may change the global conformations of the protein and its ability to bind to receptors.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Start the main part of the manuscript here.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section*{Introduction}
+
+The physiological significance of intrinsically disordered proteins (IDPs), which can explore a wide range of conformational ensembles in their functional form, is now well-established~\cite {Uversky2013a,Panchenko2015,Ward2004a,Dyson2005a,Uversky2019}. More than 33\% of eukaryotic proteins contain disordered regions longer than 30 residues~\cite{Ward2004a}, many of which are involved in critical biological functions, including transcriptional regulation~\cite{Minezaki2006a} and cell signaling~\cite{Dunker2005,Wright2015,Vucetic2007}. Long intrinsically disordered regions are particularly abundant among cancer-associated~\cite{Iakoucheva2002} and neurodegenerative-associated proteins~\cite{Habchi2014,Buee2000}. 
+
+IDP amino acid sequences tend to be low-complexity~\cite{Weathers2006,Romero2001a} and include numerous charged residues, often in long repeats~\cite{Uversky2013a,Jorda2010}. In contrast to ordered proteins, in which a complex sequence encodes a well-defined tertiary structure, an IDP sequence determines a heterogeneous conformational ensemble~\cite{Dyson1998,Mukhopadhyay2007,Abeln2008}. More than 35\% of IDPs reported in DISPROT~\cite{Sickmeier2007a} are strong polyampholytes, and their ensemble properties can be predicted using statistical theories of polyampholytes from polymer physics and global properties of the sequence, including the fraction of charged residues and the separation of oppositely charged residues (Fig~\ref{fig1}c)~\cite{Das2015,Das2013,Sawle2015,Firman2018}. This role is consistent with the long-range nature of electrostatic interactions, which can affect coupling between distant residues in an otherwise disordered structure. 
+
+Although IDP sequences are low-complexity and do not encode a well-defined structure, single residue substitutions can still have functional effects that are significant for the organism~\cite{Uversky2008}. More than 25\% of disease-associated missense single nucelotide polymorphisms (SNPs) are found in IDPs~\cite{Vacic2012a}. Although detectable, the relatively subtle functional effects of these SNPs may lead to relatively weak selection pressure, whether positive or negative, allowing the mutation to persist at high frequencies within a population. Numerous structural and simulation studies~\cite{Larini2013b,Ganguly2015,Viet2014a,Viet2013,Truong2014a,Zhan2013a,Xu2013a} have demonstrated clear effects of single charged-residue insertion, deletion, or substitutions on conformational ensemble and aggregation of IDPs monomers. Simple electrostatic models predict that modifications of residue charge will directly affect ensemble properties~\cite{Das2015,Larini2013b,Bah2016,He2015}. Locally, such mutations can modulate residual secondary structure preferences via forming or breaking local salt-bridges or by introducing helix breaking residues~\cite{AlexanderConicella2016,Ganguly2015,Zhan2013a}. 
+
+For IDPs with a relatively low fraction of charged residues, typical of the Janus region of the state diagram proposed by Das and Pappu~\cite{Das2015,Das2013} (Fig~\ref{fig1}c), more subtle differences among neutral amino acids play an increasingly important role in determining the ensemble. More than 40\% of disease-associated IDP polymorphisms annotated in the human UniProtKB/Swiss-Prot database~\cite{Yip2008} are substitutions between two charge-neutral residues. The extent to which such substitutions in IDPs can affect non-local aspects of the conformational ensemble is uncertain; these substitutions directly affect short-range interactions, and structure-based coupling between distant residues in IDPs is expected to be weak. Nonetheless, correlations between secondary structure of distant residues has been frequently observed in IDPs~\cite{Ganguly2015,Iesmantavicius2013,Feuerstein2012}; for example, several cancer mutations in transactivation domain of tumor suppressor p53 can lead to helicity changes in residues sequentially far away from the mutation sites~\cite{Ganguly2015}. 
+
+In structured proteins, contacts between residues distant along the sequence are reflected in the tertiary structure, but developing a framework for describing the analogous property in IDPs has not been straightforward. Among traditional structural biology techniques, NMR has been most useful for characterizing IDPs, but is frequently limited to residual secondary structure (Ref.~\cite{Mittag2007,Habchi2014} and references therein). Molecular dynamics (MD) simulations have played a significant role in understanding IDP structure and dynamics~\cite{Stanley2015,Ithuralde2016,Knott2012b,Invernizzi2013,Yedvabny2015,Levine2017a}, but face limitations on chain length similar to those incurred in simulations of protein folding. Most unbiased simulations have been performed in implicit solvent and/or involve chains too short to meaningfully sample contacts between residues far apart on the peptide chain. Studies of aggregation among multiple shorter monomeric IDPs~\cite{Levine2015,Pappu2008} have provided some of the most useful frameworks for considering tertiary contacts between residues that are distantly connected along the peptide backbone. Point mutations are also known to affect these contacts via differential salt-bridge and hydrogen-bonding formations, with mutations that change charge states affecting conformational ensemble via altered salt-bridge networks~\cite{Levine2015}. 
+
+Many SNPs in IDPs are associated with neurological, aging-associated neurodegenerative, or psychiatric disorders; despite an exponential increase in the amount of available genetic data, identifying the genetic origins of such disorders has proven remarkably challenging, with few variants identified as replicable predictors of disease. One of the earliest identified variants is the Val66Met SNP (rs6265) in precursor brain-derived neurotrophic factor (BDNF), a signaling protein that retains a critical role in neurogenesis and synaptogenesis throughout adulthood~\cite{Korte1995, Davies2003} (Fig~\ref{fig1}a). It has been implicated in maintenance of the hippocampus~\cite{Pezawas2004,Benjamin2010}, orientation selectivity in the visual system~\cite{Huang1999, Liu2011,Gao2014} and the mechanism underlying action of numerous antidepressants~\cite{Autry2012, Bjorkholm2016}, including rapidly acting low-dose ketamine~\cite{Autry2011}. An extensive library of genome-wide association studies (GWAS) have repeatedly identified the Val66Met SNP as reducing hippocampal volume and episodic memory, as well as predicting increased susceptibility to neuropsychiatric disorders including schizophrenia, bipolar, and unipolar depression, but associations have been inconsistent and population dependent~\cite{soliman2010,Chen2008,Verhagen2010,Notaras2015, Autry2011}.
+
+Difficulties in obtaining unambiguous disease associations at the precursor BDNF Val66Met SNP using GWAS are paralleled by challenges in characterizing its effects on the properties of the BDNF prodomain using structural techniques. A crystal structure of a homologous neurotrophic factor in complex with a shared receptor revealed a well-defined volume corresponding to the prodomain, but lacked resolvable density~\cite{Feng2010a}. The prodomain sequence falls in the Janus sequence region in the phase diagram proposed by Das and Pappu~\cite{Das2015,Das2013}. 
+
+It was subsequently revealed that the cleaved prodomains (91 residues) are found in monomeric states {\it in vivo}, and the M66 (but not V66) form binds to SorCS2 (sortilin-related VPS10p domain containing receptor 2), leading to axonal growth cone retraction~\cite{Anastasia2013} and eliminated synapses in hippocampal neurons~\cite{Giza2018}. NMR measurements on the prodomain confirmed significant intrinsic disorder for both forms, with differential secondary structure preference around residue 66~\cite{Anastasia2013}. Tertiary contact distances from NOEs were not accessible, however, and uncertainty in interpretation of the NMR signal prevented evidence of non-local effects on secondary structure from being conclusive. Additional NMR experiments implicated residue 66 in binding of M66 prodomain to SorCS2~\cite{Anastasia2013}.
+ 
+In this work, we aimed to provide insight into the following questions: (1) What interactions drive the secondary structure change local to residue 66 observed through NMR? (2) How can we meaningfully detect tertiary interactions in a long disordered protein? (3) Do effects on tertiary interactions explain the non-local secondary structure changes previously observed through NMR? (4) How and why does the Val66Met mutation change tertiary interactions, especially as a charge-neutral mutation? To achieve these aims, we conducted unbiased fully-atomistic replica-exchange MD simulations of the 91 residue BDNF prodomain in explicit solvent, for V66 and M66 sequence.
+
+We begin by identifying globular regions, or blobs, within the protein using a sequence-based approach based on residue hydrophobicity; this is useful for both conceptualizing the long disordered protein in the absence of a well-defined topology, as well as focusing the analysis. We then compare our simulation results with previous NMR results of Anastasia et al.~\cite{Anastasia2013} and discuss the effects of the Val66Met SNP on residual secondary structure. We propose and apply an approach for decoupling short-range structural correlations from long-range structural correlations, by comparison with a simplified polymer model parameterized from the MD trajectories. We then discuss the effect of the Val66Met SNP on the network of correlated $\beta$ strands between distant residues, illustrating how effects of the mutation propagate to tertiary contacts in which the mutation is not involved. Finally, we identify individual residue sidechains that drive the observed effects on this network. Our results suggest an important and previously-unconsidered role for specific Met-Met interactions in transducing the effects of the BDNF Val66Met SNP, and confirm the presence of weak but long-range structural correlations in a disordered protein.
+
+
+\section*{Results and discussion}
+\subsection*{Prodomain Sequence Decomposition} 
+
+The region of the BDNF prodomain studied using NMR~\cite{Anastasia2013}, and simulated here, is 91 residues long. Conceptualization of long structured proteins relies heavily on the consecutive secondary structure elements that form the protein's topology, allowing for a coarse cartoon-style representation. No such approach for constructing an IDP topology has been available. Our original motivation for identifying globular segments in the sequence was to improve statistical power in analyzing contacts, but we found the resulting topological description to be broadly useful for interpretation of results. We thus present this conceptual tool upfront for clarity. 
+
+To avoid ambiguity, we restrict use of the term ``domain'' to refer to the two major BDNF domains (mature domain and prodomain), and instead specify three levels of hierarchy below the domain level: the prodomain contains multiple ``regions'', regions contain ``groups'', and groups contain ``blobs''. Blobs and groups were identified by sequence alone, as described in {\it Methods}, while regions were identified by Monte Carlo simulation of a simplified polymer representing the blobs.
+ 
+The sequence-analysis approach outlined in {\it Methods} divides the sequence into alternating groups, classified as either hydrophobic (h groups) or non-hydrophobic (p groups). The prodomain is composed of six such groups, notated as p1-h1-p2-h2-p3-h3 from N-terminus to C-terminus. The h groups are further divided into blobs (Fig~\ref{fig1}b), indexed with a letter. Each hydrophobic group contains two to four blobs: h1 contains h1a and h1b, h2 contains h2a and h2b, and h3 contains h3a, h3b, h3c, and h3d. We denote multiple consecutive blobs within a group by multiple letters: h3ab indicates the stretch of residues between the beginning of blob h3a and the end of blob of h3b. Each p group consists of just one blob. The results in {\it Regions of tertiary enrichment} led us to further designate Region I (containing p1 through h2), Region II (comprised of p3) and Region III (comprised of h3).
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/fig1.pdf}
+\caption{{\bf Sequence-based decomposition of the BDNF prodomain.} a) The two functional domains of precursor BDNF: the disordered prodomain considered in this manuscript and the structured mature domain BDNF (mBDNF). b) The mean hydrophobicity ($\langle H \rangle$) per residue (top), given by the Kyte-Dolittle~\cite{Kyte1982a} score averaged over a three residue window, and scaled to fit between 0 and 1 was digitized (bottom) according to a cutoff at $\langle H \rangle > 0.37$. Four or more contiguous residues above the cutoff were identified as forming a hydrophobic blob. Eight hydrophobic ``h'' blobs (darkgrey) are identified along with 3 ``p'' blobs of low hydrophobicity (light grey). c) The diagram of IDP states proposed by Das and Pappu~\cite{Das2013}, based on fraction of positive ($f_{+}$) and negative ($f_{-}$) charged residues, and annotated by the location of the simulated BDNF prodomain and each blob identified in panel b. d) Location of simulated BDNF prodomain and each blob on an Uversky diagram~\cite{Uversky2000a} of IDPs and globular proteins, as a function of absolute net charge per residue ($|NCPR|$) and $\langle H\rangle$, with the boundary line between folded and disordered proteins given by the equation in the legend. e) Blobs identified in panel b, colored according to (i) the region of the Das and Pappu~\cite{Das2013} diagram in panel c or (ii)  sign of net charge, where red is negatively-charged, blue is positively-charged, and white is neutral. The blob h2b contains the Val66Met SNP and is marked with star. Additional properties of the blob sequences can be found in Table~\ref{table1}.}
+\label{fig1} 
+\end{figure}
+
+
+\begin{table}[!ht]
+\begin{adjustwidth}{-2.25in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
+\centering
+\caption{Sequence based properties of hydrophobic (h) and linker (p) blobs identified in the BDNF prodomain, as shown in Fig \ref{fig1}.}
+\label{table1}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Region & Group & Blob & N\textsuperscript{\emph{a}} & NCPR\textsuperscript{\emph{b}} & $\langle H \rangle$\textsuperscript{\emph{c}} & FCR\textsuperscript{\emph{d}} & $f_{-}$\textsuperscript{\emph{e}} & $f_{+}$\textsuperscript{\emph{f}} & $\kappa$\textsuperscript{\emph{g}} & Sequence & R\textsuperscript{\emph{h}} & P\textsuperscript{\emph{i}} \\
+\hline\hline
+\multirow{7}{*}{I} &p1 & p1 & 8 & 0.00 & 0.37 & 0.25 & 0.13 & 0.13 & 0.8 & EANIRGQG & 2 & 0.00\\ 
+\hhline{~------------}
+ &\multirow{2}{*}{h1}&h1a & 8 & 0.13 & 0.52 & 0.13 & 0.00 & 0.13 & 1.0 & GLAYPGVR & 1 & 0.13\\ \cline{4-13}
+\hhline{~~-----------}
+& &h1b & 6 & -0.17 & 0.49 & 0.17 & 0.17 & 0.00 & 0.1 & TLESVN & 1 & 0.00\\ 
+\hhline{~------------}
+& p2&p2 & 7 & 0.29 & 0.34 & 0.29 & 0.00 & 0.29 & 0.4 & GPKAGSR & 2 & 0.14\\
+\hhline{~------------}
+&\multirow{3}{*}{h2}&h2a & 9 & -0.11 & 0.58 & 0.11 & 0.11 & 0.00 & 0.7 & GLTSLADTF & 1 & 0.00\\
+\hhline{~~-----------}
+&&h2b(V66) & 8 & -0.38 & 0.54 & 0.38 & 0.38 & 0.00 & 0.3 & HVIEELLD & 4 & 0.00\\
+\hhline{~~-----------}
+&&h2b(M66) & 8 & -0.38 & 0.50 & 0.38 & 0.38 & 0.00 & 0.3 & HMIEELLD & 4 & 0.00\\
+\hhline{-------------}
+II&p3&p3 & 15 & -0.13 & 0.21 & 0.53 & 0.33 & 0.20 & 0.1 & \makecell{EDQKVRP \\ NEENNKDA} & 3 & 0.06\\
+\hline
+\multirow{4}{*}{III}&\multirow{4}{*}{h3}&h3a & 4 & -0.25 & 0.45 & 0.25 & 0.25 & 0.00 & N/A & DLYT & 2 & 0.00\\
+\hhline{~~-----------}
+&&h3b & 5 & 0.20 & 0.60 & 0.20 & 0.00 & 0.20 & N/A & RVMLS & 1 & 0.00\\
+\hhline{~~-----------}
+&&h3c & 5 & -0.20 & 0.49 & 0.20 & 0.20 & 0.00 &N/A & QVPLE & 1 & 0.20\\
+\hhline{~~-----------}
+&&h3d & 7 & -0.14 & 0.70 & 0.14 & 0.14 & 0.00 & 1.0 & PLLFLLE & 1& 0.14\\
+\hline
+\hline
+V66 Seq&& & 91 & -0.09 & 0.44 & 0.26 & 0.18 & 0.09 & 0.2 & & 2 &0.07 \\
+\hline
+M66 Seq&& & 91 & -0.09 & 0.44 & 0.26 & 0.18 & 0.09 & 0.2 & & 2 &0.07 \\
+\hline
+\end{tabular}
+\begin{flushleft}
+\textsuperscript{\emph{a}} Number of residues in the blob\\
+\textsuperscript{\emph{b}} Net charge per residue\\
+\textsuperscript{\emph{c}} Mean hydrophobicity, average of Kyte-Dolittle~\cite{Kyte1982a} scores for each residue in the blob scaled to fit between 0 and 1 \\
+\textsuperscript{\emph{d}} Fraction of charged residues\\
+\textsuperscript{\emph{e}} Fraction of negatively charged residues\\
+\textsuperscript{\emph{f}} Fraction of positively charged residues\\ 
+\textsuperscript{\emph{g}} Charge distribution parameter $\kappa$ as defined by Das and Pappu~\cite{Das2013}, calculated using CIDER~\cite{Holehouse2017} \\
+\textsuperscript{\emph{h}} Region in phase diagram proposed by Das and Pappu~\cite{Das2013} (Fig~\ref{fig1}c)\\
+\textsuperscript{\emph{i}} Fraction of Proline residues\\
+\end{flushleft}
+\end{adjustwidth}
+\end{table}
+
+Since each blob sequence has its own properties (Table~\ref{table1}), this process also suggested a new, more tractable conceptualization of the long, disordered BDNF prodomain. Each blob can be analyzed individually according to Das and Pappu metrics~\cite{Das2013} (Fig~\ref{fig1}c) or Uversky metrics~\cite{Uversky2000a} (Fig~\ref{fig1}d), while several other sequence properties of each blob are shown in Table~\ref{table1}.
+The Das and Pappu phase diagram~\cite{Das2013} predicts the compactness of IDPs based on their fraction of positively ($f_{+}$) and negatively ($f_{-}$) charged residues (Fig~\ref{fig1}c). Hydrophobic blobs h2b and blob h3a lie in the strong polyelectrolyte and Janus sequence region respectively. All the remaining hydrophobic blobs are classified as weak polyampholytes and, as isolated peptides, would be predicted to have compact globule conformations to shield hydrophobic residues~\cite{Das2013}. Linker blobs p1 and p2 also lie in the Janus sequence region, while blob p3 lies in the strong polyampholyte region. The charge distribution parameter $\kappa$~\cite{Das2013} is also low for p3, which is predicted to have random coil conformations if present as an isolated peptide.
+
+The Uversky diagram~\cite{Uversky2000a} characterizes proteins as globular or intrinsically disordered based on their normalized mean hydrophobicity ($\langle H \rangle$) and absolute net charge per residue ($|NCPR|$) (Fig~\ref{fig1}d). The proteins falling above the boundary line are predicted to be globular proteins, while the ones below that line are predicted to be IDPs. With the exception of hydrophobic blobs h2b and h3a, all hydrophobic blobs identified here fall in the globular side of the boundary. Blobs h2b, h3a and p1 fall on the disordered side of the boundary, while p2 and p3 fall deep in the disordered side of the boundary.
+
+The blob h2b contains V/M66, and has several unique properties among the identified blobs: 1) it is located at the sequence midpoint 2) it is the only strong polyelectrolyte blob 3) it has the strongest NCPR (-0.38) among all the blobs 4) its sequence is composed almost entirely of two competing residue types, yielding the uncommon mix of a highly-charged, hydrophobic blob. Considering mean hydrophobicity alone, Uversky et al.~\cite{Uversky2000a} found $\langle H \rangle \sim 0.48 \pm{0.03}$ for a set of 275 folded proteins and $\langle H \rangle \sim 0.39 \pm{0.05}$ for a set of 91 unfolded proteins. By this criteria, we would expect the h2b sequence to be folded: for V66-h2b, $\langle H \rangle \sim 0.54$, while for M66-h2b, $\langle H \rangle\sim0.50$. The full Uversky diagram also considers NCPR, and the high NCPR pushes h2b into the IDP region of the Uversky diagram~\cite{Uversky2000a}. 
+
+More specifically, this blob sequence (HV/MIEELLD) has hydrophobic residues at i, i+3, and i+4 separated by acidic residues at i+1 and i+2. Helix formation would thus segregate hydrophobic residues from acidic residues but would also increase the density of like-charge residues. Similar sequences are observed in the activation domains of transcription factors: a motif of alternating hydrophobic and acidic residues folds into an amphipathic helix upon binding, and the interactions between the amphipathic helix and the binding partner are mediated by hydrophobic residues, not charged residues~\cite{Brzovic2011,Uesugi1997, Radhakrishnan1997, Canales2017, Staller2018}. Staller et al.~\cite{Staller2018} have earlier reported that in the disordered acidic activation domain of Gcn4, the acidic residues keep key hydrophobic residues exposed to solvent and binding partners.
+
+The blob h3a is a unique hydrophobic Janus blob with high NCPR. Janus sequences have intermediate compositional biases and their conformations are context dependent~\cite{Das2013, Das2015}. The SNP blob h2b and the Janus blob h3a are separated by the long (15 residue) strong polyampholyte linker p3, which has well mixed charge ($\kappa$ = 0.1). The blobs h1a and h3b are positively charged and all the remaining hydrophobic blobs are negatively charged (Fig~\ref{fig1}e).
+
+\subsection*{Comparison of experimental observables and their computational analogues}
+
+NMR spectroscopy~\cite{Anastasia2013} has previously confirmed the intrinsic disorder of the prodomain. Many of the common force-field and water model combinations used for MD simulations are optimized for folded proteins, and are not recommended for IDPs~\cite{Mercadante2015,Piana2015}. Piana et al.~\cite{Piana2015} showed that several such force-field and water model combinations produced substantially more compact disordered states when compared with experiments. In order to predict accurate ensembles of the prodomain, we tested several force-field and water model combinations, optimized for IDPs, including a03sbws~\cite{Best2009, Best2014} with Tip4p/2005~\cite{Abascal2005}, a99sbws~\cite{Lindorff-Larsen2010a, Best2014} with Tip4p/2005~\cite{Abascal2005}, a99sb*-ildn-q~\cite{Lindorff-Larsen2010a, Hornak2006a} with Tip4p-D~\cite{Piana2015} and c36m~\cite{Huang2016a} with Tip3p~\cite{Jorgensen1981} on 30 residue fragments of the V66 prodomain using temperature replica-exchange molecular dynamics (T-REMD), further described in \nameref{S1_Table}). To minimize the effects of loss of long-range contacts in the 30 residue fragment, only $\Delta$$\delta$C$_{\alpha}$ were compared; $\Delta$$\delta$C$_{\beta}$ is more dependent on $\beta$-pairing within the sequence. Among all the force-fields tested, only a03sbws with Tip4p/2005 and a99sb-ildn with Tip3p yielded significant deviations from NMR. The three remaining force-fields compared reasonably well ($\Delta$$\delta$C$_{\alpha}$ RMSD $<$0.5 ppm) (\nameref{S1_Fig}, \nameref{S1_Table}). This is also consistent with the force-field comparison study by Robustelli et al.~\cite{Robustelli2018}, which observed that for IDPs with little or no secondary structure, both c36m and a99sb*-ildn-q with Tip4p-D yielded the best agreement with experimental NMR measurements.
+
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/fig2.pdf}
+\caption{{\bf Comparison of MD and NMR observables.} a) $\Delta$$\delta$C$_{\alpha}$ (top), 
+$\Delta$$\delta$C$_{\beta}$ (middle), 
+$\Delta$$\delta$$C_{\alpha}$-$\Delta$$\delta$C$_{\beta}$ (bottom) values from NMR at 280K (black lines)~\cite{Anastasia2013} and MD at 300K for the V66 (a) and M66 (b) sequences. The gray region represents a discrepancy of more than 1 ppm from NMR secondary chemical shifts. Root-mean-squared deviation (RMSD) represents the deviation between the NMR and MD values. Error at each residue is calculated as the standard error in the mean, where $n = 1088$ is the product of the total number of replicas simulated and the average number of roundtrips per replica. Panels are annotated by a blob representation of the prodomain, as in Fig~\ref{fig1}e(i); vertical grey lines in each panel represent the blob boundaries.}
+\label{fig2} 
+\end{figure}
+
+The a99sb*-ildn-q/Tip4p-D force-field was used for the full prodomain MD simulations further described in {\it Methods}. Fig~\ref{fig2} shows the C$_{\alpha}$ and C$_{\beta}$ secondary chemical shifts calculated from the full-length simulations using SPARTA+~\cite{Shen2010} (further described in {\it Methods}) and compares them with the NMR secondary chemical shifts obtained from Anastasia et al.~\cite{Anastasia2013} for the V66 and M66 sequences. We obtain good agreement with NMR secondary chemical shifts: the discrepancy at each residue is \textless 0.7 ppm, which is less than the individual SPARTA+ prediction uncertainties of $\sim$ 1 ppm~\cite{Shen2010}. 
+
+Comparison of the simulated hydrodynamic radii ($R_h$) generated from MD and from NMR/SAXS is an additional useful validation measure~\cite{Mercadante2015, Rauscher2015, Meng2018}. $R_h$ was calculated from the trajectory using Hydropro~\cite{Ortega2011} (further described in {\it Methods}). Mean hydrodynamic radii of both the V66 ($\langle R_{h, V66}\rangle=2.202\pm{0.006}$ nm) and M66 ($\langle R_{h, M66}\rangle=2.187\pm{0.005}$ nm) sequences are in excellent agreement with the experimental values from NMR diffusion measurements~\cite{Anastasia2013} ($R_{h, V66}=2.24\pm{0.1}$ nm and $R_{h, M66}=2.20\pm{0.1}$ nm) (Convergence and distribution is discussed in {\it Methods}). Error bars for simulation results represent statistical uncertainty and do not include the additional systematic uncertainty of about 5\% or 0.1~nm associated with use of Hydropro~\cite{Ortega2011}. Although the M66 sequence is slightly more compact, the distributions of both $R_h$ and the simulated radius of gyration ($R_g$) demonstrate that the V66 and M66 sequence populate closely overlapping ensembles (See {\it Methods}). Our results support previous reports~\cite{Piana2015, Robustelli2018} on the importance of pairing a99sb*-ildn-q with the Tip4p-D water model in simulations of disordered proteins; prodomain simulations with Tip3P resulted in significantly more compact ensembles.
+
+\subsection*{Effects of Val66Met on local and non-local secondary structure}
+
+Anastasia et al.~\cite{Anastasia2013} reported an increase in helical tendency for the M66 sequence within blob h2 and h3ab and an increase in $\beta$ tendency within blob h3b in the V66 sequence (Fig~\ref{fig3}a). Consistent with these NMR experiments~\cite{Anastasia2013}, the M66 sequence demonstrates an increased tendency of forming helices within blob h2 and h3a relative to the same blobs in the V66 sequence (Fig~\ref{fig3}b). Comparing the length of secondary structure formed at each residue (Fig~\ref{fig3}c) reveals an even stronger effect of the mutation that would not have been detectable via NMR: Val66Met consistently increases the frequency of long helices formed within group h2. 
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/fig3.pdf}
+\caption{{\bf Effects of Val66Met on secondary structure.} a) $\Delta$$\delta$$C_{\alpha}$-$\Delta$$\delta$C$_{\beta}$ values for the V66 and M66 sequences from NMR~\cite{Anastasia2013}. Values on top are equivalent to the two NMR curves shown in Fig~\ref{fig2} (bottom panel), while the difference between the two curves is shown at the bottom. b) Helix (top) or $\beta$ (bottom) propensity for each simulated residue of the 300K replica, defined as the probability of a given residue being part of a sequence of four or more consecutive residues whose dihedral angles place them in the helical (left) region or $\beta$ (right) region of the Ramachandran map (further described in {\it Methods}). Errors represent standard error of a Bernoulli trial with $n$ samples, where $n = 1088$ is the product of the total number replicas and the average number of roundtrips per replica. c) Difference (M66-V66) between probabilities of secondary structure formation of a given length, for helix (top) and $\beta$ (bottom). d) Contact probability for each residue pair within the h2 group for V66 (top) and M66 (bottom) sequences. Each residue in group h2 is annotated with a circle representation and contacts found in at least 50\% of the frames are represented with an edge. Residues are colored by residue type: blue:basic, red:acidic, cyan:polar, grey:hydrophobic except methionine, Met: yellow. e) Difference (M66-V66) between the contact probabilities shown in panel d. Contacts with a population difference of at least 15\% between the V66 and M66 sequences are represented by an edge. Panels are annotated by a blob representation of the prodomain, as in Fig~\ref{fig1}e(i); vertical grey lines in each panel represent the blob boundaries. }
+\label{fig3} 
+\end{figure}
+
+In general, C\textsuperscript{$\beta$}-branched amino acids, such as valine, have more restricted side-chain rotamers in helical conformation when compared with non-C\textsuperscript{$\beta$}-branched amino acids. Creamer et. al.~\cite{Creamer1992} ranked the entropic cost of helix formation for apolar side chains using simulations of an (Ala)\textsubscript{8} sequence with the guest amino acid at the center, and reported a higher entropic cost of helix formation for valine when compared with methionine. In our simulations, the likelihood that V66 will be in a short helix decreases with temperature, while the opposite effect is observed for the M66 (\nameref{S2_Fig}). These trends are consistent with an increased entropic cost for helix formation at V66 relative to M66. 
+
+The helical structure within group h2 in M66 sequence is also stabilized by local sequence, including the favorable interaction between M66 (i) and F63 (i-3). MD simulations have previously shown the stability of a sulfur-aromatic contacts in a model helix~\cite{Viguera1995}. Fig~\ref{fig3}d shows the residue level contact map within group h2. For the M66 sequence, M66 (i) more frequently contacts F63 (i-3) than any other residue within the blob: M66-F63 is formed 2.6 times as often than M66-E69 (Fig~\ref{fig3}d). We find that the largest change in intrablob contacts from V66 to M66 is the gain of contact at M66-F63 (1.7 times as often in M66 when compared with V66) followed by loss of contact at I67 (i+1)-L70 (i+4) (0.75 as often in M66 when compared with V66) (Fig~\ref{fig3}e). This is also consistent with a previously identified role for Met-Phe interactions~\cite{Viguera1995,Faure2008,Valley2012,Gomez-Tamayo2016}.
+ 
+While the effects of the Val66Met mutation on secondary structure in the blob which contains residue 66 (h2b) are not unexpected, we also observed an effect on secondary structure in group h1 and blobs h3a and h3b within group h3. As shown in Fig~\ref{fig3}c, the increased frequency of long helices for blob h3a in the M66 sequence is comparable to the increase in blob h2b. We consider the possible tertiary origins of the non-local effects on secondary structure in \emph{{\it Effects of Val66Met on the $\beta$-pairing network}}.
+
+\subsection*{Regions of tertiary enrichment}
+\label{sec:interdomain}
+
+The potential number of residue-residue contacts in the prodomain is $91\times90/2\sim4000$, and each contact is formed infrequently (\nameref{S3_Fig}, \nameref{S4_Fig}). Detecting significant differences for numerous weak signals is statistically prohibitive, even given the long simulations presented here. Dividing the sequence into blobs based on sequence hydrophobicity (Fig~\ref{fig1}b), as described in {\it Methods}, helps address this analysis challenge. Such coarse-graining reduces the number of potential contacts to $11\times10/2=55$, while increasing the likelihood that any given contact will be formed. 
+
+\begin{figure}[!ht]
+\includegraphics[width=0.7\textwidth,trim={0 0cm 0 0cm},clip]{./figures/fig4.pdf}
+\caption{{\bf Detection of Tertiary Enrichment } To decouple short-range and long-range structural correlations, this work grouped segments of the protein into blobs using sequence, and then compared contacts between the blobs to those expected for an analogous self-avoiding heteropolymer (SAHP). The SAHP was parameterized by extracting local properties (size and shape) of blobs from the real protein (RP) trajectory.}
+\label{fig:schematic}
+\end{figure}
+
+
+We expect that even for a freely-jointed, self-avoiding heteropolymer (SAHP), contact probability between monomers would depend on monomer shape and separation, although a SAHP does not have tertiary structure. Inspired by the Kuhn treatment of real polymers~\cite{Rubinstein2003}, we propose that the expected intermonomer contact frequency in a SAHP can be a useful reference for detecting specific tertiary interactions (Fig~\ref{fig:schematic}), as long as the monomers mimic the blobs of the real protein (RP). In support of this approach, we find that within a given blob, the protein obeys Flory polymer scaling laws (\nameref{S1_Text}). The exponent varies across blobs (\nameref{S5_Fig}), capturing the intrinsic heterogeneity of the long polymer.
+
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.3,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/fig5.pdf}
+\caption{{\bf Effect of Val66Met on contacts between blobs.} a) Blob-blob contact probability for the V66 self-avoiding heteropolymer (SAHP) from Monte Carlo simulations (further described in {\it Methods}). The black boxes mark the regions identified. b) Blob-blob contact probability shown in panel a for the V66 (left) and M66 (right) sequences of the real protein (RP). The x and y axes are annotated with cartoon representation of the prodomain; circles are drawn to the scale of each blob's size. c) Population of contacts (top) in SAHP and RP  and enrichment in RP contacts with respect to SAHP contacts (bottom) for each region pair. The errors represent standard errors ($n =1088$ as described in {\it Methods}). d) Difference (M66-V66) between the contact probabilities shown in panel b. e) Differences shown in panel with respect to SAHP; interactions more frequently found in M66 or V66 sequence are in blue and orange respectively.}
+\label{fig5}
+\end{figure}
+
+The predicted contact probabilities for this freely-jointed SAHP from Monte Carlo simulation (further described in {\it Methods}) are shown in Fig~\ref{fig5}a. In the SAHP version of the prodomain, the chain is visibly segmented by the p3 blob. As shown in~\nameref{S6_Fig}, shifting the p3 blob within the SAHP chain shifts the visible segmentation boundary, confirming that the p3 blob defines the segmentation. Based on this expectation, we define three regions: the pre-p3 blobs are ``Region I'', p3 is ``Region II'', and the post-p3 blobs are ``Region III''. SAHP blobs within Region I are in contact for 61\% of the frames, while SAHP blobs within Region III are in contact in 76\% of the frames. In comparison, the average contact probability between Regions I and III is only 10\%~(Fig~\ref{fig5}c).
+
+Fig~\ref{fig5}b shows the probability of blob-blob contacts for both the V66 and M66 sequences of the RP, calculated analogously to those in the SAHP. The frequencies of contacts within Region I and within Region III were quantitatively consistent with the SAHP predictions. The total number of blob-blob contacts within Region I was enriched by 1.3 times the expected value for the SAHP. Within Region III, the total number was depleted by 0.9 times the expected value (Fig~\ref{fig5}c).
+
+In contrast, contacts between blobs on either side of the long p3 linker are more common in the RP than in the SAHP, and are also affected by the substitution at residue 66 (Fig~\ref{fig5}c, d and e). Contacts between pre-linker Region I and post-linker Region III are about three times as common in the RP as in the SAHP, indicating specific tertiary interactions beyond those expected for a polymer undergoing a random-walk. Quantitatively, enrichment in the V66 sequence is 3.0$\pm$0.1 while enrichment in the M66 sequence is 3.4$\pm$0.1. The increased number of cross linker contacts are also consistent with the lower mean $R_h$ and $R_g$ for the M66 sequence.
+
+\subsection*{Effects of Val66Met on the $\beta$-pairing network} 
+\label{sec:betacoupling}
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/fig6.pdf}
+\caption{{\bf Secondary structure coupling between blobs on either side of the p3 linker.} $\beta$ propensities at each residue in the V66 sequence (top) and the M66 sequence (bottom) for four clusters. Frames were first clustered by whether the h3b-h2b (a) or h3b-h1a (b) contact was formed (purple) or broken (green), and then by whether $\beta$ structure was present (solid) or absent (dashed) in h2b (panel a) or h1a (panel b). The dark-gray window indicates the contacting blob that is constrained to have high or vanishing values by construction of the cluster, while the white window indicates the contacting blob without constrained secondary structure. If the contact is coupled to simultaneous $\beta$-strand formation, the peak within the white window for the solid purple curve should be significantly higher than other curves. Errors represent standard error of a Bernoulli trial with n number of samples, where n is the product of the total number of unique replicas in a given cluster and the average number of roundtrips per replica. Panels are annotated by a blob representation of the prodomain, as in Fig~\ref{fig1}e(i); vertical grey lines in each panel represent the blob boundaries. }
+\label{fig6}
+\end{figure}
+
+To test whether the changes we observed in tertiary contacts at the blob, group, or region level could be due to a change in partnering $\beta$-strands, we applied a clustering approach. All frames were divided into 4 clusters, representing two independent collective variables with two possible values each: either a certain contact between blobs X and Y is formed or broken, and any residue in blob X is found within a stretch of 4 sequential residues in $\beta$ conformation. The four clusters are thus represented as (contacting,absent), (contacting,present), (distant,absent), and (distant,present).
+
+For each cluster, we calculated $\beta$ propensity across all residues (Fig~\ref{fig6}). If the X-Y contact reflects correlated $\beta$-strands, we expect a peak at residues in blob Y in the (contacting,present) cluster that is significantly higher than the signal for all other clusters. If the secondary structure in Y is used for clustering instead, the reciprocal peak (at blob X) should be reproduced. Furthermore, unless there are higher-order correlations between multiple sets of $\beta$-strands, $\beta$ propensity should not depend on cluster for all residues \emph{not} in blob X or Y. 
+
+This clustering process on all frames was carried out for all possible X and Y blobs, provided X and Y were not in the same group and were non adjacent blobs in sequence (\nameref{S7_Fig}-\nameref{S17_Fig}). For most pairs, there was no correlating peak in $\beta$ structure. For some pairs, a peak was present in one direction but the reciprocal peak was not present in the opposite direction. This result reflected longer $\beta$-strands that extended to a neighboring blob, which had the true peak. One symmetrically significant peak (indicating correlated $\beta$ structure) involving the h3b was observed in each sequence. The partner blob shifted from h2b in the V66 sequence to h1a in the M66 sequence (Fig~\ref{fig6}). A second correlated pair involving the blob p1 was also observed in each sequence. The partner blob for this pair shifted from h3d in the V66 sequence to h2b in the M66 sequence (\nameref{S7_Fig}, \nameref{S12_Fig}). 
+
+Despite a loss of correlated $\beta$-pairing, the contact between h2b and h3b is actually more probable in the M66 sequence than in the V66 sequence (Fig~\ref{fig5}d). As discussed in \emph{Noteworthy residue-residue interactions stabilizing tertiary contacts}, this result reflects a significant change at the residue level. In the M66 sequence, specific interactions between M66 and side-chains of residues within h3b form the contact, rather than backbone-backbone interactions. As the h3b side-chains stabilize the contact with h2b, the backbone of h3b is then free to pair with h1a, increasing the number of favorable long-range contacts and condensing the M66 sequence overall.
+
+\subsection*{Noteworthy residue-residue interactions stabilizing tertiary contacts}
+\label{sec:residuelevel}
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/fig7.pdf}
+\caption{{\bf Effect of secondary structure in group h2 on which residues form the cross-boundary h2-h3 contact.} a) Contact probability at each residue in h2b with each residue in h3 for V66 (left) and M66 (right) sequences. b) Difference (M66-V66) between the contact probabilities shown in panel a. c) Representative conformations of V66 sequence (top) and M66 sequence (bottom) showing preferred residue-level contacts in VDW representations. Residues are colored by residue type: blue:basic, red:acidic, cyan:polar, grey:hydrophobic except methionine, Met: yellow. The chain is colored according to the Das and Pappu diagram in Fig~\ref{fig1}. Tubes represent hydrophobic ``h'' blobs whereas lines represent non-hydrophobic linker ``p'' blobs. d) Contact probability between residues 63-69 and each residue in h3ab, when respective secondary structure is formed at each residue, for both the V66 (left) and M66 (right) sequences. Residue labels are colored according to residue type: blue:basic, red:acidic, grey:hydrophobic/polar and Met: yellow.}
+\label{fig7}
+\end{figure}
+
+As shown previosly in {\it Effects of Val66Met on the $\beta$-pairing network}, the Val66Met substitution causes loss of correlated $\beta$-strands between blobs h2b and h3b, while introducing correlated $\beta$-strands between blobs h3b and h1a. We consider here the effects of the substitution on these contacts at residue level. As shown in the absolute residue-residue contact probability maps (Fig~\ref{fig7}a), both sequences frequently form contacts between hydrophobic residues in blobs h2b and h3b. The residue pairs most frequently forming the contact shift from V66-V94 in the V66 sequence to M66-M95 in the M66 sequence (Fig~\ref{fig7}b). 
+The residue-level contact maps also show a high probability of contacts between D72 and T91 in the V66 but not M66 sequence. As illustrated in Fig~\ref{fig7}c, these contacts (between $\alpha$ carbons) are stabilized by salt-bridges between R93 and D74, in a conformation that is incompatible with a side-chain contact between V/M66 and M95. 
+
+M95 is the only other methionine in the simulated sequence. The role of specific Met-Met interactions due to polarizable sulfur atoms is often under-appreciated, but such interactions are common in structures of folded proteins~\cite{Faure2008}. Using ab initio calculations, G\'omez-Tamayo et al.~\cite{Gomez-Tamayo2016} predicted that Met-Met interactions are stronger than Met-aromatic or aromatic-aromatic interactions, due to the polarizability of sulfur. Although the fixed-charge force-field we are using (a99sb*-ildn-q) cannot explicitly capture polarizability, G\'omez-Tamayo et al. demonstrate that this force-field preserves rankings of strong side-chain interactions involving methionine. In these simulations, the M66-M95 contact was about five times as common (10\% of frames) as the analogous V66-M95 contact (2\% of frames) (Fig \ref{fig7}a and b). Methionine-aromatic interactions also contribute to the increased number of Region I-III contacts: M66, but not V66, forms a frequent contact with F108 in blob h3d, which is also consistent with the favorable interactions between Met-Phe residues~\cite{Viguera1995,Faure2008,Valley2012} (Fig \ref{fig7}a and b). 
+
+To determine which residue contacts between h2b and h3ab couple the secondary structure within the two blobs, we decomposed the residue-level contact maps into nine clusters. Each cluster was specified by two collective variables with three possible values each: secondary structure (helix, $\beta$, or coil) around residue 66 and secondary structure (helix, $\beta$, or coil) in h3ab (Fig~\ref{fig7}d). The $\beta$-pairing at h2b-h3ab is stabilized via a combination of backbone hydrogen bonds between V66 and S92, salt-bridge between E64 and R93, and hydrophobic interactions between V66 and V94. The V66-M95 contact was only formed frequently within the (h2b - coil, h3ab - helix) cluster, and since this cluster was a very small part of the overall population, the contact overall was rare as well (Fig~\ref{fig7}d). This cluster was more common in the M66 sequence, and contributes to the non-local increase in helicity around residue 95 (Fig~\ref{fig3}b).
+
+
+\subsection*{Summary and Conclusion}
+
+We have carried out over 250 $\mu$s of fully-atomistic explicit solvent MD simulation of the 91 residue BDNF prodomain, with and without the disease-associated Val66Met mutation. These long simulations successfully reproduced the experimentally observed secondary chemical shifts and hydrodynamic radius. The simulations also correctly reproduced the location of both local and non-local secondary changes due to the Val66Met mutation in the BDNF prodomain. 
+
+We find that the highly disordered 91 residue prodomain, which as a whole falls in the Janus sequence region of the Das and Pappu phase diagram~\cite{Das2013}, can be meaningfully divided into 11 blobs based on sequence hydrophobicity alone. Among 8 hydrophobic blobs, we identified 2 blobs in the disordered region: the strong polyelectrolyte blob h2b (which contains Val66Met), and the Janus blob h3a. These are connected via the highly disordered long linker p3. The groups containing these unique blobs have biological significance as well: The sequence h2-p3-h3 is essential for intracellular trafficking of precursor BDNF~\cite{Chen2005}. 
+
+We used the protein sequence to systematically design a tractable approach for coarse-graining analysis, by reducing the initial number of potential contacts from over 4000 to 55, while increasing the number of observations for each contact. Furthermore, it allowed us to isolate the most sensitive regions of the protein for examination at the residue level. This method, simply based on sequence hydrophobicity, may be a generally useful informatics strategy to suggest functionally significant regions in long disordered proteins. Our conclusions further suggest an important role for disorder heterogeneity within disordered proteins. 
+
+We were able to identify mechanisms through which a charge-neutral mutation can affect the residual secondary structure and tertiary contacts of a disordered protein. We further identified how these effects can be propagated to non-local residual secondary structure. Within its local blob h2b, the Val66Met mutation affects local contact preference due to local sequence effects (preferred Met-Phe contacts) and the reduced entropic cost of helix formation for the methionine sidechain.
+
+The long, disordered, exposed Region II linker segregates the blob-level contact probability map: blobs within Region I or Region III have a high probability of contact, while Region I-III contacts are far less probable. We consistently observed this segregation in both simple self-avoiding hetropolymer simulations with beads mimicking identified blobs, and actual prodomain simulations. Val66Met increases the frequency of Region I-III contacts. We find here that the dominant mechanism involves replacing $\beta$-strand coupling between group h2 of Region I and group h3 of Region III with favorable Met/Met side-chain interactions between the same groups. The group h3 backbone is then exposed for interactions with the backbone of group h1, also of Region I. The non-local increase in helicity in group h3 may reflect stabilization of non-$\beta$ structure by the Met-Met interactions.
+
+Met/Met interactions have been shown to stabilize tertiary contacts in folded proteins and membrane proteins, but their role has not been investigated in disordered proteins. In general, our study supports previous observations~\cite{Gomez-Tamayo2016, Lim2019} that methionine plays a distinct role from true aliphatic residues in determining protein structure, and highlights the importance of mimicking its unique properties within fixed-charge force-fields. 
+
+Anastasia et al.~\cite{Anastasia2013} observed differential kinetics for interactions between the BDNF prodomain and SorCS2, and also observed that the SNP-containing blob h2b (H65 to L71) only interacts with SorCS2 in the M66 sequence. The increased interactions between M66 and SorCS2 could be attributed to increased helical propensity at that residue and/or specific Met-Met contacts. In the first mechanism, helix formation in the SNP blob segregates acidic and hydrophobic residues on opposite sides of the helix. It is possible that this preformed structure will stabilize binding. The second mechanism is suggested by the specific Met-Met interactions we observed in the isolated prodomain, as well as the high number of exposed methionines on the SorCS2 surface. It is also possible both mechanisms could contribute to stabilizing the complex, although this would require a more specific protein-protein interface. 
+
+\section*{Methods}
+
+\subsection*{System setup} To account for differences in starting coil conformation, we included six unique structures to represent residues 23-113 of BDNF prodomain. These structures were built using I-Tasser~\cite{Yang2014,Roy2010,Bioinformatics}, Rosetta~\cite{Kim2004} or Modeller~\cite{Sali1993a}, and were simulated in a water box at 600K for 50 ns at a constant volume. From the six resulting trajectories, 64 structures with correct proline isomers were selected (based on at least 2ps time interval); in total, our study included 64 unique prodomain structures. All structures were cooled to 300K for 1ns, while prolines were restrained in trans-conformation. Each V66 replica was placed in a dodecahedron water box with approximately 30,500 Tip4p-D~\cite{Piana2015} water molecules and a 0.15M salt concentration (NaCl) for a total system size of approximately 124,000 atoms. The same volume for each replica was ensured by fixing the simulation box of each replica to the average box size (11 nm).
+
+\subsection*{MD simulations} For the simulations we use the a99sb*-ildn-q force-field~\cite{Lindorff-Larsen2010a, Hornak2006a} and the GROMACS 5.1.2 simulation package~\cite{Berendsen1995,Abraham2015a}, with a time step of 2 fs. Long-range electrostatics are calculated using the particle mesh Ewald (PME) method~\cite{Essmann1995}, with a 1 nm cutoff and a 0.12 nm grid spacing. Periodic boundary conditions are also used to reduce system size effects. The system was simulated using T-REMD~\cite{Sugita1999a} with an exchange frequency of 1ps for 2 $\mu$s, giving a total simulation time of 128~$\mu$s with NVT ensemble for each system. 64 replicas are used with temperatures ranging from 300-385K, with exponential spacing. A different random seed was used for the Langevin dynamics of each replica. The average exchange acceptance probability ranged between 0.19-0.23. 
+
+The minimum separation between the molecule and its image was less than 2 nm for less than 1\% of the frames for both sequences and these frames were discarded from all analysis. Time-series of the relative measurements were generated every 100 ps. For both V66 and M66 sequences, initial 51.2 $\mu$s (800 ns $\times$ 64) trajectories were discarded for equilibration purposes, determined by plateauing of $R_g$ (Fig~\ref{fig8}a). Over the course of remaining 76.8 $\mu$s (1.2 $\mu$s $\times$ 64) simulations, each replica completes a minimum of 5 roundtrips and an average of 17 roundtrips for each sequence (Fig~\ref{fig8}e). Simulation convergence was monitored using several metrics (Fig~\ref{fig8}). 
+ 
+Time-series of the $R_g$ and end-to-end distance ($R_etoe$) were calculated using respectively the g\textunderscore gyrate and g\textunderscore polystat utilities of Gromacs. We took $R_etoe$ as the distance between N-termini and C-termini N and O atoms respectively. Statistical uncertainties are provided for $R_etoe$ and $R_g$ as the standard error in the mean, where $n = 1088$ is the product of the total number of replicas simulated (64) and the average number of roundtrips per replica (17). 
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/fig8.pdf}
+\caption{{\bf Simulation convergence.} a) Trajectory (left) and distribution (right) of $R_{g}$ and $R_{h}$ for the 300K replicas. The shaded region represents the equilibration period discarded from the distribution and from all analysis presented in {\it Results and discussion}. Experimental values of $R_{h}$ from NMR diffusion~\cite{Anastasia2013} are 2.24$\pm${0.1} nm for the V66 sequence and 2.20$\pm${0.1} nm for the M66 sequence, and are indicated by dashed lines. b) Trajectory of helix (top) and $\beta$ (bottom) propensity at residue 66 for the 300K replicas of both sequences. c) Trajectory of enrichment of total Region I-Region III contacts relative to SAHP in the 300K replica. The trajectory shows averages over a 100 ns moving window in panel a, b and c.  d) Number of replicas forming the V66-V94 contact (top) and the M66-M95 contact (bottom) vs the simulation time. e) The number of round trips completed by each replica over the 1.2 $\mu$s production period.}
+\label{fig8} 
+\end{figure}
+
+
+%M - .36, V- .77, V-hip-11, 4.47 , replica 38 becomes expanded, all the frames from this replica is removed giving 1.66 remaining replicas, M-hip-11, 1.16. 
+\subsection*{Blob identification} $\langle H\rangle$ at each residue is defined as the average Kyte-Dolittle\cite{Kyte1982a} score with a window size of 3 residues, scaled to fit between 0 and 1. Any stretch of four or more residues with $\langle H \rangle$ $>$ 0.37 is classified as a hydrophobic or h blob and any stretch of four or more residues with $\langle H \rangle$ $\leq$ 0.37 is classified as a non-hydrophobic linker or ``p'' blob. Multiple consecutive hydrophobic blobs without a ``p'' blob separating them are classified as a single group. 
+
+\subsection*{Secondary chemical shifts} Prior to the present study, Anastasia et al.~\cite{Anastasia2013} measured chemical shifts for the BDNF prodomain (residues 21-113) using NMR, and then used backbone NMR secondary chemical shifts to predict secondary structure via TALOS+~\cite{Shen2009} and SSP~\cite{Marsh2006a}. For comparison with simulation data, we reinterpreted the chemical shifts directly from\cite{Anastasia2013}, deposited at Biological Magnetic Resonance Bank (BMRB). C$_{\alpha}$ secondary chemical shifts are calculated as follows: $\Delta$$\delta$$C_{\alpha,MD}$ = ($\delta$$C_{\alpha,MD}$ - $\delta$$C_{\alpha,RC(300K)}$) for MD and $\Delta$$\delta$$C_{\alpha, NMR}$ = ($\delta$$C_{\alpha, NMR}$ - $\delta$$C_{\alpha,RC(280K)}$), where $\delta$$C_{\alpha,MD}$, $\delta$$C_{\alpha,NMR}$ and $\delta$$C_{\alpha,RC}$ are predicted C$_{\alpha}$ chemical shifts from MD simulation, NMR experiments and random coil respectively. 
+
+$\delta$C$_{\alpha}$ were calculated from MD simulated conformations using SPARTA+~\cite{Shen2010}. NMR experiments values were obtained from the data deposited at BMRB by Anastasia et al~\cite{Anastasia2013}.  
+Random coil $\delta$C$_{\alpha}$ for the 91 residue BDNF prodomain were obtained using POTENCI~\cite{Nielsen2018} at pH 7, with a 0.15 M ion concentration, at 280K and 300K for NMR and MD respectively. Error at each residue is calculated as the standard error in the mean, where $n = 1088$ is the product of the total number of replicas simulated (64) and the average number of roundtrips per replica (17). C$_{\beta}$ secondary chemical shifts were calculated analogously.
+
+\subsection*{Hydrodynamic radius calculation} 
+The values for the Hydropro~\cite{Ortega2011} parameters were: atomic level model with shell-method calculation, a = 0.29 nm, 6 minibead iterations, and $\sigma$ = 0.1 to 0.2 nm. The temperature was taken to be 300 K, the solvent viscosity was 0.01 Poise, the solvent density was 1.0 gcm$^{-3}$, the partial specific volume of the peptide 0.7313 cm$^{3}$g$^{-1}$ (V66 sequence) or 0.7304 cm$^{3}$g$^{-1}$ (M66 sequence), and molecular weight of the peptide was equal to 10044 Da (V66 sequence) or 10076 Da (M66 sequence). The resultant translational diffusion constants were then used for calculating $R_h$ using the Stokes-Einstein equation. Error is calculated as the standard error in the mean, where $n = 1088$ is the product of the total number of replicas simulated (64) and the average number of roundtrips per replica (17).
+
+\subsection*{Secondary structure calculation} Helix propensity or $\beta$ propensity is expressed as the probability of a given residue being part of a sequence of four consecutive residues whose dihedral angles place them in the helical region or $\beta$ region of the Ramachandran space. The helical region is defined as -100$^{\circ}$ \textless $\phi$ \textless -30$^{\circ}$ and -120$^{\circ}$ $\leq$ $\psi$ $\leq$ 50$^{\circ}$\cite{Nodet,Garcia2002,Knott2012b}. The $\beta$ region is defined as $\phi$ \textless -80$^{\circ}$ and 50$^{\circ}$ \textless $\psi$ \textless -120$^{\circ}$. The error bars are the standard error of a Bernoulli trial with n number of samples, where n is the product of the total number of unique replicas in a cluster and the average number of roundtrips per replica. The length of secondary structure (SS-map)~\cite{Iglesias2013} were calculated with the above defined helical and $\beta$ region.
+
+\subsection*{Blob-level contact maps}
+As illustrated in Fig~\ref{fig9}c, the excess distance between any two blobs $i$ and $j$ is defined as \begin{equation}d_{e,ij} = {|\vec{r}_i - \vec{r}_j |} - (R_{g,i}+R_{g,j})\label{eq:overlap2}\end{equation} where $\vec{r}_i$ is the position vector of a blob $i$ defined as the mean of its N-terminal N atom and the C-terminal O atom coordinates, calculated using g\textunderscore traj utility of Gromacs. Two blobs $i$ and $j$ are in contact if the excess distance ($d_{\mathrm{e,ij}}$) between the two is less than 0.55 nm. At residue level, two residues are in contact if the distance between C$_{\alpha}$ atoms of the two residues is 0.8 nm or less.
+Presented statistical uncertainties are the standard error in the mean, with n is the product of the total number of replicas forming the given contact and the average number of roundtrips per replica.
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/fig9.pdf}
+\caption{{\bf Parameterization of self-avoiding heteropolymer.} a) $\langle R_g \rangle$ vs $\langle R_{etoe} \rangle$ for each blob of V66 sequence. Blobs are colored according to the Das and Pappu diagram in Fig~\ref{fig1}. Statistical error was smaller than the circles used for the representation of each blob. b) The distribution of normalized excess distances across all blob-pairs in the V66 RP, where $|i-j| > 1$. c) Relationship between the radius of gyration $R_{g,i}$, end to end distance $R_{etoe,j}$, and excess distance $d_{ij}$, calculated for each blob or blob pair using a RP trajectory. d) The SAHP is a chain with each monomer representing a blob of the RP and modeled as a hard sphere. Each monomer $i$ has radius $a R_{g,i}$ and is separated from monomer $i+1$ by bond length $(R_{etoe,i}+R_{etoe,i+1})/2$. Bond lengths are constrained and bond angles can rotate freely.}
+\label{fig9} 
+\end{figure}
+
+
+\subsection*{Self-avoiding heteropolymer simulation} 
+The BDNF prodomain was approximated as a freely-jointed self-excluding heteropolymer with 11 monomers, each mimicking one of the blobs identified in Fig~\ref{fig1}b. As illustrated in Fig~\ref{fig9}d), the separation between monomers $i$ and $i+1$ (analogous to the Kuhn length for a homopolymer~\cite{Rubinstein2003}) was constrained to be half the end to end distance for each of the analogous blobs:
+
+\begin{equation}|\vec{r}_{i-1} - \vec{r}_i| = \frac{\langle R_{etoe,i-1}\rangle + \langle R_{etoe,i}\rangle }{2}\label{eq:bond}\end{equation}
+
+where $\langle R_{etoe,i}\rangle$ was determined from the coordinates of blob $i$ residues in the MD simulations, shown in Fig~\ref{fig9}a.
+
+Two monomers $i$ and $j$ are considered to be overlapping if \begin{equation}\frac{|\vec{r}_i- \vec{r}_j|}{\langle R_{g, i}\rangle + \langle R_{g, j}\rangle} = \frac{d_{e,ij}}{\langle R_{g, i}\rangle + \langle R_{g, j}\rangle} +1 < a \label{eq:overlap}\end{equation} where $\langle R_{g, i}\rangle$ was determined from the coordinates of residues in blob $i$ in the MD simulations (Fig~\ref{fig9}a), and $a$ is a constant. In the MD simulations of the real protein, we observed that $\frac{d_{e,ij}}{\langle R_{g, i}\rangle + \langle R_{g, j}\rangle} \ge -0.7$ for almost all frames (Fig~\ref{fig9}b), and thus we set $a =0.3$. 
+
+The random walk was carried out using a simple Metropolis Monte Carlo, with the following move set: 1) a random bead $i>0$ was selected, 2) a random displacement vector $\vec{\delta r}$ of magnitude 0.5 nm was generated in three cartesian dimensions, 3) $\vec{\delta r}$ was scaled so that $|\vec{r}_{i-1} - (\vec{r}_i + \vec{\delta r})| =( \langle R_{etoe,i-1}\rangle + \langle R_{etoe,i}\rangle)/2$, satisfying Eq \ref{eq:bond}, 4) the translation $\vec{r}_j \rightarrow \vec{r_j} + \delta_r$ was applied for all $j\ge i$.
+
+Any trial move that caused an overlap according to Eq. \ref{eq:overlap} was rejected, while all others were accepted. The Monte Carlo simulation was run for 5,000,000 steps (500,000 steps per moveable bead); additional steps did not change the outcome in Fig~\ref{fig5}a.
+
+
+\section*{Acknowledgments}
+The authors are grateful to Dr. Clay Bracken and Dr. Barbara Hempstead of Weill Cornell Medical Center for helpful discussions.
+
+\section*{Supporting Information}
+
+
+
+\paragraph*{Table S1}
+\label{S1_Table}
+{\bf Summary of force-field comparison simulations.}
+
+\paragraph*{S1 Text}
+\label{S1_Text}
+{\bf Heterogeneous behavior of individual blobs.} 
+
+\paragraph*{S1 Fig.}
+\label{S1_Fig}
+{\bf Force-field comparison.} We ran T-REMD simulations of a 30 residue fragment of the V66 prodomain with several commonly used force-field and water model combinations. (a) Comparison of $\Delta$$\delta$C$_{\alpha}$ at 280K from MD ensembles for a99sb*-ildn-q~\cite{Lindorff-Larsen2010a, Hornak2006a} with Tip4p-D~\cite{Piana2015}, c36m~\cite{Huang2016a}, a99sbws~\cite{Lindorff-Larsen2010a, Best2014}, a03sbws~\cite{Best2009, Best2014}, a99sb-ildn with Tip3p~\cite{Jorgensen1981}, calculated using SPARTA+~\cite{Shen2010} and NMR from Ref.~\cite{Anastasia2013}. (b) $R_g$ vs the simulation time, using a 100 ns moving window on left and $R_g$ distribution for each force-field on right. Tip3p and a03sbws generates most collapsed and expanded $R_g$ distribution respectively. The equilibration time and $\langle R_g \rangle$ is shown with vertical and horizontal dashed lines for each force-field. The $R_g$ distribution and its mean does not include the simulation equilibration time.
+
+\paragraph*{S2 Fig.}
+\label{S2_Fig}
+{\bf Effects of temperature and Val66Met mutation on helix propensity around residue 66.} 
+The frequency of formation of a helix of a given length containing residue 66 in V66 (top) and M66 (bottom) sequences in the temperature range of 300K to 385 K. With the increase in temperature the color transitions from cooler (blue) to hotter (red). It is entropically unfavorable for V66 and its neighboring residue to be simultaneously in the helical region of the Ramachandran map, as indicated by the decreasing helical propensity with increasing temperature. For longer helices, the trend will depend more on the additional side-chains in the helix, and the trend with temperature is reversed, but it remains weaker than the analogous trend for the M66 sequence. Errors represent the standard error of a Bernoulli trial with n number of samples, where n is the product of the total number unique replicas forming the helix of given length at residue 66 at a given temperature and the average number of roundtrips per replica, 17.
+
+\paragraph*{S3 Fig.}
+\label{S3_Fig}
+{\bf Residue level contacts for the entire prodomain.}
+Contact probability between every residue pair for V66 (left), M66 (middle) sequences and the difference between the two (right).Two residue pairs are considered to be in contact if the $C_{\alpha}$-$C_{\alpha}$ distance between the two residues is less than or equal to 0.8 nm. Panels are annotated by a blob representation of the prodomain, as in Fig~\ref{fig1}e(i); vertical grey lines in each panel represent the blob boundaries. b) A linear network of transient tertiary contacts shown in a). The contact networks were build using Cytoscape~\cite{Ahlstrom2013} with a linear representation of residues. Each protein residue comprises a node in the network, with interactions between residues represented as edges. The strength of individual interactions can be interpreted by the thickness of the edge line on the network diagram. If the separation between residues forming the contact is more than 20, its edge is drawn above the node; otherwise, the edge is drawn at the bottom of the node. To focus on significant interactions, interactions showing more than 6\% persistence were considered in the network visualization. 
+
+\paragraph*{S4 Fig.}
+\label{S4_Fig}
+{\bf Residue level contacts for the entire prodomain including backbone-backbone, sidechain-sidechain, salt-bridge and hydrophobic contacts.}
+Contact probability between every residue pair for V66 (left) and M66 (middle) sequences and the difference between the two (right). Two residue pairs are in contact if the distance between backbone-backbone atoms between the two residues are 0.4 nm or less (1st row), if the distance between non hydrogen sidechain-sidechain atoms between the two residues are 0.4 nm or less (2nd row), if the distance between non hydrogen sidechain-sidechain atoms between the two hydrophobic residues are 0.4 nm or less (3rd row), if the two residue pairs are forming a salt-bridge with the distance between the donor and acceptor atoms $<$ 0.32 nm (4th row). Cartoon representation of h (circles) and p (rectangles) blobs identified in Fig~\ref{fig1}b colored according to Das and Pappu diagram in Fig~\ref{fig1}c is overlain at x and y axes of each panel and the blob boundaries are represented with vertical grey lines in each panel.
+
+\paragraph*{S5 Fig.}
+\label{S5_Fig}
+{\bf Polymer scaling behavior for each identified blob and entire prodomain.} 
+a) Mean distances between any residues $i$ and $j$ at 300K, for the entire V66 and M66 prodomains as well as each blob in the V66 (left) and M66 (right) sequences. Theoretical polymer scaling limits are represented by the curves $\langle R_{|i-j|}\rangle = A |i-j|^{\nu}$ where $A=0.59$~nm and $\nu$ is the Flory exponent. For good, theta, and bad solvent, $\nu = 3/5, 1/2, 1/3$ respectively. b) Values of $\nu$ resulting from fits to each blob for V66 (left) and M66 (right) sequences. The x axis is annotated with cartoon representation of the prodomain; blobs are colored according to the Das and Pappu diagram in Fig~\ref{fig1}.
+
+\paragraph*{S6 Fig.}
+\label{S6_Fig}
+{\bf Effect of perturbing monomer properties on freely-jointed, self-avoiding heteropolymer.}
+Contact probability maps from SAHP calculations, analogous to those in Fig 5a of the main text. The x and y axes are annotated with cartoon representation of the prodomain; circles are drawn to the scale of each blob's size. Here the SAHP model is varied systematically by swapping the p3 blob with every other blob in the chain. As the p3 blob is shifted along the chain, p3 and p1 consistently bound a white ``forbidden'' region that has little interaction with the rest of the protein.
+
+\paragraph*{S7 Fig.}
+\label{S7_Fig}
+{\bf $\beta$-pairing between blob p1 and each remaining blob, excluding adjacent or intra group pairs in the V66 (left) and M66 (right) sequences.} 
+Frames were first clustered by whether the X-Y contact was formed (purple) or broken (green), and then by whether $\beta$ structure was present in X (solid) or absent (dashed). The dark-gray window indicates the contacting blob that is constrained to have high or vanishing values by construction of the cluster, while the white window indicates the contacting blob without constrained secondary structure. If the contact is coupled to simultaneous $\beta$-strand formation, the peak within the white window for the solid purple curve should be significantly higher than other curves. Errors represent standard error of a Bernoulli trial with n number of samples, where n is the product of total number of unique replicas in a given cluster and average number of roundtrips per replica (17). X represents p1 and Y represents other blobs identified in the sequence and is annotated on the left for each panel.
+
+\paragraph*{S8 Fig.}
+\label{S8_Fig}
+{\bf $\beta$-pairing between blob h1a and each remaining blob, excluding adjacent or intra group pairs in the V66 (left) and M66 (right) sequences.} Same as \nameref{S7_Fig}, but for h1a blob.
+
+\paragraph*{S9 Fig.}
+\label{S9_Fig}
+{\bf $\beta$-pairing between blob h1b and each remaining blob, excluding adjacent or intra group pairs in the V66 (left) and M66 (right) sequences.} Same as \nameref{S7_Fig}, but for h1b blob.
+
+\paragraph*{S10 Fig.}
+\label{S10_Fig}
+{\bf $\beta$-pairing between blob p2 and each remaining blob, excluding adjacent or intra group pairs in the V66 (left) and M66 (right) sequences.} Same as \nameref{S7_Fig}, but for p2 blob.
+
+\paragraph*{S11 Fig.}
+\label{S11_Fig}
+{\bf $\beta$-pairing between blob h2a and each remaining blob, excluding adjacent or intra group pairs in the V66 (left) and M66 (right) sequences.} Same as \nameref{S7_Fig}, but for h2a blob.
+
+\paragraph*{S12 Fig.}
+\label{S12_Fig}
+{\bf $\beta$-pairing between blob h2b and each remaining blob, excluding adjacent or intra group pairs in the V66 (left) and M66 (right) sequences.} Same as \nameref{S7_Fig}, but for h2b blob.
+
+\paragraph*{S13 Fig.}
+\label{S13_Fig}
+{\bf $\beta$-pairing between blob p3 and and each remaining blob, excluding adjacent or intra group pairs in the V66 (left) and M66 (right) sequences.} Same as \nameref{S7_Fig}, but for p3 blob.
+
+\paragraph*{S14 Fig.}
+\label{S14_Fig}
+{\bf $\beta$-pairing between blob h3a and each remaining blob, excluding adjacent or intra group pairs in the V66 (left) and M66 (right) sequences.} Same as \nameref{S7_Fig}, but for h3a blob.
+
+\paragraph*{S15 Fig.}
+\label{S15_Fig}
+{\bf $\beta$-pairing between blob h3b and each remaining blob, excluding adjacent or intra group pairs in the V66 (left) and M66 (right) sequences.} Same as \nameref{S7_Fig}, but for h3b blob.
+
+\paragraph*{S16 Fig.}
+\label{S16_Fig}
+{\bf $\beta$-pairing between blob h3c and each remaining blob, excluding adjacent or intra group pairs in the V66 (left) and M66 (right) sequences.} Same as \nameref{S7_Fig}, but for h3c blob.
+
+\paragraph*{S17 Fig.}
+\label{S17_Fig}
+{\bf $\beta$-pairing between blob h3d and each remaining blob, excluding adjacent or intra group pairs in the V66 (left) and M66 (right) sequences.} Same as \nameref{S7_Fig}, but for h3d blob.
+
+% Either type in your references using
+% Either type in your references using
+% \begin{thebibliography}{}
+% \bibitem{}
+% Text
+% \end{thebibliography}
+%
+% or
+%
+% Compile your BiBTeX database using our plos2015.bst
+% style file and paste the contents of your .bbl file
+% here.
+
+\bibliography{IDP_Val66Met_Lohia}
+
+\begin{table}[!ht]
+\begin{adjustwidth}{-2.25in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
+\centering
+\caption{\bf Summary of force-field comparison simulations.}
+\label{table2}
+\begin{tabular}{|c|c|c|c|c|c|c|} 
+\hline 
+Force-field & \makecell{RMSD \\ $\Delta$$\delta$$C_{\alpha}$}\textsuperscript{\emph{a}} & $\langle R_{g} \rangle$\textsuperscript{\emph{b}} & \makecell{Equilibration\\length}\textsuperscript{\emph{c}} & \makecell{No. of\\replicas}\textsuperscript{\emph{d}} & Temperature range\textsuperscript{\emph{e}} & \makecell{Simulation\\length}\textsuperscript{\emph{f}} \\
+\hline
+aff03sbws (Tip4p/2005) & 0.855 & 1.347 $\pm{0.007}$ & 400 ns & 36 & 280-360K & 700 ns \\
+\hline
+a99sb*-ildn-q (Tip4p-D) & 0.355 & 1.270 $\pm{0.007}$ & 200 ns & 36 & 280-360K & 500 ns\\
+\hline
+a99sbws (Tip4p/2005) & 0.425 & 1.277 $\pm{0.007}$ & 200 ns & 36 & 280-360K & 500 ns\\
+\hline
+c36m (Tip3p) & 0.350 & 1.306 $\pm{0.007}$ & 200 ns & 30 & 280-360K & 500 ns\\
+\hline
+a99sb-ildn (Tip3p) & 0.617 & 0.922 $\pm{0.003}$ & 200 ns & 32 & 280-420K & 500 ns\\
+\hline
+\end{tabular}
+\begin{flushleft}
+\textsuperscript{\emph{a}} Root-mean-squared deviation (RMSD) represents the deviation between the NMR and MD $\Delta$$\delta$$C_{\alpha}$.\\
+\textsuperscript{\emph{b}} Statistical uncertainties are provided for $\langle R_{g} \rangle$ as the standard error in the mean, where n is the product of the total number of replicas simulated and the average number of roundtrips per replica.\\
+\textsuperscript{\emph{c}} Simulation period discarded for equilibration for each replica.\\
+\textsuperscript{\emph{d}} Total number of replicas simulated using T-REMD.\\
+\textsuperscript{\emph{e}} Temperature range for T-REMD.\\
+\textsuperscript{\emph{f}} Total simulation length for each replica.\\
+\end{flushleft}
+\end{adjustwidth}
+\end{table}
+
+\subsection*{Heterogeneous behavior of individual blobs}
+\label{sec:scaling}
+
+We also calculated the polymer properties of each blob. Disordered proteins can be well-described by Flory scaling theory $\langle R_{|i-j|}\rangle = A|i-j|^{\nu}$, where $\langle R_{|i-j|}\rangle$ is the ensemble-averaged internal distance, $|$i-j$|$ is residue separation along the chain, and $\nu$ is the Flory scaling coefficient~\cite{Flory1949}. Larger values of $\nu$ correspond to swollen coils, while smaller values correspond to compact globules~\cite{Das2013}. In particular, when $\nu$=0.6 (``good solvent") the protein maximizes its interaction with solvent, and for $\nu$=0.33 (``poor solvent"), the protein maximizes self-interactions. The special intermediate case of $\nu$=0.5 is called a ``theta solvent"~\cite{Flory1949}. Most IDPs that obey this scaling behavior have $\nu$$>$0.5~\cite{Hofmann2012,Das2013,Zerze2015,Meng2018}. 
+
+As shown in S5 Fig the prodomain as a whole is not well fit by a single power law: for separations of 15 or fewer residues the prodomain falls in the ``theta solvent" regime, while for separations of 20 or more residues it falls in the ``poor solvent" regime. Each identified individual blob does obey a power law, and we calculated A and $\nu$ for each blob as if it was isolated from rest of the protein (S5 Fig). The highest observed value of $\nu$ was in blob h2b and h3c. This is in agreement with strong polyelectrolyte nature of h2b and high content of Proline residue (20\%) in h3c.
+
+\textbf{Method:} We calculated the average distance between the first atom (N) and last atom (O) for all residue pairs of a given sequence as a function of sequence separation $|i-j|$ using $g_{-}traj$. Errors before fitting were calculated as the standard error in the mean, where $n = 1088$ is the product of the total number of replicas simulated (64) and the average number of roundtrips per replica (17). $\nu$ was calculated by linear fit of ln($\langle R_{|i-j|}\rangle)$ vs ln$(|i-j|)$ weighted by each point's pre fit error with fixed A of 0.59 nm. To exclude the short-range backbone rigidity, distances with $|i-j|$ $<$ 3 were not fit.
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S1.pdf}
+\caption{{FigS1}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S2.pdf}
+\caption{{FigS2}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S3.pdf}
+\caption{{FigS3}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S4.pdf}
+\caption{{FigS4}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S5.pdf}
+\caption{{FigS5}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S6.pdf}
+\caption{{FigS6}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S7.pdf}
+\caption{{FigS7}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S8.pdf}
+\caption{{FigS8}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S9.pdf}
+\caption{{FigS9}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S10.pdf}
+\caption{{FigS10}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S11.pdf}
+\caption{{FigS11}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S12.pdf}
+\caption{{FigS12}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S13.pdf}
+\caption{{FigS13}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S14.pdf}
+\caption{{FigS14}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S15.pdf}
+\caption{{FigS15}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S16.pdf}
+\caption{{FigS16}}
+\end{figure}
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.5,width=\textwidth,trim={0 0cm 0 0cm},clip]{./figures/S17.pdf}
+\caption{{FigS17}}
+\end{figure}
+
+\end{document}
+
+

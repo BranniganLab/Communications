@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: book_chapter_anesthetics_edited.aux
+The style file: pnas-new.bst
+Database file #1: GABAa_anesthetics.bib
+Repeated entry---line 10589 of file GABAa_anesthetics.bib
+ : @article{Pohorille2010
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 10747 of file GABAa_anesthetics.bib
+ : @article{Jo2009
+ :                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 10857 of file GABAa_anesthetics.bib
+ : @article{Trott2010
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 12471 of file GABAa_anesthetics.bib
+ : @article{Murail2011
+ :                    ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in Murlidaran2017
+Warning--empty journal in Git---2017
+You've used 21 entries,
+            1837 wiz_defined-function locations,
+            644 strings with 10756 characters,
+and the built_in function-call counts, 5306 in all, are:
+= -- 456
+> -- 254
+< -- 1
++ -- 76
+- -- 55
+* -- 463
+:= -- 780
+add.period$ -- 40
+call.type$ -- 21
+change.case$ -- 21
+chr.to.int$ -- 0
+cite$ -- 23
+duplicate$ -- 242
+empty$ -- 491
+format.name$ -- 55
+if$ -- 1152
+int.to.chr$ -- 0
+int.to.str$ -- 21
+missing$ -- 21
+newline$ -- 85
+num.names$ -- 21
+pop$ -- 36
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 152
+stack$ -- 0
+substring$ -- 482
+swap$ -- 72
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 53
+width$ -- 23
+write$ -- 206
+(There were 4 error messages)

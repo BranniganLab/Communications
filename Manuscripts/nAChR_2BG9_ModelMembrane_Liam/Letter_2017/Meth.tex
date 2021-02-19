@@ -1,0 +1,82 @@
+% !TEX root = main.tex
+\subsection{System Composition}
+
+All simulations reported here used the coarse-grained MARTINI 2.2\cite{martini} topology and forcefield.%, which was necessary for allowing sufficient lipid diffusion to equilibrate mixed membranes.  
+~nAChR coordinates were based on a cryo-EM structure of the $\alpha{\beta}\gamma\delta$ muscle-type receptor in native torpedo membrane (PDB 2BG9\cite{Unwin_Refined_2005}). This is a medium resolution structure (4\AA) and was further coarse-grained using the martinize.py script; medium resolution is sufficient for use in coarse-grained simulation, and the native lipid environment of the proteins used to construct 2BG9 is critical for the present study. The secondary, tertiary and quaternary structure in 2BG9 was preserved via soft backbone restraints during simulation as described below, so any inaccuracies in local residue-residue interactions would not cause instability in the global conformation.  
+
+Coarse-grained membranes were built using the Martini script insane.py, which was also used to embed the coarse-grained \nachr~within the membrane. The insane.py script randomly places lipids throughout the inter- and extra-cellular leaflets, and each simulation presented in this manuscript was built separately.  Binary mixed membranes were composed of one saturated lipid species (Dipalmitoylphosphatidylcholine-DPPC or Dipalmitoylphosphatidylethanolamine-DPPE) and cholesterol (CHOL), while ternary mixed membranes also included either two $n-6$ PUFA acyl chains : Dilinoleoylphosphatidylcholine (DLiPC) or Dilinoleoylphosphatidylethanolamine (DLiPE) or two $n-3$ PUFA acyl chains : Didocosahexaenoylphosphatidylethanolamine (DHA-PE) or Didocosahexaenoylphosphatidylcholine (DHA-PC). DHA-PC is not distributed with the MARTINI lipidome, but was constructed in-house using MARTINI DHA tails and PC headgroups). Multiple box sizes were used depending on the goal;  ``small'' boxes were between $22x22x20$ nm$^3$ and $25x25x25$ nm$^3$, with about {$\sim$ 1400} total lipids and {$\sim$ 80000} total beads, and were used primarily to investigate composition trends, ``large'' boxes were about $45x45x40$ nm$^3$ with about {$\sim$ 8,300} total lipids and {$\sim$ 820,000} total beads, and were used primarily to investigate subunit specificity and long-range sorting, and ``very large'' boxes were $\sim$ 75x75x40~nm$^3$ with about {$\sim$ 19,000} total lipids and {$\sim$ 1.8 million} total beads, and were used to verify that partitioning in the $\ldo$ phase did not reflect finite size effects.  
+
+%The saturated lipids used are Dipalmitoylphosphatidylcholine (DPPC), Dipalmitoylphosphatidylethanolamine(DPPE). The PUFAs used were Didocosahexaenoylphosphatidylethanolamine (DHA-PE), Didocosahexaenoylphosphatidylcholine (DHA-PC), Dilinoleoylphosphatidylcholine (DLiPC), and Dilinoleoylphosphatidylethanolamine (DLiPE). Cholesterol (Chol) was the only sterol used. 
+%The lipids used are Dipalmitoylphosphatidylcholine (DPPC), Dipalmitoylphosphatidylethanolamine(DPPE), Didocosahexaenoylphosphatidylethanolamine (DHA-PE), Didocosahexaenoylphosphatidylcholine (DHA-PC), Dilinoleoylphosphatidylcholine (DLiPC), Dilinoleoylphosphatidylethanolamine (DLiPE) and cholesterol (Chol).
+
+\subsection{Simulations}
+
+
+Molecular dynamics simulations were carried out using GROMACS\cite{grom}; small boxes used GROMACS 5.0.6 and large boxes used  GROMACS 5.1.2 or 5.1.4. All systems were run using van der Waals (vdW) and Electrostatics in shifted form with a dielectric constant of $\epsilon_r$=15. vdW cutoff lengths were between 0.9 and 1.2 nm, with electrostatic cutoff length at 1.2 nm.
+
+Energy minimization was performed over 10000 to 21000 steps.  Molecular dynamics were run using a time step of 25~fs, as recommended by MARTINI, for 2 $\mu$s for {small membranes,and 10 $\mu$s for large and very large membranes}. Simulations were conducted in the isothermal-isobaric (NPT) ensemble, by using a Berendsen thermostat set to 323 K with temperature coupling constant set to  1 ps, as well as isotropic pressure coupling with compressibility set to $3\times 10^{-5}$ bar$^{-1}$ and a pressure coupling constant set to 3.0 ps. %All systems were run using van der Waals (vdW) and Electrostatics in shifted form with a dielectric constant of $\epsilon_r=15$. vdW cutoff lengths were between 0.9 and 1.2 nm, with electrostatic cutoff length at 1.2 nm.
+
+%However most energy minimizations finished within $\sim$ 1700 to 3000 steps. Molecular dynamics were run using a time step 0.025 $ps$ for 2 $\mu$s. Simulations used  NPT ensembles. We used Berendsen thermostat with an isotropic pressure couple. The reference temperature was set to 323 Kelvin with temperature coupling constant set to  1 $ps$. The system's compressibility is set to $3e^{-5}$ $bar^{-1}$ and a pressure coupling constant of 3.0 $ps$. 
+%\liam{In the case of systems at $45x45x40$ $nm^3$, Martini 2.2 and Gromacs 5.1.2 and 5.1.4 were used. Parameters remain the same, however energy minimization was carried out to $\sim$ 21000 steps, and 12.5 $ns$ of NPT equilibration were performed before $\sim 4.5-5 \mu s$ simulation was performed.}
+
+Secondary structures restraints consistent with MARTINI recommendations were constructed by the martinize.py \cite{martini} script {and} imposed by Gromacs\cite{grom}. Protein conformation was maintained in small systems via harmonic restraint (with a spring constant of 1000 kJ$\cdot$ mol$^{-1}$) on the position of backbone beads. \nachr~conformation in large systems was preserved via harmonic bonds between backbone beads separated by less than 0.5 nm. Based on Martini's \cite{martini} ElNeDyn algorithm \cite{Periole_Combining_2009} with a harmonic constant of 900 kJ$\cdot$ mol$^{-1}$.  These restraints limited the root-mean-squared-displacement (RMSD) of the backbone to less than 2.5 \r{A} throughout the simulation.  
+
+The minimum equilibration time depended on the system size. Small systems typically began domain formation by 500 ns, with domains fully formed by 1000 ns. Large systems and very large simulations required about 5$\mu$s of equilibration for stabilization of $M_{DHA,DHA}$.
+
+\subsection{Analysis}
+
+Extent of domain formation within the membrane was tracked by 
+    \begin{equation}
+    \begin{aligned}
+      M_{A, B} = \frac{\langle n_{A,B} \rangle} {6x_{B}} -1 
+    \end{aligned}
+    \label{eq:M}
+  \end{equation}
+ where $n_{A,B}$ is the number of type B molecules among the 6 nearest neighbors for a given type A molecule, and the average is over time and all molecules of type $A$. For a random mixture, $\langle n_{A,B} \rangle = 6x_{B}$, where $x_{B}$ is the fraction of overall bulk lipids that are of type B. ${M_{A,B}~0}$ indicates random mixing while ${M_{A,B}>0}$  and ${M_{A,B}<0}$ indicate demixing and excessive mixing respectively.  
+
+%	$M_{a,b}$ compares measured and expected mixing, where $a$ and $b$ represent a reference and a local lipid species respectively, equation \ref{eq:M}. 
+%    \begin{equation}
+%    \begin{aligned}
+%      M_{a,b} = \frac{\langle \eta_{a,b} \rangle} {\langle \eta_{a,b} \rangle_{rand}} - 1
+%    \end{aligned}
+%    \label{eq:M}
+%  \end{equation}
+%  We define $\eta_{a,b}$ as the percentage of lipid species $b$ in contact with lipid species $a$. $M_{a,b}$ is subtracted by one to include all points.
+
+Extent of receptor partitioning within the $\lo$ or $\ldo$ domain was tracked by counting the number $\bsat$ of saturated boundary lipids and comparing with the expectation for a random mixture, via the order parameter $\qsat$:
+  \begin{equation}
+    \begin{aligned}
+      \qsat\equiv \frac{1}{\xsat}\left\langle\frac{  \bsat }{\nbound }\right\rangle-1,\\
+    \end{aligned}
+    \label{eq:Q}
+  \end{equation}
+  where $\nbound$ is the total number of lipids in the boundary region and $\xsat$ is the fraction of overall bulk lipids that are saturated phospholipids. $\qsat <0$ indicates depletion of saturated lipids among boundary lipids, as expected for partitioning into an $\ldo$ phase, while $\qsat>0$ indicates enrichment and likely partitioning into an $\lo$ phase. Each frame, $\nbound$ and $\bsat$ were calculated by counting the number of total and saturated lipids, respectively, for which the phosphate bead fell within a distance of 10~\AA~ to 35~\AA~ from the M2 helices, projected onto the membrane plane. 
+  
+  Two-dimensional density distribution of the beads within a given lipid species $B$ around the protein was calculated on a polar grid: %$\rho_a$ (\r{A}$^{-2}$) is the density of lipid $a$ within a given bin equations \ref{eq:R}.
+  \begin{equation}
+    \begin{aligned}
+      \rho_{B}(r_i,\theta_j)= \frac{\left\langle n_{B}(r_i,\theta_j) \right\rangle}{r_i \Delta{r}\Delta{\theta}} \\        
+    \end{aligned}
+    \label{eq:R}
+  \end{equation}
+  where  $r_i = i \Delta{r}$ is the projected distance of the bin center from the protein center, $\theta_j = j \Delta{\theta}$ is the polar angle associated with bin j,  $\Delta{r}$= 10\AA~ and  $\Delta{\theta} = \frac{\pi}{15}$ radians are the bin widths in the radial and angular direction respectively, and $\left\langle n_{B}(r_i,\theta_j) \right\rangle$ is the time-averaged number of beads of lipid species $B$ found within the bin centered around radius $r_{i}$ and polar angle $\theta_{j}$.  In order to determine enrichment or depletion, the normalized density $ \tilde{\rho}_{B}(r_i,\theta_j)$ is calculated by dividing by the approximate expected density of beads of lipid type B in a random mixture, $x_{B}s_{B}~N_{L}/\langle L^{2}\rangle$, where $s_{B}$ is the number of beads in one lipid of species B, $N_{L}$ is the total number of lipids in the system, and $\langle L^{2}\rangle$ is the average projected box area: 
+  \begin{equation}
+    \begin{aligned}
+  \tilde{\rho}_{B}(r_i,\theta_j)=\frac{ \rho_{B}(r_i,\theta_j)}{x_{B}s_{B}~N_{L}/\langle L^{2}\rangle} \\        
+    \end{aligned}
+    \label{eq:Rt}
+  \end{equation}
+  This expression is approximate because it does not correct for the protein footprint or any undulation-induced deviations of the membrane area.  The associated corrections are small compared to the membrane area and would shift the expected density for all species equally, without affecting the comparisons we perform here.   
+   %However, as a result of smaller boxes, protein-protein interaction across the periodic boundary resulted in a ''pinwheeling'' effect. 
+
+   %To compensate this, $\rho$ was adjusted by the thickness of the membrane
+   %\begin{equation}
+   % \begin{aligned}
+   %   \tilde{\rho}_{B,i}=\rho_{B,i}\left\langle\frac{1}{\til%de{z}_{i}}\right\rangle \\        
+   % \end{aligned}
+   % \label{eq:Til}
+  %\end{equation}
+ %, \liam{$\tilde{z}_{i}$ is the thickness of a membrane per total number of lipids in a given bin}. %In the case of Cartesian bins, $A = \Delta{x} \Delta{y}$ where 
+ 
+ %\liam{Regardless of the pinwheeling effect, 
+  

@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: GABA_A_receptor_jacs.aux
+The style file: achemso.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: acs-GABA_A_receptor_jacs.bib
+Database file #2: GABAa_K289M.bib
+achemso 2015/04/07 v3.10
+You've used 52 entries,
+            2514 wiz_defined-function locations,
+            1187 strings with 21975 characters,
+and the built_in function-call counts, 19736 in all, are:
+= -- 1475
+> -- 1352
+< -- 22
++ -- 527
+- -- 475
+* -- 2256
+:= -- 2700
+add.period$ -- 51
+call.type$ -- 52
+change.case$ -- 4
+chr.to.int$ -- 2
+cite$ -- 52
+duplicate$ -- 1062
+empty$ -- 1171
+format.name$ -- 547
+if$ -- 3642
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 328
+num.names$ -- 153
+pop$ -- 92
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 52
+stack$ -- 0
+substring$ -- 1179
+swap$ -- 1249
+text.length$ -- 102
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 361
+warning$ -- 0
+while$ -- 196
+width$ -- 0
+write$ -- 631

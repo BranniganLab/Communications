@@ -1,0 +1,131 @@
+\documentclass[journal=jacsat,manuscript=article]{achemso}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Place any additional packages needed here.  Only include packages
+%% which are essential, to avoid problems later. Do NOT use any
+%% packages which require e-TeX (for example etoolbox): the e-TeX
+%% extensions are not currently available on the ACS conversion
+%% servers.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+\usepackage{color}  % remove this package once you are done
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% If issues arise when submitting your manuscript, you may want to
+%% un-comment the next line.  This provides information on the
+%% version of every file you have used.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\listfiles
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Place any additional macros here.  Please use \newcommand* where
+%% possible, and avoid layout-changing macros (which are not used
+%% when typesetting).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand*\mycommand[1]{\texttt{\emph{#1}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Meta-data block
+%% ---------------
+%% Each author should be given as a separate \author command.
+%%
+%% Corresponding authors should have an e-mail given after the author
+%% name as an \email command. Phone and fax numbers can be given
+%% using \phone and \fax, respectively; this information is optional.
+%%
+%% The affiliation of authors is given after the authors; each
+%% \affiliation command applies to all preceding authors not already
+%% assigned an affiliation.
+%%t
+%% The affiliation takes an option argument for the short name.  This
+%% will typically be something like "University of Somewhere".
+%%
+%% The \altaffiliation macro should be used for new address, etc.
+%% On the other hand, \alsoaffiliation is used on a per author basis
+%% when authors are associated with multiple institutions.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{Ruchi Lohia}
+%\altaffiliation{A shared footnote}
+
+%\altaffiliation{Current address: Some other place, Othert\"own,
+%Germany}
+\author{Grace Brannigan}
+\email{grace.brannigan@rutgers.edu(GB)}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The document title should be given as usual. Some journals require
+%% a running title from the author: this should be supplied as an
+%% optional argument to \title.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[An \textsf{achemso} demo]
+{Examining the structure of proteins that contribute to neurodegenerative diseases}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Some journals require a list of abbreviations or keywords to be
+%% supplied. These should be set up here, and will be printed after
+%% the title and author information, if needed.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\abbreviations{IR,NMR,UV}
+\keywords{American Chemical Society, \LaTeX}
+\newcommand{\grace}[1]{\textcolor{blue}{#1}}
+\newcommand{\ruchi}[1]{\textcolor{red}{#1}}
+\newcommand{\sticky}{proglobular~}
+\begin{document}
+
+
+\subsection*{Executive summary}
+The toll that neurodegenerative diseases can take on a person and their loved ones can be daunting. At the very least, the uncertainty about how to care for a person and to offer compassionate treatment and care is hampered by a lack of understanding about the disease's causes. Much research has been does to identify the biochemistry of the brain, and to discover how the delicate interplay of neurons and chemical signals play a role in giving life to the mind.
+
+One of the pathways for understanding how the mind works is to study how the brains biochemistry is affected by mutations of proteins that are known to be important in the growth of neurons and intracellular signaling. The studies conducted by our research group seek to find out why certain gene mutations are tied to aging and stress related disorders, as well as lower tolerance for drugs. To do this, molecular dynamics simulations are an indispensable tool to understand how the mutations affect the structure and dynamics of proteins. Since large proteins are modeled atom by atom and require long simulation times, their dynamical behavior has to be followed using a large number of compute cores in order to run the computational experiments efficiently and get meaningful results. 
+
+\subsection*{Research challenge}
+ An important mental function that can be a precursor or symptom of neurodegeneration is memory impairment. The signaling protein, brain derived neurotrophic factor (BNDF), is particularly noted for its importance in regulating neural development through the growth of neural synapses and intracellular signaling \cite{Korte1995} (Fig~\ref{fig1}a). 
+Val66Met single nucleotide polymorphism(SNP)  is one of the earliest identified variants in the prodomain region BDNF (Fig~\ref{fig1}b).  An extensive library of genome-wide association (and even earlier) studies have repeatedly identified the Val66Met SNP as reducing hippocampal volume and episodic memory, as well as predicting increased susceptibility to neuropsychiatric disorders including schizophrenia, bipolar, and unipolar depression, but associations have been inconsistent and population dependent. \cite{soliman2010,Chen2008,Verhagen2010}.
+
+Our research attempts to elucidate the underlying molecular mechanism via which the Val66Met affects conformation of prodomain region of BDNF and eventually increases susceptibility to neuropsychiatric disorders.
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.1,width=\textwidth,trim={0 0 0 0},clip]{/Users/lohia/Desktop/RD1.pdf}
+\caption{{\bf BDNF and Val66Met SNP.} a) Cartoon representation of proBDNF and it's two domains, prodomain and BDNF. Prodomain is an IDP and it contains the Val66Met SNP.   b) Computationally generated model of prodomain. The Val66 is shown in green color. We explore the possible mechanism by which Val66Met SNP can affect the conformation and dynamics of the BDNF protein. }
+\label{fig1} 
+\end{figure}
+
+
+\subsection*{Methods and codes}
+We carried out 128µs of fully atomistic explicit solvent molecular dynamics (MD) simulations with temperature replica exchange (64replicas, 2µs per replica) of the 90-residues BDNF prodomain with and without Val66Met substitution to investigate its conformational effects.
+
+\textbf{T-REMD}: is a widely used replica exchange enhanced sampling technique where multiple replicas of the system are run at different temperatures with the goal of improving sampling by making the conformations at higher temperature available to the lower ones and vice versa. At specific intervals during the simulations, the conformations of the two replicas are swapped according to a Metropolis-type criterion \cite{Sugita1999a}.
+
+\textbf{Software requirements} Gromacs 5.1.2-mpi simulations package ( has already been installed on Caliburn ). 
+
+\subsection*{Results}
+Two simulations with 64 parallel replicas each were run on Caliburn. Since the simulation convergence time increases exponentially with increased protein length, our simulations ran for approximately 0.5 milliseconds, which is among some of the longest simulation time for a disordered protein. These long simulations successfully reproduced the earlier experimentally observed (NMR) variables from Anastasia et al 2013 \cite{Anastasia2013} (Fig~\ref{fig2}).
+
+ \begin{figure}[!ht]
+\includegraphics[scale=0.1,width=0.7\textwidth,trim={0 0 0 0},clip]{/Users/lohia/Desktop/RD2.pdf}
+\caption{{\bf Simulation convergence.} Hydrodynamic radius (R\textsubscript{h}) at 100 ns moving window for V66 and M66 sequence vs the simulation time. The Rh for both the sequences converge after 800ns of simulation time. The NMR diffusion experiment values from Anastasia et al. \cite{Anastasia2013} are represented with dashed lines. }
+\label{fig2} 
+\end{figure}
+
+We find that the BDNF prodomain, can be meaningfully divided into domains based on sequence alone (Fig~\ref{fig3}a,b). We identified two unique hydrophobic domains, the SNP containing domain and the Janus domain. These unique domains have biological significance as well: both SNP domain and Janus domain are equally essential for intracellular trafficking of proBDNF. 
+
+\begin{figure}[!ht]
+\includegraphics[scale=0.1,width=\textwidth,trim={0 0 0 0},clip]{/Users/lohia/Desktop/RD3.pdf}
+\caption{{\bf Domain identification in prodomain and Met-Met interactions.} a) Diagram of states reported by Das et al \cite{Das2013a}, based on fraction of positively and negatively-charged residues. b) The cartoon representation of the prodoamin with identified domains; circles and squares represent hydrophobic domains and linker regions respectively. Domains are colored according to the region found in diagram of states. The SNP containing domain h2b is marked with star. Domain h3a is the Janus domain. c) Representative conformation of M66 sequence showing Met66-Met95 contact colored as in b) with Methionine in yellow. Thick lines represents hydrophobic domains whereas thin line represents linker regions (bottom).}
+\label{fig3} 
+\end{figure}
+
+We observe that only the M66 sequence interacts strongly with the only other Methionine in its sequence due to preferred Met-Met interactions (Fig~\ref{fig3}c). This points out that although both Valine and Methionine residues are hydrophobic, they do not essentially have the same interaction preference. Met-Met interactions have been under-appreciated in IDP's.
+
+The BDNF prodomain receptor SorCS2 also has the presence of several Methionine's on its surface. Therefore, our finding suggests that M66 binds strongly to this receptor due to Met-Met interactions and not Val66, this leads to differential biological function for Val66 and Met66 sequence.
+
+\subsection*{Why RDI2}
+Caliburn's nodes, each containing 18 cores, are perfectly suited for providing parallelism. With partitions that allow numerous simultaneous node usage, researchers can take advantage of running single massively parallel simulations as well as ensemble workflows. 
+
+\subsection*{Publications and data sets}
+1) Lohia, R., Brannigan, G. A. Conformational Effects of a Disease-Associated Hydrophobic-to-Hydrophobic Substitution and Histidine Protonation State Located at the Midpoint of the Intrinsically Disordered Region of proBDNF. Biophys. J. 2019, 116(3). 10.1016/j.bpj.2018.11.993. 
+\\
+2) Ruchi Lohia, Reza Salari, Grace Brannigan Conformational effects of a disease-associated hydrophobic-to-hydrophobic substitution located at the midpoint of the intrinsically disordered region of proBDNF, Poster at the Gordon Research Conference on Intrinsically Disordered Proteins, Switzerland, July 2018.  
+
+\bibliography{/Users/lohia/Desktop/Jacs_ref}
+
+\end{document}

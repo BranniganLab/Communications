@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: GABAa_K289M_pnas_new.aux
+The style file: pnas-new.bst
+Illegal, another \bibstyle command---line 86 of file GABAa_K289M_pnas_new.aux
+ : \bibstyle
+ :          {pnas-new.bst}
+I'm skipping whatever remains of this command
+Database file #1: GABAa_K289M.bib
+You've used 52 entries,
+            1837 wiz_defined-function locations,
+            866 strings with 17056 characters,
+and the built_in function-call counts, 12430 in all, are:
+= -- 1080
+> -- 566
+< -- 0
++ -- 173
+- -- 121
+* -- 1160
+:= -- 1877
+add.period$ -- 104
+call.type$ -- 52
+change.case$ -- 52
+chr.to.int$ -- 0
+cite$ -- 52
+duplicate$ -- 517
+empty$ -- 1185
+format.name$ -- 121
+if$ -- 2622
+int.to.chr$ -- 0
+int.to.str$ -- 52
+missing$ -- 52
+newline$ -- 211
+num.names$ -- 52
+pop$ -- 54
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 261
+stack$ -- 0
+substring$ -- 1241
+swap$ -- 104
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 145
+width$ -- 54
+write$ -- 521
+(There was 1 error message)

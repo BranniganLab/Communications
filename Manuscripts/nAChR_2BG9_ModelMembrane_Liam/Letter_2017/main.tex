@@ -1,0 +1,217 @@
+%% his is file `elsarticle-template-1-num.tex',
+%%
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the fil%e `manifest.txt'.
+%%
+%% Template article for Elsevier's document class `elsarticle' 
+%% with numbered style bibliographic references
+%%
+%% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
+%%
+%% \documentclass[preprint,12pt]{elsarticle}
+%% Use the option review to obtain double line spacing
+% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+\documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+\usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{mathtools}
+\usepackage{color}
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+\usepackage{lineno}
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+\newcommand{\bsat}{b_{\mathrm{sat}}}
+\newcommand{\qsat}{Q_{\mathrm{sat}}}
+\newcommand{\xsat}{x_{\mathrm{sat}}}
+\newcommand{\xunsat}{x_{\mathrm{unsat}}}
+\newcommand{\xch}{x_{\mathrm{Chol}}}
+\newcommand{\nbound}{b_{\mathrm{tot}}}
+\newcommand{\lo}{l_{\mathrm{o}}}
+\newcommand{\ldo}{l_{\mathrm{do}}}
+\biboptions{sort&compress,super,numbers,comma,round}
+%\biboptions{square,sort,comma,numbers}
+
+\graphicspath{{../Images/}}
+\journal{BBA}
+\newcommand{\nachr}{nAChR}
+\newcommand{\grace}[1]{\textcolor{blue}{#1}}
+\newcommand{\graceforgrace}[1]{\textcolor{green}{#1}}
+\newcommand{\liam}[1]{\textcolor{red}{#1}}
+\newcommand{\del}[1]{\textcolor{cyan}{#1}}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+\title{Boundary lipids of the nicotinic acetylcholine receptor: spontaneous partitioning via coarse-grained molecular dynamics simulation} 
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{<author name>}
+%% \address[label1]{<address>}
+%% \address[label2]{<address>}
+
+\author[ccib]{L. Sharp} 
+\author[ccib,wasu]{R. Salari}
+\author[ccib,physics]{G. Brannigan}
+%GB: set your affiliation as CCIB & set mine as CCIB and physics dept 
+\address[ccib]{Center for Computational and Integrative Biology, Rutgers University-Camden, Camden, NJ}
+\address[wasu]{Now at Washington University School of Medicine in St Louis}
+\address[physics]{Department of Physics, Rutgers University-Camden, Camden, NJ}
+
+\begin{abstract}
+%% Text of abstract
+Reconstituted nicotinic acetylcholine receptors (nAChR) exhibit significant gain-of-function upon addition of cholesterol to reconstitution mixtures, and cholesterol affects organization of nAChRs within domain-forming membranes, but whether \nachr~partitions to cholesterol-rich liquid-ordered (``raft``) domains or cholesterol-poor liquid-disordered domains is unknown.  
+%The functional sensitivity of nicotinic acetylcholine receptors (nAChR) to membrane lipids is well-established, and it has been demonstrated numerous times that adding at least 10-15\% cholesterol can restore nAChR native function in model phosphatidylcholine model membranes.  Along with images of nAChR clustering, it has been hypothesized that nAChRs partition to cholesterol rich liquid-ordered (``raft'') domains within membranes, although this has not been directly observed.  
+We use coarse-grained molecular dynamics (MD) simulations to observe spontaneous interactions of cholesterol, saturated lipids, and polyunsaturated lipids with \nachr s. 
+% in binary cholesterol-containing model membranes as well as ternary domain-forming membranes inspired by native nAChR membranes, which include high levels of $n-3$ polyunsaturated fatty acids (PUFAs), saturated fatty acids, and cholesterol. 
+In binary Dipalmitoylphosphatidylcholine:Cholesterol (DPPC:CHOL) mixtures, both CHOL and DPPC acyl chains were observed spontaneously entering deep ``non-annular'' cavities in the \nachr~TMD, particularly at the subunit interface and the $\beta$ subunit center, facilited by the low amino acid density in the cryo-EM structure of nAChR in a native membrane.  Cholesterol was highly enriched in the annulus around the TMD, but this was a short range effect that extended over (at most) 5-10\AA. 
+%The two PUFAs chosen for these simulations were Docosahexaenoic acid and Linoleic acid.
+In ternary mixtures containing polyunsaturated fatty acids (PUFAs), the presence of a single receptor did not significantly affect the likelihood of domain formation, and nAChR partitioned to the cholesterol-poor liquid-disordered domain whenever one was present. This was independent of whether the $\ldo$ domain lipids had PC or PE headgroups, but saturated lipids with PE headgroups were less depleted from the boundary than those with PC headgroups. % frequently near the boundary of the liquid-ordered domain. 
+%Analysis of boundary lipid composition indicates enrichment of PUFA chains, particularly $n-3$ chains (tested here with Docosahexaenoic Acid, DHA), and to a lesser extent, $n-6$ chains (represented here with Linoleic acid,\graceforgrace{need to be consistent with lipid} LoA), regardless of whether the headgroup for the PUFA containing lipid is PC or PE, while Saturated lipids are moderately less likely to be depleted from the \nachr~boundary with a PE headgroup than a PC headgroup.  % a  confirms nAChR boundary lipids are enriched in PUFAs. 
+%$\alpha$ subunits, however, indicate a preference for cholesterol rich domains, potentially facilitating partitioning near the interface. 
+Enrichment of unsaturated phospholipids among boundary lipids was positively correlated with their propensity for demixing from cholesterol-rich phases. Long $n-3$ chains (tested here with Docosahexaenoic Acid, DHA) were highly enriched in annular and non-annular embedded sites, partially displacing cholesterol and completely displacing DPPC, and occupying sites even deeper within the bundle. Shorter $n-6$ chains (Linoleic acid, LA) were far less effective at displacing cholesterol from non-annular sites.   % , with PUFA acyl chains preferred over cholesterol in most sites.   %  while beta subunits show preference for PUFAs. Lastly, analysis shows PUFAs and cholesterol binding non-annularly nAChR. 
+
+\end{abstract}
+
+\begin{keyword}
+Polyunsaturated Fatty Acids (PUFA) \sep Docosahexaenoic acid (DHA) \sep cholesterol \sep nicotinic acetylcholine receptor \sep nAChR partitioning \sep liquid order ($l_o$) \sep liquid disorder ($l_{do}$) \sep lipid-protein interactions \sep lipid rafts
+%% keywords here, in the form: keyword \sep keyword
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+%%
+%% Start line numbering here if you want
+%%
+\linenumbers
+%% main text
+\section{Introduction}
+\label{S:1}
+\input{intro_rough}
+\section{Methods}
+\label{S:2}
+\input{Meth}
+\section{Results}
+\label{S:3}
+\input{results_ver3}
+\section{Discussion}
+\label{S:4}
+\input{discution}
+\section{Acknowledgment}
+GB and RS were supported by research grants NSF MCB1330728 and NIH P01GM55876-14A1. GB and LM were also supported through a grant from the Research Corporation for Scientific Advancement. This project was supported with computational resources from the National Science Foundation XSEDE program through allocation NSF-MCB110149 as well as a local cluster funded by NSF-DBI1126052. We are grateful to Dr. J\'{e}r\^{o}me H\'{e}nin for his helpful suggestions throughout this study.  
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% References
+%%
+%% Following citation commands can be used in the body text:
+%% Usage of \cite is as follows:
+%%   \cite{key}          ==>>  [#]
+%%   \cite[chap. 2]{key} ==>>  [#, chap. 2]
+%%   \citet{key}         ==>>  Author [#]
+
+%% References with bibTeX database:
+
+
+%% Authors are advised to submit their bibtex database files. They are
+%% requested to list a bibtex style file in the manuscript if they do
+%% not want to use model1-num-names.bst.
+\nocite{HUMP96,STON1998}
+\bibliographystyle{model1-num-names}
+%\bibliographystyle{alpha}
+\bibliography{readcube_export,CysLoopReferencesJuly2018}
+
+%% References without bibTeX database:
+
+% \begin{thebibliography}{00}
+
+%% \bibitem must have the following form:
+%%   \bibitem{key}...
+%%
+
+% \bibitem{}
+
+% \end{thebibliography}
+
+%%\newpage
+\section{SI}
+\label{S:SI}
+\input{SI}
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-1-num.tex'.

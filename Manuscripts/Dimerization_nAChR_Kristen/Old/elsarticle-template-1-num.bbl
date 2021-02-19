@@ -1,0 +1,370 @@
+\begin{thebibliography}{42}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Unwin(2005)}]{Unwin2005}
+\bibinfo{author}{N.~Unwin},
+\newblock \bibinfo{title}{Refined structure of the nicotinic acetylcholine
+  receptor at 4{\r a} resolution}  (\bibinfo{year}{2005}).
+%Type = Article
+\bibitem[{Albuquerque et~al.(2009)Albuquerque, Pereira, Alkondon, and
+  Rogers}]{Albuquerque2009}
+\bibinfo{author}{E.~X. Albuquerque}, \bibinfo{author}{E.~F.~R. Pereira},
+  \bibinfo{author}{M.~Alkondon}, \bibinfo{author}{S.~W. Rogers},
+\newblock \bibinfo{title}{Mammalian nicotinic acetylcholine receptors: From
+  structure to function},
+\newblock \bibinfo{journal}{Physiological Reviews} \bibinfo{volume}{89}
+  (\bibinfo{year}{2009}) \bibinfo{pages}{73--120}. \bibinfo{note}{PMID:
+  19126755}.
+%Type = Article
+\bibitem[{Ramarao and Cohen(1998)}]{Ramarao1998}
+\bibinfo{author}{M.~K. Ramarao}, \bibinfo{author}{J.~B. Cohen},
+\newblock \bibinfo{title}{Mechanism of nicotinic acetylcholine receptor cluster
+  formation by rapsyn.},
+\newblock \bibinfo{journal}{Proceedings of the National Academy of Sciences of
+  the United States of America} \bibinfo{volume}{95} (\bibinfo{year}{1998})
+  \bibinfo{pages}{4007--4012}.
+%Type = Article
+\bibitem[{Breckenridge et~al.(1972)Breckenridge, Gombos, and
+  Morgan}]{Breckenridge1972}
+\bibinfo{author}{W.~Breckenridge}, \bibinfo{author}{G.~Gombos},
+  \bibinfo{author}{I.~Morgan},
+\newblock \bibinfo{title}{{The lipid composition of adult rat brain
+  synaptosomal plasma membranes}},
+\newblock \bibinfo{journal}{Biochimica et Biophysica Acta (BBA) - Biomembranes}
+  \bibinfo{volume}{266} (\bibinfo{year}{1972}) \bibinfo{pages}{695--707}.
+%Type = Article
+\bibitem[{Criado et~al.(1982)Criado, Eibl, and Barrantes}]{Criado1982}
+\bibinfo{author}{M.~Criado}, \bibinfo{author}{H.~Eibl}, \bibinfo{author}{F.~J.
+  Barrantes},
+\newblock \bibinfo{title}{Effects of lipids on acetylcholine receptor.
+  essential need of cholesterol for maintenance of agonist-induced state
+  transitions in lipid vesicles},
+\newblock \bibinfo{journal}{Biochemistry} \bibinfo{volume}{21}
+  (\bibinfo{year}{1982}) \bibinfo{pages}{3622--3629}.
+%Type = Article
+\bibitem[{daCosta et~al.(2013)daCosta, Dey, Therien, and
+  Baenziger}]{daCosta_A_2013}
+\bibinfo{author}{C.~J.~B. daCosta}, \bibinfo{author}{L.~Dey},
+  \bibinfo{author}{J.~P.~D. Therien}, \bibinfo{author}{J.~E. Baenziger},
+\newblock \bibinfo{title}{A distinct mechanism for activating uncoupled
+  nicotinic acetylcholine receptors},
+\newblock \bibinfo{journal}{Nature Chemical Biology} \bibinfo{volume}{9}
+  (\bibinfo{year}{2013}) \bibinfo{pages}{701--707}.
+%Type = Article
+\bibitem[{Almarza et~al.(2014)Almarza, S{\'{a}}nchez, and
+  Barrantes}]{Almarza2014}
+\bibinfo{author}{G.~Almarza}, \bibinfo{author}{F.~S{\'{a}}nchez},
+  \bibinfo{author}{F.~J. Barrantes},
+\newblock \bibinfo{title}{Transient cholesterol effects on nicotinic
+  acetylcholine receptor cell-surface mobility},
+\newblock \bibinfo{journal}{{PLoS} {ONE}} \bibinfo{volume}{9}
+  (\bibinfo{year}{2014}) \bibinfo{pages}{e100346}.
+%Type = Misc
+\bibitem[{Yadav and Tiwari(2014)}]{Yadav2014}
+\bibinfo{author}{R.~S. Yadav}, \bibinfo{author}{N.~K. Tiwari},
+  \bibinfo{title}{{Lipid Integration in Neurodegeneration: An Overview of
+  Alzheimer's Disease}}, \bibinfo{year}{2014}.
+%Type = Article
+\bibitem[{Narayanaswami and McNamee(1993)}]{Narayanaswami1993}
+\bibinfo{author}{V.~Narayanaswami}, \bibinfo{author}{M.~G. McNamee},
+\newblock \bibinfo{title}{Protein-lipid interactions and torpedo californica
+  nicotinic acetylcholine receptor function. 2. membrane fluidity and
+  ligand-mediated alteration in the accessibility of .gamma. subunit cysteine
+  residues to cholesterol},
+\newblock \bibinfo{journal}{Biochemistry} \bibinfo{volume}{32}
+  (\bibinfo{year}{1993}) \bibinfo{pages}{12420--12427}. \bibinfo{note}{PMID:
+  8241132}.
+%Type = Article
+\bibitem[{Leibel et~al.(1987)Leibel, Firestone, Legler, Braswell, and
+  Miller}]{Leibel1987}
+\bibinfo{author}{W.~S. Leibel}, \bibinfo{author}{L.~L. Firestone},
+  \bibinfo{author}{D.~C. Legler}, \bibinfo{author}{L.~M. Braswell},
+  \bibinfo{author}{K.~W. Miller},
+\newblock \bibinfo{title}{Two pools of cholesterol in acetylcholine
+  receptor-rich membranes from torpedo},
+\newblock \bibinfo{journal}{Biochimica et Biophysica Acta (BBA) - Biomembranes}
+  \bibinfo{volume}{897} (\bibinfo{year}{1987}) \bibinfo{pages}{249 -- 260}.
+%Type = Article
+\bibitem[{Marsh and Barrantes(1978)}]{Marsh1978}
+\bibinfo{author}{D.~Marsh}, \bibinfo{author}{F.~Barrantes},
+\newblock \bibinfo{title}{Immobilized lipid in acetylcholine receptor-rich
+  membranes from torpedo marmorata},
+\newblock \bibinfo{journal}{Proceedings of the National Academy of Sciences}
+  \bibinfo{volume}{75} (\bibinfo{year}{1978}) \bibinfo{pages}{4329--4333}.
+%Type = Article
+\bibitem[{Popot et~al.(1978)Popot, Demel, Sobel, Van~Deenen, and
+  Changeux}]{POPOT1978}
+\bibinfo{author}{J.-L. Popot}, \bibinfo{author}{R.~A. Demel},
+  \bibinfo{author}{A.~Sobel}, \bibinfo{author}{L.~L.~M. Van~Deenen},
+  \bibinfo{author}{J.-P. Changeux},
+\newblock \bibinfo{title}{Interaction of the acetylcholine (nicotinic) receptor
+  protein from torpedo marmorata electric organ with monolayers of pure
+  lipids},
+\newblock \bibinfo{journal}{European Journal of Biochemistry}
+  \bibinfo{volume}{85} (\bibinfo{year}{1978}) \bibinfo{pages}{27--42}.
+%Type = Article
+\bibitem[{Fong and McNamee(1986)}]{Fong_Correlation_1986}
+\bibinfo{author}{T.~Fong}, \bibinfo{author}{M.~McNamee},
+\newblock \bibinfo{title}{Correlation between acetylcholine receptor function
+  and structural properties of membranes.},
+\newblock \bibinfo{journal}{Biochemistry} \bibinfo{volume}{25}
+  (\bibinfo{year}{1986}) \bibinfo{pages}{830--840}.
+%Type = Article
+\bibitem[{Sunshine and {MG}(1992)}]{Sunshine_Lipid_1992}
+\bibinfo{author}{C.~Sunshine}, \bibinfo{author}{M.~{MG}},
+\newblock \bibinfo{title}{Lipid modulation of nicotinic acetylcholine receptor
+  function: the role of neutral and negatively charged lipids.},
+\newblock \bibinfo{journal}{Biochim. Biophys. Acta} \bibinfo{volume}{1108}
+  (\bibinfo{year}{1992}) \bibinfo{pages}{240--6}.
+%Type = Article
+\bibitem[{Butler and McNamee(1993)}]{Butler1993}
+\bibinfo{author}{D.~H. Butler}, \bibinfo{author}{M.~G. McNamee},
+\newblock \bibinfo{title}{{FTIR} analysis of nicotinic acetylcholine receptor
+  secondary structure in reconstituted membranes},
+\newblock \bibinfo{journal}{Biochimica et Biophysica Acta ({BBA}) -
+  Biomembranes} \bibinfo{volume}{1150} (\bibinfo{year}{1993})
+  \bibinfo{pages}{17--24}.
+%Type = Article
+\bibitem[{Fong and McNamee(1987)}]{Fong_Stabilization_1987}
+\bibinfo{author}{T.~Fong}, \bibinfo{author}{M.~McNamee},
+\newblock \bibinfo{title}{Stabilization of acetylcholine receptor secondary
+  structure by cholesterol and negatively charged phospholipids in membranes},
+\newblock \bibinfo{journal}{Biochemistry}  (\bibinfo{year}{1987}).
+%Type = Article
+\bibitem[{daCosta et~al.(2001)daCosta, Ogrel, McCardy, Blanton, and
+  Baenziger}]{Corrie_Lipid_2002}
+\bibinfo{author}{C.~J.~B. daCosta}, \bibinfo{author}{A.~A. Ogrel},
+  \bibinfo{author}{E.~A. McCardy}, \bibinfo{author}{M.~P. Blanton},
+  \bibinfo{author}{J.~E. Baenziger},
+\newblock \bibinfo{title}{Lipid-protein interactions at the nicotinic
+  acetylcholine receptor},
+\newblock \bibinfo{journal}{Journal of Biological Chemistry}
+  \bibinfo{volume}{277} (\bibinfo{year}{2001}) \bibinfo{pages}{201--208}.
+%Type = Article
+\bibitem[{Brannigan et~al.(2008)Brannigan, H{\'e}nin, Law, Eckenhoff, and
+  Klein}]{brannigan}
+\bibinfo{author}{G.~Brannigan}, \bibinfo{author}{J.~H{\'e}nin},
+  \bibinfo{author}{R.~Law}, \bibinfo{author}{R.~Eckenhoff},
+  \bibinfo{author}{M.~L. Klein},
+\newblock \bibinfo{title}{Embedded cholesterol in the nicotinic acetylcholine
+  receptor.} \bibinfo{volume}{105} (\bibinfo{year}{2008})
+  \bibinfo{pages}{14418--23}.
+%Type = Article
+\bibitem[{Dalziel et~al.(1980)Dalziel, Rollins, and McNamee}]{Dalziel1980}
+\bibinfo{author}{A.~W. Dalziel}, \bibinfo{author}{E.~S. Rollins},
+  \bibinfo{author}{M.~G. McNamee},
+\newblock \bibinfo{title}{{The effect of cholesterol on agonist-induced flux in
+  reconstituted acetylcholine receptor vesicles}},
+\newblock \bibinfo{journal}{FEBS Letters} \bibinfo{volume}{122}
+  (\bibinfo{year}{1980}) \bibinfo{pages}{193--196}.
+%Type = Article
+\bibitem[{Hamouda et~al.(2006)Hamouda, Chiara, Sauls, Cohen, and
+  Blanton}]{Hamouda2006}
+\bibinfo{author}{A.~K. Hamouda}, \bibinfo{author}{D.~C. Chiara},
+  \bibinfo{author}{D.~Sauls}, \bibinfo{author}{J.~B. Cohen},
+  \bibinfo{author}{M.~P. Blanton},
+\newblock \bibinfo{title}{Cholesterol interacts with transmembrane
+  {$\alpha$}-helices m1, m3, and m4 of the torpedo nicotinic acetylcholine
+  receptor: photolabeling studies using [3h] azicholesterol},
+\newblock \bibinfo{journal}{Biochemistry} \bibinfo{volume}{45}
+  (\bibinfo{year}{2006}) \bibinfo{pages}{976--986}.
+%Type = Article
+\bibitem[{Fernandez-Ballester et~al.(????)Fernandez-Ballester, Castresana,
+  Fernandez, Arrondo, Ferragut, and Gonzalez-Ros}]{medline7821683}
+\bibinfo{author}{G.~Fernandez-Ballester}, \bibinfo{author}{J.~Castresana},
+  \bibinfo{author}{A.~M. Fernandez}, \bibinfo{author}{J.~L. Arrondo},
+  \bibinfo{author}{J.~A. Ferragut}, \bibinfo{author}{J.~M. Gonzalez-Ros}
+  (????).
+%Type = Article
+\bibitem[{daCosta and Baenziger(2013)}]{structure_2013}
+\bibinfo{author}{C.~J. daCosta}, \bibinfo{author}{J.~E. Baenziger},
+\newblock \bibinfo{title}{Gating of pentameric ligand-gated ion channels:
+  Structural insights and ambiguities},
+\newblock \bibinfo{journal}{Structure} \bibinfo{volume}{21}
+  (\bibinfo{year}{2013}) \bibinfo{pages}{1271--1283}.
+%Type = Article
+\bibitem[{Zabrecky and Raftery(1985)}]{Zabrecky1985}
+\bibinfo{author}{J.~R. Zabrecky}, \bibinfo{author}{M.~A. Raftery},
+\newblock \bibinfo{title}{The role of lipids in the function of the
+  acetylcholine receptor},
+\newblock \bibinfo{journal}{Journal of Receptors and Signal Transduction}
+  \bibinfo{volume}{5} (\bibinfo{year}{1985}) \bibinfo{pages}{397--417}.
+%Type = Article
+\bibitem[{Kilian et~al.(1980)Kilian, Dunlap, Mueller, Schell, Huganir, and
+  Racker}]{Kilian1980}
+\bibinfo{author}{P.~L. Kilian}, \bibinfo{author}{C.~R. Dunlap},
+  \bibinfo{author}{P.~Mueller}, \bibinfo{author}{M.~A. Schell},
+  \bibinfo{author}{R.~L. Huganir}, \bibinfo{author}{E.~Racker},
+\newblock \bibinfo{title}{Reconstitution of acetylcholine receptor from torpedo
+  californica with highly purified phospholipids: Effect of α-tocopherol,
+  phylloquinone, and other terpenoid quinones},
+\newblock \bibinfo{journal}{Biochemical and Biophysical Research
+  Communications} \bibinfo{volume}{93} (\bibinfo{year}{1980})
+  \bibinfo{pages}{409 -- 414}.
+%Type = Article
+\bibitem[{Campagna and Fallon(2006)}]{Campagna2006}
+\bibinfo{author}{J.~Campagna}, \bibinfo{author}{J.~Fallon},
+\newblock \bibinfo{title}{Lipid rafts are involved in c95 (4, 8) agrin
+  fragment-induced acetylcholine receptor clustering},
+\newblock \bibinfo{journal}{Neuroscience} \bibinfo{volume}{138}
+  (\bibinfo{year}{2006}) \bibinfo{pages}{123--132}.
+%Type = Article
+\bibitem[{Marchand et~al.(2002)Marchand, Devillers-Thi{\'{e}}ry, Pons,
+  Changeux, and Cartaud}]{Marchand2002a}
+\bibinfo{author}{S.~Marchand}, \bibinfo{author}{A.~Devillers-Thi{\'{e}}ry},
+  \bibinfo{author}{S.~Pons}, \bibinfo{author}{J.-P. Changeux},
+  \bibinfo{author}{J.~Cartaud},
+\newblock \bibinfo{title}{{Rapsyn escorts the nicotinic acetylcholine receptor
+  along the exocytic pathway via association with lipid rafts.}},
+\newblock \bibinfo{journal}{The Journal of neuroscience : the official journal
+  of the Society for Neuroscience} \bibinfo{volume}{22} (\bibinfo{year}{2002})
+  \bibinfo{pages}{8891--8901}.
+%Type = Article
+\bibitem[{Pato et~al.(2008)Pato, Stetzkowski-Marden, Gaus, Recouvreur, Cartaud,
+  and Cartaud}]{Pato2008}
+\bibinfo{author}{C.~Pato}, \bibinfo{author}{F.~Stetzkowski-Marden},
+  \bibinfo{author}{K.~Gaus}, \bibinfo{author}{M.~Recouvreur},
+  \bibinfo{author}{A.~Cartaud}, \bibinfo{author}{J.~Cartaud},
+\newblock \bibinfo{title}{{Role of lipid rafts in agrin-elicited acetylcholine
+  receptor clustering}},
+\newblock \bibinfo{journal}{Chemico-Biological Interactions}
+  \bibinfo{volume}{175} (\bibinfo{year}{2008}) \bibinfo{pages}{64--67}.
+%Type = Article
+\bibitem[{Zhu et~al.(2006)Zhu, Xiong, and Mei}]{Zhu2006a}
+\bibinfo{author}{D.~Zhu}, \bibinfo{author}{W.~C. Xiong},
+  \bibinfo{author}{L.~Mei},
+\newblock \bibinfo{title}{{Lipid rafts serve as a signaling platform for
+  nicotinic acetylcholine receptor clustering.}},
+\newblock \bibinfo{journal}{The Journal of neuroscience : the official journal
+  of the Society for Neuroscience} \bibinfo{volume}{26} (\bibinfo{year}{2006})
+  \bibinfo{pages}{4841--4851}.
+%Type = Article
+\bibitem[{Willmann et~al.(2006)Willmann, Pun, Stallmach, Sadasivam, Santos, and
+  et~al.}]{Willmann2006}
+\bibinfo{author}{R.~Willmann}, \bibinfo{author}{S.~Pun},
+  \bibinfo{author}{L.~Stallmach}, \bibinfo{author}{G.~Sadasivam},
+  \bibinfo{author}{A.~F. Santos}, \bibinfo{author}{P.~C. et~al.},
+\newblock \bibinfo{title}{Cholesterol and lipid microdomains stabilize the
+  postsynapse at the neuromuscular junction},
+\newblock \bibinfo{journal}{The EMBO journal} \bibinfo{volume}{25}
+  (\bibinfo{year}{2006}) \bibinfo{pages}{4050--4060}.
+%Type = Article
+\bibitem[{Stetzkowski-Marden et~al.(2006)Stetzkowski-Marden, Gaus, Recouvreur,
+  Cartaud, and Cartaud}]{Stetzkowski-Marden2006}
+\bibinfo{author}{F.~Stetzkowski-Marden}, \bibinfo{author}{K.~Gaus},
+  \bibinfo{author}{M.~Recouvreur}, \bibinfo{author}{A.~Cartaud},
+  \bibinfo{author}{J.~Cartaud},
+\newblock \bibinfo{title}{Agrin elicits membrane lipid condensation at sites of
+  acetylcholine receptor clusters in c2c12 myotubes},
+\newblock \bibinfo{journal}{Journal of lipid research} \bibinfo{volume}{47}
+  (\bibinfo{year}{2006}) \bibinfo{pages}{2121--2133}.
+%Type = Article
+\bibitem[{Feller(2008)}]{Feller_Acyl_2008}
+\bibinfo{author}{S.~E. Feller},
+\newblock \bibinfo{title}{Acyl chain conformations in phospholipid bilayers: a
+  comparative study of docosahexaenoic acid and saturated fatty acids},
+\newblock \bibinfo{journal}{Chemistry and Physics of Lipids}
+  \bibinfo{volume}{153} (\bibinfo{year}{2008}) \bibinfo{pages}{76--80}.
+%Type = Incollection
+\bibitem[{Yeagle(2016)}]{Yeagle2016115}
+\bibinfo{author}{P.~L. Yeagle},
+\newblock \bibinfo{title}{Chapter 7 - structures of lipid assemblies},
+\newblock in: \bibinfo{editor}{P.~L. Yeagle} (Ed.), \bibinfo{booktitle}{The
+  Membranes of Cells (Third Edition)}, \bibinfo{publisher}{Academic Press},
+  \bibinfo{address}{Boston}, \bibinfo{edition}{third edition} edition,
+  \bibinfo{year}{2016}, pp. \bibinfo{pages}{115 -- 154}.
+%Type = Article
+\bibitem[{Turk and Chapkin(2013)}]{Turk2013}
+\bibinfo{author}{H.~F. Turk}, \bibinfo{author}{R.~S. Chapkin},
+\newblock \bibinfo{title}{Membrane lipid raft organization is uniquely modified
+  by n-3 polyunsaturated fatty acids},
+\newblock \bibinfo{journal}{Prostaglandins, leukotrienes, and essential fatty
+  acids}  (\bibinfo{year}{2013}).
+%Type = Article
+\bibitem[{Shaikh et~al.(2004)Shaikh, Dumaual, Castillo, Locascio, Siddiqui,
+  Stillwell, and
+  Wassall}]{shaikh_dumaual_castillo_locascio_siddiqui_stillwell_wassall_2004}
+\bibinfo{author}{S.~R. Shaikh}, \bibinfo{author}{A.~C. Dumaual},
+  \bibinfo{author}{A.~Castillo}, \bibinfo{author}{D.~Locascio},
+  \bibinfo{author}{R.~A. Siddiqui}, \bibinfo{author}{W.~Stillwell},
+  \bibinfo{author}{S.~R. Wassall},
+\newblock \bibinfo{title}{Oleic and docosahexaenoic acid differentially phase
+  separate from lipid raft molecules: A comparative nmr, dsc, afm, and
+  detergent extraction study},
+\newblock \bibinfo{journal}{Biophysical Journal} \bibinfo{volume}{87}
+  (\bibinfo{year}{2004}) \bibinfo{pages}{1752–1766}.
+%Type = Article
+\bibitem[{Lavandera et~al.(2017)Lavandera, Saín, Fariña, Bernal, and
+  González}]{12439486320170901}
+\bibinfo{author}{J.~V. Lavandera}, \bibinfo{author}{J.~Saín},
+  \bibinfo{author}{A.~C. Fariña}, \bibinfo{author}{C.~A. Bernal},
+  \bibinfo{author}{M.~A. González},
+\newblock \bibinfo{title}{N-3 fatty acids reduced trans fatty acids retention
+  and increased docosahexaenoic acid levels in the brain.},
+\newblock \bibinfo{journal}{Nutritional Neuroscience} \bibinfo{volume}{20}
+  (\bibinfo{year}{2017}) \bibinfo{pages}{424 -- 435}.
+%Type = Article
+\bibitem[{Wassall and Stillwell(2008)}]{S000930840800032720080101}
+\bibinfo{author}{S.~R. Wassall}, \bibinfo{author}{W.~Stillwell},
+\newblock \bibinfo{title}{Docosahexaenoic acid domains: the ultimate non-raft
+  membrane domain.},
+\newblock \bibinfo{journal}{Chemistry and Physics of Lipids}
+  \bibinfo{volume}{153} (\bibinfo{year}{2008}) \bibinfo{pages}{57 -- 63}.
+%Type = Article
+\bibitem[{Georgieva et~al.(2015)Georgieva, Chachaty, Hazarosova, Tessier, Nuss,
+  Momchilova, and Staneva}]{Georgieva2015}
+\bibinfo{author}{R.~Georgieva}, \bibinfo{author}{C.~Chachaty},
+  \bibinfo{author}{R.~Hazarosova}, \bibinfo{author}{C.~Tessier},
+  \bibinfo{author}{P.~Nuss}, \bibinfo{author}{A.~Momchilova},
+  \bibinfo{author}{G.~Staneva},
+\newblock \bibinfo{title}{Docosahexaenoic acid promotes micron scale
+  liquid-ordered domains. a comparison study of docosahexaenoic versus oleic
+  acid containing phosphatidylcholine in raft-like mixtures},
+\newblock \bibinfo{journal}{Biochimica et Biophysica Acta ({BBA}) -
+  Biomembranes} \bibinfo{volume}{1848} (\bibinfo{year}{2015})
+  \bibinfo{pages}{1424--1435}.
+%Type = Article
+\bibitem[{Sharp et~al.(2018)Sharp, Salari, and Brannigan}]{Sharp2018}
+\bibinfo{author}{L.~Sharp}, \bibinfo{author}{R.~Salari},
+  \bibinfo{author}{G.~Brannigan},
+\newblock \bibinfo{title}{Domain partitioning of nicotinic acetylcholine
+  rceptors in mixed model membranes},
+\newblock \bibinfo{journal}{Preprint submitted to BBA}  (\bibinfo{year}{2018}).
+%Type = Article
+\bibitem[{Marrink et~al.(2007)Marrink, Risselada, Yefimov, Tieleman, and
+  Vries}]{Marrink2007}
+\bibinfo{author}{S.~J. Marrink}, \bibinfo{author}{H.~J. Risselada},
+  \bibinfo{author}{S.~Yefimov}, \bibinfo{author}{D.~P. Tieleman},
+  \bibinfo{author}{A.~H.~D. Vries},
+\newblock \bibinfo{title}{The martini force field: coarse grained model for
+  biomolecular simulations},
+\newblock \bibinfo{journal}{The Journal of Physical Chemistry B}
+  \bibinfo{volume}{111} (\bibinfo{year}{2007}) \bibinfo{pages}{7812--7824}.
+%Type = Article
+\bibitem[{Pronk et~al.(2013)Pronk, P·ll, Schulz, Larsson, Bjelkmar, and
+  et~al.}]{Pronk2013}
+\bibinfo{author}{S.~Pronk}, \bibinfo{author}{S.~P·ll},
+  \bibinfo{author}{R.~Schulz}, \bibinfo{author}{P.~Larsson},
+  \bibinfo{author}{P.~Bjelkmar}, \bibinfo{author}{R.~A. et~al.},
+\newblock \bibinfo{title}{Gromacs 4.5: a high-throughput and highly parallel
+  open source molecular simulation toolkit},
+\newblock \bibinfo{journal}{Bioinformatics}  (\bibinfo{year}{2013}).
+%Type = Article
+\bibitem[{Humphrey et~al.(1996)Humphrey, Dalke, and Schulten}]{HUMP96}
+\bibinfo{author}{W.~Humphrey}, \bibinfo{author}{A.~Dalke},
+  \bibinfo{author}{K.~Schulten},
+\newblock \bibinfo{title}{{VMD} -- {V}isual {M}olecular {D}ynamics},
+\newblock \bibinfo{journal}{Journal of Molecular Graphics} \bibinfo{volume}{14}
+  (\bibinfo{year}{1996}) \bibinfo{pages}{33--38}.
+%Type = Article
+\bibitem[{Jaiteh et~al.(2016)Jaiteh, Taly, and H{\'{e}}nin}]{Jaiteh2016}
+\bibinfo{author}{M.~Jaiteh}, \bibinfo{author}{A.~Taly},
+  \bibinfo{author}{J.~H{\'{e}}nin},
+\newblock \bibinfo{title}{Evolution of pentameric ligand-gated ion channels:
+  Pro-loop receptors.},
+\newblock \bibinfo{journal}{PLoS One} \bibinfo{volume}{11}
+  (\bibinfo{year}{2016}) \bibinfo{pages}{e0151934}.
+
+\end{thebibliography}

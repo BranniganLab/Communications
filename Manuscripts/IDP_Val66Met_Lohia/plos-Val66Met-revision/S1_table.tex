@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{makecell}
+\usepackage{changepage}
+\begin{document}
+\renewcommand{\thetable}{S\arabic{table}}
+\begin{table}[!ht]
+\begin{adjustwidth}{-1.25in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
+\centering
+\caption{\bf Summary of force-field comparison simulations.}
+\label{table2}
+\begin{tabular}{|c|c|c|c|c|c|c|} 
+\hline 
+Force-field & \makecell{RMSD \\ $\Delta$$\delta$$C_{\alpha}$}\textsuperscript{\emph{a}} & $\langle R_{g} \rangle$\textsuperscript{\emph{b}} & \makecell{Equilibration\\length}\textsuperscript{\emph{c}} & \makecell{No. of\\replicas}\textsuperscript{\emph{d}} & Temperature range\textsuperscript{\emph{e}} & \makecell{Simulation\\length}\textsuperscript{\emph{f}} \\
+\hline
+aff03sbws (Tip4p/2005) & 0.855 & 1.347 $\pm{0.007}$ & 400 ns & 36 & 280-360K & 700 ns \\
+\hline
+a99sb*-ildn-q (Tip4p-D) & 0.355 & 1.270 $\pm{0.007}$ & 200 ns & 36 & 280-360K & 500 ns\\
+\hline
+a99sbws (Tip4p/2005) & 0.425 & 1.277 $\pm{0.007}$ & 200 ns & 36 & 280-360K & 500 ns\\
+\hline
+c36m (Tip3p) & 0.350 & 1.306 $\pm{0.007}$ & 200 ns & 30 & 280-360K & 500 ns\\
+\hline
+a99sb-ildn (Tip3p) & 0.617 & 0.922 $\pm{0.003}$ & 200 ns & 32 & 280-420K & 500 ns\\
+\hline
+\end{tabular}
+\begin{flushleft}
+\textsuperscript{\emph{a}} Root-mean-squared deviation (RMSD) represents the deviation between the NMR and MD $\Delta$$\delta$$C_{\alpha}$.\\
+\textsuperscript{\emph{b}} Statistical uncertainties are provided for $\langle R_{g} \rangle$ as the standard error in the mean, where n is the product of the total number of replicas simulated and the average number of roundtrips per replica.\\
+\textsuperscript{\emph{c}} Simulation period discarded for equilibration for each replica.\\
+\textsuperscript{\emph{d}} Total number of replicas simulated using T-REMD.\\
+\textsuperscript{\emph{e}} Temperature range for T-REMD.\\
+\textsuperscript{\emph{f}} Total simulation length for each replica.\\
+\end{flushleft}
+\end{adjustwidth}
+\end{table}
+\end{document}
+
+
+
+

@@ -1,0 +1,688 @@
+\begin{thebibliography}{100}
+
+\bibitem{Uversky2013a}
+Uversky VN.
+\newblock {Unusual biophysics of intrinsically disordered proteins.}
+\newblock Biochim Biophys Acta. 2013;1834(5):932--51.
+\newblock doi:{10.1016/j.bbapap.2012.12.008}.
+
+\bibitem{Panchenko2015}
+Panchenko AR, Babu MM.
+\newblock {Editorial overview: Linking protein sequence and structural changes
+  to function in the era of next-generation sequencing}.
+\newblock Curr Opin Struct Biol. 2015;32:viii--x.
+\newblock doi:{10.1016/j.sbi.2015.06.005}.
+
+\bibitem{Ward2004a}
+Ward JJ, Sodhi JS, McGuffin LJ, Buxton BF, Jones DT.
+\newblock {Prediction and Functional Analysis of Native Disorder in Proteins
+  from the Three Kingdoms of Life}.
+\newblock J Mol Biol. 2004;337(3):635--645.
+\newblock doi:{10.1016/j.jmb.2004.02.002}.
+
+\bibitem{Dyson2005a}
+Dyson HJ, Wright PE.
+\newblock {Intrinsically unstructured proteins and their functions}.
+\newblock Nat Rev Mol Cell Biol. 2005;6(3):197--208.
+\newblock doi:{10.1038/nrm1589}.
+
+\bibitem{Dunker2005}
+Dunker AK, Cortese MS, Romero P, Iakoucheva LM, Uversky VN.
+\newblock {Flexible nets. The roles of intrinsic disorder in protein
+  interaction networks}.
+\newblock FEBS J. 2005;272(20):5129--5148.
+\newblock doi:{10.1111/j.1742-4658.2005.04948.x}.
+
+\bibitem{Habchi2014}
+Habchi J, Tompa P, Longhi S, Uversky VN.
+\newblock {Introducing Protein Intrinsic Disorder}.
+\newblock Chem Rev. 2014;114(13):6561--6588.
+\newblock doi:{10.1021/cr400514h}.
+
+\bibitem{Babu2011}
+Babu MM, van~der Lee R, de~Groot NS, Gsponer J.
+\newblock {Intrinsically disordered proteins: regulation and disease.}
+\newblock Curr Opin Struct Biol. 2011;21(3):432--40.
+\newblock doi:{10.1016/j.sbi.2011.03.011}.
+
+\bibitem{Sickmeier2007a}
+Sickmeier M, Hamilton JA, LeGall T, Vacic V, Cortese MS, Tantos A, et~al.
+\newblock {DisProt: the Database of Disordered Proteins}.
+\newblock Nucleic Acids Res. 2007;35(Database):D786--D793.
+\newblock doi:{10.1093/nar/gkl893}.
+
+\bibitem{Das2015}
+Das RK, Ruff KM, Pappu RV.
+\newblock {Relating sequence encoded information to form and function of
+  intrinsically disordered proteins}.
+\newblock Curr Opin Struct Biol. 2015;32:102--112.
+\newblock doi:{10.1016/j.sbi.2015.03.008}.
+
+\bibitem{Das2013a}
+Das RK, Pappu RV.
+\newblock {Conformations of intrinsically disordered proteins are influenced by
+  linear sequence distributions of oppositely charged residues.}
+\newblock Proc Natl Acad Sci U S A. 2013;110(33):13392--7.
+\newblock doi:{10.1073/pnas.1304749110}.
+
+\bibitem{Vacic2012a}
+Vacic V, Markwick PRL, Oldfield CJ, Zhao X, Haynes C, Uversky VN, et~al.
+\newblock {Disease-associated mutations disrupt functionally important regions
+  of intrinsic protein disorder.}
+\newblock PLoS Comput Biol. 2012;8(10):e1002709.
+\newblock doi:{10.1371/journal.pcbi.1002709}.
+
+\bibitem{Larini2013b}
+Larini L, Gessel MM, LaPointe NE, Do TD, Bowers MT, Feinstein SC, et~al.
+\newblock {Initiation of assembly of tau(273-284) and its $\Delta$K280 mutant:
+  an experimental and computational study}.
+\newblock Phys Chem Chem Phys. 2013;15(23):8916.
+\newblock doi:{10.1039/c3cp00063j}.
+
+\bibitem{Ganguly2015}
+Ganguly D, Chen J, Dyson H, Wright P, Uversky V, Oldfield C, et~al.
+\newblock {Modulation of the Disordered Conformational Ensembles of the p53
+  Transactivation Domain by Cancer-Associated Mutations}.
+\newblock PLOS Comput Biol. 2015;11(4):e1004247.
+\newblock doi:{10.1371/journal.pcbi.1004247}.
+
+\bibitem{Viet2014a}
+Viet MH, Nguyen PH, Derreumaux P, Li MS.
+\newblock {Effect of the English Familial Disease Mutation (H6R) on the
+  Monomers and Dimers of A$\beta$40 and A$\beta$42}.
+\newblock ACS Chem Neurosci. 2014;5(8):646--657.
+\newblock doi:{10.1021/cn500007j}.
+
+\bibitem{Viet2013}
+Viet MH, Nguyen PH, Ngo ST, Li MS, Derreumaux P.
+\newblock {Effect of the Tottori Familial Disease Mutation (D7N) on the
+  Monomers and Dimers of A$\beta$ 40 and A$\beta$ 42}.
+\newblock ACS Chem Neurosci. 2013;4(11):1446--1457.
+\newblock doi:{10.1021/cn400110d}.
+
+\bibitem{Truong2014a}
+Truong PM, Viet MH, Nguyen PH, Hu CK, Li MS.
+\newblock {Effect of Taiwan Mutation (D7H) on Structures of Amyloid-$\beta$
+  Peptides: Replica Exchange Molecular Dynamics Study}.
+\newblock J Phys Chem B. 2014;118(30):8972--8981.
+\newblock doi:{10.1021/jp503652s}.
+
+\bibitem{Zhan2013a}
+Zhan YA, Wu H, Powell AT, Daughdrill GW, Ytreberg FM.
+\newblock {Impact of the K24N mutation on the transactivation domain of p53 and
+  its binding to murine double-minute clone 2}.
+\newblock Proteins Struct Funct Bioinforma. 2013;81(10):1738--1747.
+\newblock doi:{10.1002/prot.24310}.
+
+\bibitem{Xu2013a}
+Xu L, Shan S, Wang X.
+\newblock {Single Point Mutation Alters the Microstate Dynamics of Amyloid
+  $\beta$-Protein A$\beta$42 as Revealed by Dihedral Dynamics Analyses}.
+\newblock J Phys Chem B. 2013;117(20):6206--6216.
+\newblock doi:{10.1021/jp403288b}.
+
+\bibitem{Bah2016}
+Bah A, Forman-Kay JD.
+\newblock {Modulation of Intrinsically Disordered Protein Function by
+  Post-translational Modifications}.
+\newblock J Biol Chem. 2016;291(13):6696--6705.
+\newblock doi:{10.1074/jbc.R115.695056}.
+
+\bibitem{He2015}
+He Y, Chen Y, Mooney SM, Rajagopalan K, Bhargava A, Sacho E, et~al.
+\newblock {Phosphorylation-induced Conformational Ensemble Switching in an
+  Intrinsically Disordered Cancer/Testis Antigen}.
+\newblock J Biol Chem. 2015;290(41):25090--25102.
+\newblock doi:{10.1074/jbc.M115.658583}.
+
+\bibitem{AlexanderConicella2016}
+Conicella AE, Zerze GH, Mittal J, Fawzi NL, {Alexander Conicella} AE, Zerze GH,
+  et~al.
+\newblock {ALS Mutations Disrupt Phase Separation Mediated by $\alpha$-Helical
+  Structure in the TDP-43 Low-Complexity C-Terminal Domain}.
+\newblock Struct Des. 2016;24(9):1537--1549.
+\newblock doi:{10.1016/j.str.2016.07.007}.
+
+\bibitem{Iesmantavicius2013}
+Ie{\v{s}}mantavi{\v{c}}ius V, Jensen MR, Ozenne V, Blackledge M, Poulsen FM,
+  Kjaergaard M.
+\newblock {Modulation of the Intrinsic Helix Propensity of an Intrinsically
+  Disordered Protein Reveals Long-Range Helix–Helix Interactions}.
+\newblock J Am Chem Soc. 2013;135(27):10155--10163.
+\newblock doi:{10.1021/ja4045532}.
+
+\bibitem{Mittag2007}
+Mittag T, Forman-Kay JD.
+\newblock {Atomic-level characterization of disordered protein ensembles}.
+\newblock Curr Opin Struct Biol. 2007;17(1):3--14.
+\newblock doi:{10.1016/j.sbi.2007.01.009}.
+
+\bibitem{Stanley2015}
+Stanley N, Esteban-Mart{\'{i}}n S, {De Fabritiis} G.
+\newblock {Progress in studying intrinsically disordered proteins with
+  atomistic simulations}.
+\newblock Prog Biophys Mol Biol. 2015;119:47--52.
+\newblock doi:{10.1016/j.pbiomolbio.2015.03.003}.
+
+\bibitem{Ithuralde2016}
+Ithuralde RE, Roitberg AE, Turjanski AG.
+\newblock {Structured and Unstructured Binding of an Intrinsically Disordered
+  Protein as Revealed by Atomistic Simulations}.
+\newblock J Am Chem Soc. 2016;138(28):8742--8751.
+\newblock doi:{10.1021/jacs.6b02016}.
+
+\bibitem{Knott2012b}
+Knott M, Best RB, Hummer G, de~Bakker P, Word J.
+\newblock {A Preformed Binding Interface in the Unbound Ensemble of an
+  Intrinsically Disordered Protein: Evidence from Molecular Simulations}.
+\newblock PLoS Comput Biol. 2012;8(7):e1002605.
+\newblock doi:{10.1371/journal.pcbi.1002605}.
+
+\bibitem{Invernizzi2013}
+Invernizzi G, Lambrughi M, Regonesi ME, Tortora P, Papaleo E.
+\newblock {The conformational ensemble of the disordered and
+  aggregation-protective 182-291 region of ataxin-3.}
+\newblock Biochim Biophys Acta. 2013;1830(11):5236--47.
+\newblock doi:{10.1016/j.bbagen.2013.07.007}.
+
+\bibitem{Abeln2008}
+Abeln S, Frenkel D.
+\newblock {Disordered flanks prevent peptide aggregation.}
+\newblock PLoS Comput Biol. 2008;4(12):e1000241.
+\newblock doi:{10.1371/journal.pcbi.1000241}.
+
+\bibitem{Yedvabny2015}
+Yedvabny E, Nerenberg PS, So C, Head-Gordon T.
+\newblock {Disordered Structural Ensembles of Vasopressin and Oxytocin and
+  Their Mutants}.
+\newblock J Phys Chem B. 2015;119(3):896--905.
+\newblock doi:{10.1021/jp505902m}.
+
+\bibitem{Levine2017a}
+Levine ZA, Shea JE.
+\newblock {Simulations of disordered proteins and systems with conformational
+  heterogeneity}.
+\newblock Curr Opin Struct Biol. 2017;43:95--103.
+\newblock doi:{10.1016/J.SBI.2016.11.006}.
+
+\bibitem{Levine2015}
+Levine ZA, Larini L, LaPointe NE, Feinstein SC, Shea JE.
+\newblock {Regulation and aggregation of intrinsically disordered peptides.}
+\newblock Proc Natl Acad Sci U S A. 2015;112(9):2758--63.
+\newblock doi:{10.1073/pnas.1418155112}.
+
+\bibitem{Pappu2008}
+Pappu RV, Wang X, Vitalis A, Crick SL.
+\newblock {A polymer physics perspective on driving forces and mechanisms for
+  protein aggregation.}
+\newblock Arch Biochem Biophys. 2008;469(1):132--41.
+\newblock doi:{10.1016/j.abb.2007.08.033}.
+
+\bibitem{Notaras2015}
+Notaras M, Hill R, van~den Buuse M.
+\newblock {The BDNF gene Val66Met polymorphism as a modifier of psychiatric
+  disorder susceptibility: progress and controversy}.
+\newblock Mol Psychiatry. 2015;20(8):916--930.
+\newblock doi:{10.1038/mp.2015.27}.
+
+\bibitem{Korte1995}
+Korte M, Carroll P, Wolf E, Brem G, Thoenen H, Bonhoeffer T.
+\newblock {Hippocampal long-term potentiation is impaired in mice lacking
+  brain-derived neurotrophic factor.}
+\newblock Proc Natl Acad Sci. 1995;92(19):8856--8860.
+\newblock doi:{10.1073/pnas.92.19.8856}.
+
+\bibitem{Davies2003}
+Davies AM.
+\newblock {Regulation of neuronal survival and death by extracellular signals
+  during development.}
+\newblock EMBO J. 2003;22(11):2537--45.
+\newblock doi:{10.1093/emboj/cdg254}.
+
+\bibitem{Huang1999}
+Huang ZJ, Kirkwood A, Pizzorusso T, Porciatti V, Morales B, Bear MF, et~al.
+\newblock {BDNF Regulates the Maturation of Inhibition and the Critical Period
+  of Plasticity in Mouse Visual Cortex}.
+\newblock Cell. 1999;98(6):739--755.
+\newblock doi:{10.1016/S0092-8674(00)81509-3}.
+
+\bibitem{Liu2011}
+Liu Bh, Li Yt, Ma Wp, Pan Cj, Zhang L, Tao H.
+\newblock {Broad Inhibition Sharpens Orientation Selectivity by Expanding Input
+  Dynamic Range in Mouse Simple Cells}.
+\newblock Neuron. 2011;71(3):542--554.
+\newblock doi:{10.1016/j.neuron.2011.06.017}.
+
+\bibitem{Gao2014}
+Gao M, Maynard KR, Chokshi V, Song L, Jacobs C, Wang H, et~al.
+\newblock {Rebound potentiation of inhibition in juvenile visual cortex
+  requires vision-induced BDNF expression.}
+\newblock J Neurosci. 2014;34(32):10770--9.
+\newblock doi:{10.1523/JNEUROSCI.5454-13.2014}.
+
+\bibitem{Autry2012}
+Autry AE, Monteggia LM.
+\newblock {Brain-Derived Neurotrophic Factor and Neuropsychiatric Disorders}.
+\newblock Pharmacol Rev. 2012;64(2):238--258.
+\newblock doi:{10.1124/pr.111.005108}.
+
+\bibitem{Bjorkholm2016}
+Bj{\"{o}}rkholm C, Monteggia LM.
+\newblock {BDNF – a key transducer of antidepressant effects}.
+\newblock Neuropharmacology. 2016;102:72--79.
+\newblock doi:{10.1016/j.neuropharm.2015.10.034}.
+
+\bibitem{Autry2011}
+Autry AE, Adachi M, Nosyreva E, Na ES, Los MF, Cheng Pf, et~al.
+\newblock {NMDA receptor blockade at rest triggers rapid behavioural
+  antidepressant responses}.
+\newblock Nature. 2011;475(7354):91--95.
+\newblock doi:{10.1038/nature10130}.
+
+\bibitem{soliman2010}
+Soliman F, Glatt CE, Bath KG, Levita L, Jones RM, Pattwell SS, et~al.
+\newblock {A genetic variant BDNF polymorphism alters extinction learning in
+  both mouse and human.}
+\newblock Science. 2010;327(5967):863--6.
+\newblock doi:{10.1126/science.1181886}.
+
+\bibitem{Chen2008}
+Chen ZY, Bath K, McEwen B, Hempstead B, Lee F.
+\newblock {Impact of genetic variant BDNF (Val66Met) on brain structure and
+  function.}
+\newblock Novartis Found Symp. 2008;289:180--8; discussion 188--95.
+
+\bibitem{Verhagen2010}
+Verhagen M, van~der Meij A, van Deurzen PAM, Janzing JGE, Arias-V{\'{a}}squez
+  A, Buitelaar JK, et~al.
+\newblock {Meta-analysis of the BDNF Val66Met polymorphism in major depressive
+  disorder: effects of gender and ethnicity.}
+\newblock Mol Psychiatry. 2010;15(3):260--71.
+\newblock doi:{10.1038/mp.2008.109}.
+
+\bibitem{Kyte1982a}
+Kyte J, Doolittle RF.
+\newblock {A simple method for displaying the hydropathic character of a
+  protein.}
+\newblock J Mol Biol. 1982;157(1):105--32.
+
+\bibitem{Uversky2000a}
+Uversky VN, Gillespie JR, Fink AL.
+\newblock {Why are "natively unfolded" proteins unstructured under physiologic
+  conditions?}
+\newblock Proteins. 2000;41(3):415--27.
+
+\bibitem{Feng2010a}
+Feng D, Kim T, {\"{O}}zkan E, Light M, Torkin R, Teng KK, et~al.
+\newblock {Molecular and Structural Insight into proNGF Engagement of p75NTR
+  and Sortilin}.
+\newblock J Mol Biol. 2010;396(4):967--984.
+\newblock doi:{10.1016/j.jmb.2009.12.030}.
+
+\bibitem{Anastasia2013}
+Anastasia A, Deinhardt K, Chao MV, Will NE, Irmady K, Lee FS, et~al.
+\newblock {Val66Met polymorphism of BDNF alters prodomain structure to induce
+  neuronal growth cone retraction.}
+\newblock Nat Commun. 2013;4:2490.
+\newblock doi:{10.1038/ncomms3490}.
+
+\bibitem{Giza2018}
+Giza JI, Kim J, Meyer HC, Anastasia A, Dincheva I, Zheng CI, et~al.
+\newblock {The BDNF Val66Met Prodomain Disassembles Dendritic Spines Altering
+  Fear Extinction Circuitry and Behavior}.
+\newblock Neuron. 2018;99(1):163--178.e6.
+\newblock doi:{10.1016/J.NEURON.2018.05.024}.
+
+\bibitem{Holehouse2017}
+Holehouse AS, Das RK, Ahad JN, Richardson MOG, Pappu RV.
+\newblock {CIDER: Resources to Analyze Sequence-Ensemble Relationships of
+  Intrinsically Disordered Proteins}.
+\newblock Biophys J. 2017;112(1):16--21.
+\newblock doi:{10.1016/j.bpj.2016.11.3200}.
+
+\bibitem{Brzovic2011}
+Brzovic P, Heikaus C, Kisselev L, Vernon R, Herbig E, Pacheco D, et~al.
+\newblock {The Acidic Transcription Activator Gcn4 Binds the Mediator Subunit
+  Gal11/Med15 Using a Simple Protein Interface Forming a Fuzzy Complex}.
+\newblock Mol Cell. 2011;44(6):942--953.
+\newblock doi:{10.1016/J.MOLCEL.2011.11.008}.
+
+\bibitem{Uesugi1997}
+Uesugi M, Nyanguile O, Lu H, Levine AJ, Verdine GL.
+\newblock {Induced $\alpha$ Helix in the VP16 Activation Domain upon Binding to
+  a Human TAF}.
+\newblock Science (80- ). 1997;277(5330):1310--1313.
+\newblock doi:{10.1126/SCIENCE.277.5330.1310}.
+
+\bibitem{Radhakrishnan1997}
+Radhakrishnan I, P{\'{e}}rez-Alvarado GC, Parker D, Dyson HJ, Montminy MR,
+  Wright PE.
+\newblock {Solution Structure of the KIX Domain of CBP Bound to the
+  Transactivation Domain of CREB: A Model for Activator:Coactivator
+  Interactions}.
+\newblock Cell. 1997;91(6):741--752.
+\newblock doi:{10.1016/S0092-8674(00)80463-8}.
+
+\bibitem{Canales2017}
+Canales {\'{A}}, R{\"{o}}singer M, Sastre J, Felli IC, Jim{\'{e}}nez-Barbero J,
+  Gim{\'{e}}nez-Gallego G, et~al.
+\newblock {Hidden $\alpha$-helical propensity segments within disordered
+  regions of the transcriptional activator CHOP}.
+\newblock PLoS One. 2017;12(12):e0189171.
+\newblock doi:{10.1371/journal.pone.0189171}.
+
+\bibitem{Staller2018}
+Staller MV, Holehouse AS, Swain-Lenz D, Das RK, Pappu RV, Cohen BA.
+\newblock {A High-Throughput Mutational Scan of an Intrinsically Disordered
+  Acidic Transcriptional Activation Domain}.
+\newblock Cell Syst. 2018;6(4):444--455.e6.
+\newblock doi:{10.1016/j.cels.2018.01.015}.
+
+\bibitem{Das2015b}
+Das RK, Ruff KM, Pappu RV.
+\newblock {Relating sequence encoded information to form and function of
+  intrinsically disordered proteins}.
+\newblock Curr Opin Struct Biol. 2015;32:102--112.
+\newblock doi:{10.1016/J.SBI.2015.03.008}.
+
+\bibitem{Mercadante2015}
+Mercadante D, Milles S, Fuertes G, Svergun DI, Lemke EA, Gr{\"{a}}ter F.
+\newblock {Kirkwood–Buff Approach Rescues Overcollapse of a Disordered
+  Protein in Canonical Protein Force Fields}.
+\newblock J Phys Chem B. 2015;119(25):7975--7984.
+\newblock doi:{10.1021/acs.jpcb.5b03440}.
+
+\bibitem{Piana2015}
+Piana S, Donchev AG, Robustelli P, Shaw DE.
+\newblock {Water Dispersion Interactions Strongly Influence Simulated
+  Structural Properties of Disordered Protein States}.
+\newblock J Phys Chem B. 2015;119(16):5113--5123.
+\newblock doi:{10.1021/jp508971m}.
+
+\bibitem{Best2009}
+Best RB, Hummer G.
+\newblock {Optimized Molecular Dynamics Force Fields Applied to the
+  Helix−Coil Transition of Polypeptides}.
+\newblock J Phys Chem B. 2009;113(26):9004--9015.
+\newblock doi:{10.1021/jp901540t}.
+
+\bibitem{Best2014}
+Best RB, Zheng W, Mittal J.
+\newblock {Balanced Protein–Water Interactions Improve Properties of
+  Disordered Proteins and Non-Specific Protein Association}.
+\newblock J Chem Theory Comput. 2014;10(11):5113--5124.
+\newblock doi:{10.1021/ct500569b}.
+
+\bibitem{Abascal2005}
+Abascal JLF, Vega C.
+\newblock {A general purpose model for the condensed phases of water:
+  TIP4P/2005}.
+\newblock J Chem Phys. 2005;123(23):234505.
+\newblock doi:{10.1063/1.2121687}.
+
+\bibitem{Lindorff-Larsen2010a}
+Lindorff-Larsen K, Piana S, Palmo K, Maragakis P, Klepeis JL, Dror RO, et~al.
+\newblock {Improved side-chain torsion potentials for the Amber ff99SB protein
+  force field.}
+\newblock Proteins. 2010;78(8):1950--8.
+\newblock doi:{10.1002/prot.22711}.
+
+\bibitem{Hornak2006a}
+Hornak V, Abel R, Okur A, Strockbine B, Roitberg A, Simmerling C.
+\newblock {Comparison of multiple Amber force fields and development of
+  improved protein backbone parameters}.
+\newblock Proteins Struct Funct Bioinforma. 2006;65(3):712--725.
+\newblock doi:{10.1002/prot.21123}.
+
+\bibitem{Robustelli2018}
+Robustelli P, Piana S, Shaw DE.
+\newblock {Developing a molecular dynamics force field for both folded and
+  disordered protein states}.
+\newblock Proc Natl Acad Sci. 2018;115(21):E4758--E4766.
+\newblock doi:{10.1073/PNAS.1800690115}.
+
+\bibitem{Shen2010}
+Shen Y, Bax A.
+\newblock {SPARTA+: a modest improvement in empirical NMR chemical shift
+  prediction by means of an artificial neural network}.
+\newblock J Biomol NMR. 2010;48(1):13--22.
+\newblock doi:{10.1007/s10858-010-9433-9}.
+
+\bibitem{Ortega2011}
+Ortega A, Amor{\'{o}}s D, {Garc{\'{i}}a de la Torre} J.
+\newblock {Prediction of hydrodynamic and other solution properties of rigid
+  proteins from atomic- and residue-level models.}
+\newblock Biophys J. 2011;101(4):892--8.
+\newblock doi:{10.1016/j.bpj.2011.06.046}.
+
+\bibitem{Rauscher2015}
+Rauscher S, Gapsys V, Gajda MJ, Zweckstetter M, de~Groot BL, Grubm{\"{u}} H,
+  et~al.
+\newblock {Structural Ensembles of Intrinsically Disordered Proteins Depend
+  Strongly on Force Field: A Comparison to Experiment}.
+\newblock J Chem Theory Comput. 2015;11(11):5513--5524.
+\newblock doi:{10.1021/acs.jctc.5b00736}.
+
+\bibitem{Meng2018}
+Meng F, Bellaiche MMJ, Kim JY, Zerze GH, Best RB, Chung HS.
+\newblock {Highly Disordered Amyloid-$\beta$ Monomer Probed by Single-Molecule
+  FRET and MD Simulation}.
+\newblock Biophys J. 2018;114(4):870--884.
+\newblock doi:{10.1016/j.bpj.2017.12.025}.
+
+\bibitem{Flory1949}
+Flory PJ.
+\newblock {The Configuration of Real Polymer Chains}.
+\newblock J Chem Phys. 1949;17(3):303--310.
+\newblock doi:{10.1063/1.1747243}.
+
+\bibitem{Hofmann2012}
+Hofmann H, Soranno A, Borgia A, Gast K, Nettels D, Schuler B.
+\newblock {Polymer scaling laws of unfolded and intrinsically disordered
+  proteins quantified with single-molecule spectroscopy}.
+\newblock Proc Natl Acad Sci. 2012;109(40):16155--16160.
+\newblock doi:{10.1073/pnas.1207719109}.
+
+\bibitem{Zerze2015}
+Zerze GH, Best RB, Mittal J.
+\newblock {Sequence- and Temperature-Dependent Properties of Unfolded and
+  Disordered Proteins from Atomistic Simulations}.
+\newblock J Phys Chem B. 2015;119(46):14622--14630.
+\newblock doi:{10.1021/acs.jpcb.5b08619}.
+
+\bibitem{Rubinstein2003}
+Rubinstein M, Colby RH.
+\newblock {Polymer physics}.
+\newblock Oxford University Press; 2003.
+
+\bibitem{Faure2008}
+Faure G, Bornot A, de~Brevern AG.
+\newblock {Protein contacts, inter-residue interactions and side-chain
+  modelling}.
+\newblock Biochimie. 2008;90(4):626--639.
+\newblock doi:{10.1016/J.BIOCHI.2007.11.007}.
+
+\bibitem{Gomez-Tamayo2016}
+G{\'{o}}mez-Tamayo JC, Cordom{\'{i}} A, Olivella M, Mayol E, Fourmy D, Pardo L.
+\newblock {Analysis of the interactions of sulfur-containing amino acids in
+  membrane proteins.}
+\newblock Protein Sci. 2016;25(8):1517--24.
+\newblock doi:{10.1002/pro.2955}.
+
+\bibitem{Viguera1995}
+Viguera AR, Serrano L.
+\newblock {Side-chain interactions between sulfur-containing amino acids and
+  phenylalanine in alpha-helices.}
+\newblock Biochemistry. 1995;34(27):8771--9.
+
+\bibitem{Valley2012}
+Valley CC, Cembran A, Perlmutter JD, Lewis AK, Labello NP, Gao J, et~al.
+\newblock {The methionine-aromatic motif plays a unique role in stabilizing
+  protein structure.}
+\newblock J Biol Chem. 2012;287(42):34979--91.
+\newblock doi:{10.1074/jbc.M112.374504}.
+
+\bibitem{Riback2017}
+Riback JA, Katanski CD, Kear-Scott JL, Pilipenko EV, Rojek AE, Sosnick TR,
+  et~al.
+\newblock {Stress-Triggered Phase Separation Is an Adaptive, Evolutionarily
+  Tuned Response.}
+\newblock Cell. 2017;168(6):1028--1040.e19.
+\newblock doi:{10.1016/j.cell.2017.02.027}.
+
+\bibitem{Creamer1992}
+Creamer TP, Rose GD.
+\newblock {Side-chain entropy opposes a-helix formation but rationalizes
+  experimentally determined helix-forming propensities (a-helix/protein
+  folding/protein engineering)}.
+\newblock Nat Sci. 1992;89(250):5937--5941.
+
+\bibitem{Feuerstein2012}
+Feuerstein S, Solyom Z, Aladag A, Favier A, Schwarten M, Hoffmann S, et~al.
+\newblock {Transient Structure and SH3 Interaction Sites in an Intrinsically
+  Disordered Fragment of the Hepatitis C Virus Protein NS5A}.
+\newblock J Mol Biol. 2012;420(4-5):310--323.
+\newblock doi:{10.1016/J.JMB.2012.04.023}.
+
+\bibitem{Chen2005}
+Chen ZY, Ieraci A, Teng H, Dall H, Meng CX, Herrera DG, et~al.
+\newblock {Sortilin controls intracellular sorting of brain-derived
+  neurotrophic factor to the regulated secretory pathway.}
+\newblock J Neurosci. 2005;25(26):6156--66.
+\newblock doi:{10.1523/JNEUROSCI.1017-05.2005}.
+
+\bibitem{Lim2019}
+Lim JM, Kim G, Levine RL.
+\newblock {Methionine in Proteins: It's Not Just for Protein Initiation
+  Anymore}.
+\newblock Neurochem Res. 2019;44(1):247--257.
+\newblock doi:{10.1007/s11064-017-2460-0}.
+
+\bibitem{Leloup2018}
+Leloup N, Chataigner LMP, Janssen BJC.
+\newblock {Structural insights into SorCS2-Nerve Growth Factor complex
+  formation.}
+\newblock Nat Commun. 2018;9(1):2979.
+\newblock doi:{10.1038/s41467-018-05405-z}.
+
+\bibitem{Yang2014}
+Yang J, Yan R, Roy A, Xu D, Poisson J, Zhang Y.
+\newblock {The I-TASSER Suite: protein structure and function prediction}.
+\newblock Nat Methods. 2014;12(1):7--8.
+\newblock doi:{10.1038/nmeth.3213}.
+
+\bibitem{Roy2010}
+Roy A, Kucukural A, Zhang Y.
+\newblock {I-TASSER: a unified platform for automated protein structure and
+  function prediction}.
+\newblock Nat Protoc. 2010;5(4):725--738.
+\newblock doi:{10.1038/nprot.2010.5}.
+
+\bibitem{Bioinformatics}
+Zhang Y.
+\newblock {I-TASSER server for protein 3D structure prediction}.
+\newblock BMC Bioinformatics. 2008;9(1):40.
+\newblock doi:{10.1186/1471-2105-9-40}.
+
+\bibitem{Kim2004}
+Kim DE, Chivian D, Baker D.
+\newblock {Protein structure prediction and analysis using the Robetta server.}
+\newblock Nucleic Acids Res. 2004;32(Web Server issue):W526--31.
+\newblock doi:{10.1093/nar/gkh468}.
+
+\bibitem{Sali1993a}
+{\v{S}}ali A, Blundell TL.
+\newblock {Comparative Protein Modelling by Satisfaction of Spatial
+  Restraints}.
+\newblock J Mol Biol. 1993;234(3):779--815.
+\newblock doi:{10.1006/jmbi.1993.1626}.
+
+\bibitem{Berendsen1995}
+Berendsen HJC, van~der Spoel D, van Drunen R.
+\newblock {GROMACS: A message-passing parallel molecular dynamics
+  implementation}.
+\newblock Comput Phys Commun. 1995;91(1-3):43--56.
+\newblock doi:{10.1016/0010-4655(95)00042-E}.
+
+\bibitem{Abraham2015}
+Abraham MJ, Murtola T, Schulz R, P{\'{a}}ll S, Smith JC, Hess B, et~al.
+\newblock {Gromacs: High performance molecular simulations through multi-level
+  parallelism from laptops to supercomputers}.
+\newblock SoftwareX. 2015;1-2(June 2016):19--25.
+\newblock doi:{10.1016/j.softx.2015.06.001}.
+
+\bibitem{Essmann1995}
+Essmann U, Perera L, Berkowitz ML, Darden T, Lee H, Pedersen LG.
+\newblock {A smooth particle mesh Ewald method}.
+\newblock J Chem Phys. 1995;103(19):8577--8593.
+\newblock doi:{10.1063/1.470117}.
+
+\bibitem{Sugita1999a}
+Sugita Y, Okamoto Y.
+\newblock {Replica-exchange molecular dynamics method for protein folding}.
+\newblock Chem Phys Lett. 1999;314(1-2):141--151.
+\newblock doi:{10.1016/S0009-2614(99)01123-9}.
+
+\bibitem{Shen2009}
+Shen Y, Delaglio F, Cornilescu G, Bax A.
+\newblock {TALOS+: a hybrid method for predicting protein backbone torsion
+  angles from NMR chemical shifts.}
+\newblock J Biomol NMR. 2009;44(4):213--23.
+\newblock doi:{10.1007/s10858-009-9333-z}.
+
+\bibitem{Marsh2006a}
+Marsh JA, Singh VK, Jia Z, Forman-Kay JD.
+\newblock {Sensitivity of secondary structure propensities to sequence
+  differences between $\alpha$- and $\gamma$-synuclein: Implications for
+  fibrillation}.
+\newblock Protein Sci. 2006;15(12):2795--2804.
+\newblock doi:{10.1110/ps.062465306}.
+
+\bibitem{Schwarzinger2001}
+Schwarzinger S, Kroon GJ, Foss TR, Chung J, Wright PE, Dyson HJ.
+\newblock {Sequence-dependent correction of random coil NMR chemical shifts.}
+\newblock J Am Chem Soc. 2001;123(13):2970--8.
+
+\bibitem{Kjaergaard2011b}
+Kjaergaard M, Poulsen FM.
+\newblock {Sequence correction of random coil chemical shifts: correlation
+  between neighbor correction factors and changes in the Ramachandran
+  distribution}.
+\newblock J Biomol NMR. 2011;50(2):157--165.
+\newblock doi:{10.1007/s10858-011-9508-2}.
+
+\bibitem{Kjaergaard2011a}
+Kjaergaard M, Brander S, Poulsen FM.
+\newblock {Random coil chemical shift for intrinsically disordered proteins:
+  effects of temperature and pH}.
+\newblock J Biomol NMR. 2011;49(2):139--149.
+\newblock doi:{10.1007/s10858-011-9472-x}.
+
+\bibitem{Nodet}
+Nodet G, Salmon L, Ozenne V, Meier S, Jensen MR, Blackledge M.
+\newblock {Quantitative Description of Backbone Conformational Sampling of
+  Unfolded Proteins at Amino Acid Resolution from NMR Residual Dipolar
+  Couplings}.
+\newblock J Am Chem Soc. 2009;131(49):17908--17918.
+\newblock doi:{10.1021/ja9069024}.
+
+\bibitem{Garcia2002}
+Garc{\'{i}}a AE, Sanbonmatsu KY.
+\newblock {Alpha-helical stabilization by side chain shielding of backbone
+  hydrogen bonds.}
+\newblock Proc Natl Acad Sci U S A. 2002;99(5):2782--7.
+\newblock doi:{10.1073/pnas.042496899}.
+
+\bibitem{Iglesias2013}
+Iglesias J, Sanchez-Mart{\'{i}}nez M, Crehuet R.
+\newblock {SS-map}.
+\newblock Intrinsically Disord Proteins. 2013;1(1):e25323.
+\newblock doi:{10.4161/idp.25323}.
+
+\bibitem{Parashar2018}
+Parashar M, Brennan-Tonetta M, Rodero I, Villalobos JJ.
+\newblock {High Performance Computing at the Rutgers Discovery Informatics
+  Institute}. 2018;(November).
+\newblock doi:{10.13140/RG.2.2.11579.87846}.
+
+\end{thebibliography}

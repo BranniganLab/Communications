@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: GABAa_K289M_pnas.aux
+The style file: pnas-new.bst
+Database file #1: GABAa_K289M.bib
+You've used 59 entries,
+            1837 wiz_defined-function locations,
+            920 strings with 18367 characters,
+and the built_in function-call counts, 14193 in all, are:
+= -- 1243
+> -- 661
+< -- 0
++ -- 200
+- -- 141
+* -- 1318
+:= -- 2136
+add.period$ -- 118
+call.type$ -- 59
+change.case$ -- 59
+chr.to.int$ -- 0
+cite$ -- 59
+duplicate$ -- 586
+empty$ -- 1340
+format.name$ -- 141
+if$ -- 2993
+int.to.chr$ -- 0
+int.to.str$ -- 59
+missing$ -- 59
+newline$ -- 239
+num.names$ -- 59
+pop$ -- 63
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 305
+stack$ -- 0
+substring$ -- 1417
+swap$ -- 118
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 168
+width$ -- 61
+write$ -- 590

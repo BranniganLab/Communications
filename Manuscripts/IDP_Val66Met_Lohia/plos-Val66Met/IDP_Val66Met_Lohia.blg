@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: IDP_Val66Met_Lohia.aux
+The style file: plos2015.bst
+Database file #1: IDP_Val66Met_Lohia.bib
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+`journal' is a missing field, not a string, for entry Parashar2018
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in Parashar2018
+Warning--there's a number but no volume in Parashar2018
+You've used 100 entries,
+            3058 wiz_defined-function locations,
+            1498 strings with 42631 characters,
+and the built_in function-call counts, 249305 in all, are:
+= -- 30903
+> -- 1748
+< -- 0
++ -- 986
+- -- 437
+* -- 22397
+:= -- 27357
+add.period$ -- 491
+call.type$ -- 100
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 102
+duplicate$ -- 15951
+empty$ -- 24327
+format.name$ -- 533
+if$ -- 57300
+int.to.chr$ -- 0
+int.to.str$ -- 100
+missing$ -- 1033
+newline$ -- 595
+num.names$ -- 100
+pop$ -- 1679
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1641
+stack$ -- 0
+substring$ -- 56385
+swap$ -- 2628
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 1121
+width$ -- 103
+write$ -- 1285
+(There was 1 error message)

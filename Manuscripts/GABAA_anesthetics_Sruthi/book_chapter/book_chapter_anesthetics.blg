@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: book_chapter_anesthetics.aux
+The style file: pnas-new.bst
+Database file #1: GABAa_anesthetics.bib
+Warning--empty journal in Git---2017
+You've used 21 entries,
+            1837 wiz_defined-function locations,
+            646 strings with 10802 characters,
+and the built_in function-call counts, 5276 in all, are:
+= -- 454
+> -- 254
+< -- 1
++ -- 76
+- -- 55
+* -- 458
+:= -- 778
+add.period$ -- 41
+call.type$ -- 21
+change.case$ -- 21
+chr.to.int$ -- 0
+cite$ -- 22
+duplicate$ -- 242
+empty$ -- 487
+format.name$ -- 55
+if$ -- 1146
+int.to.chr$ -- 0
+int.to.str$ -- 21
+missing$ -- 21
+newline$ -- 86
+num.names$ -- 21
+pop$ -- 34
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 152
+stack$ -- 0
+substring$ -- 470
+swap$ -- 73
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 53
+width$ -- 23
+write$ -- 208
+(There was 1 warning)
