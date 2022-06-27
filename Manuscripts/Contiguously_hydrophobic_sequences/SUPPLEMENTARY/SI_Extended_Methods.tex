@@ -1,0 +1,32 @@
+\subsection*{The blobulation query function}
+Blobulation refers to the partitioning of a given amino acid sequence (e.g. a protein isoform) into three kinds of segments based on the local hydrophobicity. The segments are referred to as ``blobs'', and they are assigned a primary type known as the ``\hydrochar''. The three blob hydrophobicity classes are hydrophobic (``h-blob''), non-hydrophobic or polar (``p-blob''), and short non-hydrophobic spacers (``s-blobs''). We use a simple partitioning approach, described below, that is based on three parameters: the h-blob hydrophobicity threshold $\cmin$, the minimum length for hydrophobic segments to be labeled as an h-blob $\Lminh$, and the threshold length separating p-blobs from s-blobs, $\Lminp$.
+
+Every amino acid $i$ is assigned a mean hydrophobicity $H_i$, defined as the average Kyte-Dolittle~\citep{Kyte1982} score with a window size of three residues, scaled to fit between 0 and 1. Given the hydrophobicity threshold $\cmin$, we first identify all contiguous stretches where $H_i \geq \cmin$ for all $i$ in the sub-sequence and where the sub-sequence length $x$ is $x\geq \Lminh$; these are classified as h-blobs. The sub-sequence between a pair of h-blobs, or between an h-blob and the end of the amino acid sequence (for sub-sequences at a terminus), is classified as a p-blob if the length $x\geq \Lminp$, and is classified as an s-blob if $x<\Lminp$. In all analyses used in this work, we set $\Lminp=\Lminh\equiv \Lmin$, so that there are effectively only two blobulation parameters, $\cmin$ and $\Lmin$.
+
+Consider a given protein amino acid sequence that contains a missense SNP at residue $i$. For a missense SNP, the reference allele and the alternative allele correspond to two different amino acids. We index the two amino acids for this polymorphism by $\alpha\in \{ \refa ,\alta \}$, where $\refa$ is the amino acid corresponding to the reference allele and $\alta$ for the alternative allele. Upon blobulation of this sequence with amino acid $\alpha$ at $i$, the residue $i$ will be contained within a blob type $\beta \in \{h, \ p, \ s\}$ with some length $x$.
+
+We define the binary blobulation query function $B_{\alpha,\beta,x}(i)$  
+\begin{equation}
+B_{\alpha,\beta,x}(i) = \begin{cases*}
+  1, & if the residue $i$ with allele\\& $\alpha$ is in a $\beta$ blob of length $x$,\\
+  0, & otherwise.
+\end{cases*}
+\end{equation}
+Importantly, $B_{\alpha,\beta,x}(i)$ is dependent upon the hydrophobicity threshold $\cmin$ (as are all quantities that depend on $B_{\alpha,\beta,x}(i)$). Furthermore, because h-blobs are detected first, p-blobs are detected from the remaining residues, and s-blobs are assigned last, $B_{\alpha,p,x}(i)$ will be dependent upon the minimum h-blob length, and $B_{\alpha,s,x}(i)$ will be dependent upon the minimum h and p-blob lengths. Unless stated otherwise, blobulation is based on the reference allele for all SNPs and we suppress the explicit $\alpha$ notation.
+
+\subsection*{dSNP enrichment details}
+Let $f_{\beta,x}$ and $g_{\beta,x}$ denote the fraction of \nSNPs and \dSNPs, respectively, which are found in $\beta$-type blobs of length $x$: 
+\begin{eqnarray}
+    f_{\beta,x} &=& \frac{1}{N_{\rm tot}}\sum_{i\in \nSNPset} B_{\beta,x}(i)\ \label{eq:f} \\
+    g_{\beta,x} &=& \frac{1}{D_{\rm tot}}\sum_{i\in \dSNPset} B_{\beta,x}(i)\label{eq:g}
+\end{eqnarray}
+where $\nSNPset$ is the set of \nSNPs with size $N_{\rm tot} \equiv \|\nSNPset\|$ and $\dSNPset$ is the set of \dSNPs with size $D_{\rm tot} \equiv \|\dSNPset\|$. 
+%where the first sum is over a set of \nSNPs with a total of $N_{tot}$ elements, and the second sum is over a set of \dSNPs with a total of $D_{tot}$ elements. 
+Enrichment of dSNPs relative to nSNPs for $\beta$-blobs of length $x$ is then 
+\begin{eqnarray}
+    \upsilon_\beta(x) = \frac{ g_{\beta,x}}{f_{\beta,x}}.
+\end{eqnarray}
+
+For some comparisons we consider the enrichment over all blob lengths above some minimum threshold $x\geq x^\star$: $F_{\beta} \equiv \sum_{x\geq x^\star} f_{\beta,x}$ and $G_{\beta} \equiv \sum_{x\geq x^\star} g_{\beta,x}$ for nSNPs and dSNPs, respectively. The corresponding minimum-length enrichment is $\Upsilon_\beta = G_{\beta}/F_{\beta}$. For the heat-maps in Figure \ref{blob_vs_window}d-f we consider the enrichment over SNPs at a given hydrophobicity threshold $\cmin$ for lengths within a length bin. Within a length bin $[x_0,x_1]$, the fractions are summed over all $x$ within that bin: $F_{\beta}^{\rm bin} \equiv \sum_{x=x_0}^{x_1} f_{\beta,x}$ for nSNPs and similarly for dSNPs. The enrichment is given by the ratio of these bin fractions, $\Upsilon_{\beta}^{\rm bin} = G_{\beta}^{\rm bin} / F_{\beta}^{\rm bin}$.
+
+Enrichment values are tested for statistically significant deviations from the null expectation of $\upsilon = 1$ using a Binomial distribution for $N_{\rm trials}=D_{\rm tot}$ Bernoulli trials with probability of success $p=f_{\beta,x}$ per trial, where the expected number of ``successes'' is $D_{\rm tot}f_{\beta,x}$.  The minimum-length enrichment $\Upsilon$, and enrichment within length bins $\Upsilon^{\rm bin}$, are tested similarly. Reported p-values correspond to the two-sided test, and any enrichment or depletion in \dSNPs is termed ``significant'' for p-value $< 10^{-3}$.
