@@ -1,20 +1,20 @@
 # Communications
 An archival repository for all *completed* communications produced by the Brannigan Lab - posters/presentations, grants, manuscripts, theses, etc.
 
-##Gallery
+## Gallery
 Molecular art produced by lab members.
 
-##Groupmeeting_Materials
+## Groupmeeting_Materials
 Presentations and other materials relating to topics discussed during group meetings.
 
-##Manuscripts
+## Manuscripts
 Materials related to lab publications.
 
-##Posters_Presentations
+## Posters_Presentations
 Materials related to posters and presentations created by lab members.
 
-##TCL-Workshop
+## TCL-Workshop
 TCL tutorial materials.
 
-##Theses
+## Theses
 Lab member dissertation and thesis materials.
