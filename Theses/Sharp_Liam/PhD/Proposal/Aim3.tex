@@ -1,0 +1,59 @@
+While multiple individuals have developed scripts to determine the fluctuation spectrum of membranes, there is no universal tool computational chemists and biophysicists can use. I will develop a tool to measure elastic parameters and fluctuation spectra within the convenient scripting environment of the VMD software, which will alleviate the daunting nature of solving for the fluctuation spectrum and related moduli.  This tool will assist us in optimizing lipid selections for modeled neuronal membranes; I can adjust lipid species and lipid concentrations to mimic elastic properties of neuronal membranes.
+
+This package could be of significant use to both biochemists and biophysicists. It would allow them to easily predict the elasticity properties of a membrane composed of non-specific lipids. Combined with VMD’s convenient scripting environment, this alleviates the daunting nature of solving for the fluctuation spectrum and related moduli, and promotes consideration of elastic effects in mechanisms by relying on the Monge Gauge $h(r)=z$, where z is a deviation in membrane height from 0.  
+
+%\subsection{Innovation of Research}
+
+Numerous computational methods with increasing sophistication for measuring elastic properties of membranes have been developed by physicists and physical chemists \cite{Galimzyanov_Undulations_2017,Brannigan2006,Pan_Effect_2009,Rawicz_Effect_2000,Goetz1999}. However, most are developed using in-house code, and none are integrated into a widely-used, flexible analysis package such as VMD \cite{HUMP96}.
+
+I will develop a user-friendly VMD plugin that can measure elastic properties for generalized heterogeneous lipid bilayers, allowing comparison among different lipid compositions relying on measurement techniques in the convenient scriptable VMD environment. It will allow those with a need to quantify membrane flexibility, but without the requisite skills in lower-level programming or background in soft-condensed matter physics, to carry out reliable and straightforward calculations. It will also link the elasticity calculations to the extensive abilities of VMD for analyzing molecular interactions.
+
+%\subsection{Approach of Research}
+
+I envision the proposed plugin will be usable from both a GUI and VMD’s tk terminal, and will provide the option to measure the bending modulus, stretching modulus, tilt modulus, equilibrium area per molecule, and monolayer spontaneous curvature, based on fluctuation spectrum methods \cite{Brannigan2006,Goetz1999} and molecular fluctuations \cite{Galimzyanov_Undulations_2017,Rawicz_Effect_2000,Pan_Effect_2009}. Calculations will be performed on a trajectory loaded through VMDs extensive trajectory format libraries, making analysis convenient for users of NAMD, GROMACS, LAMMPS, HOOMD, or any MD software that outputs in one of the many VMD-readable formats.
+
+The analysis code will have the option to specify starting and ending frames, as well as how to approximate the membrane surface and/or lipid tilt angles simply based on VMD-based atom selections, greatly simplifying the required code. The plugin will serve as a wrapper to C code that performs fast Fourier transforms and spectral analysis. Data will be output to a an ASCII file that can be easily manipulated in a scientific programing language of the user’s choice (i.e. Python, Matlab).
+
+Data will be collected by binning over a membrane with adjustable bin steps ($dx$ and $dy$), and averaging the membrane hight ($z$) over the bin. Setting $z$ to $h(r)$ (where $r=r(x,y)$) and performing a Fourier transform on $h(r)$ results in $\tilde{h}(q)$,
+	\begin{equation}
+		\begin{aligned}
+		\tilde{h}(q)=\frac{1}{L}\int dr (h(r) e^{-i q r})\\
+		h(r)=\frac{1}{L}\sum \tilde{h}(q) e^{i q r}
+		\label{eq:For}
+		\end{aligned}
+	\end{equation}
+where $q$ is the spacial frequency. Allowing F to be the Helfrich Hamiltonian
+\begin{equation}
+  \begin{aligned}
+    F = k_c(H-2C_0)^2+k_GK,
+  \end{aligned}
+\end{equation}
+where, $k_c$ is the bending modulus, $H$ is the mean curvature, $k_G$ is the Guasian modulus, and $K$ is the Gausian curvature. When applied to a closed membrane $C_0,k_G,K$ drop out, and the equation reduces to 
+\begin{equation}
+  \begin{aligned}
+    F = k_cH^2,
+  \end{aligned}
+\end{equation}
+where H can be expressed as
+\begin{equation}
+  \begin{aligned}
+    H = |\nabla^2h(r)|.
+  \end{aligned}
+\end{equation}
+We can then determine the fluctuation spectrum, $S(q)$, which \cite{Goetz1999} defined as
+  \begin{equation}
+    \begin{aligned}
+      S(q)=\langle|\tilde{h}(q)|^{2}\rangle.
+    \end{aligned}
+    \label{eq:s1}
+  \end{equation}
+According to Helfrich elasticity of membranes,\cite{safran2003statistical} at long wavelengths the spectrum should obey approximate to 
+  \begin{equation}
+    \begin{aligned}
+      S(q)\sim\frac{k_BT}{k_c q^4}%%+\frac{k_BT}{\sigma q^2}.
+    \end{aligned}
+    \label{eq:s2}
+  \end{equation}
+Where $k_B$ is Boltzmann's constant, $T$ is temperature, and $k_c$ is the bending modulus.
+
+We would work with VMD developers to incorporate the plugin into the official VMD distribution, and provide support to the VMD user’s community, as well as necessary updates and improvements.
