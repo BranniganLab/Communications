@@ -3,6 +3,8 @@ An archival repository for all *completed* communications produced by the Branni
 
 ## Gallery
 Molecular art produced by lab members.
+Directories are organized by artist lastname_firstname, and VMD image contests are given their own folders by year.
+Images should be named by projectname_title_year.
 
 ## Groupmeeting_Materials
 Presentations and other materials relating to topics discussed during group meetings.
@@ -18,3 +20,4 @@ TCL tutorial materials.
 
 ## Theses
 Lab member dissertation and thesis materials.
+Directories are organized by author lastname_firstname.
