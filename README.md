@@ -18,3 +18,4 @@ TCL tutorial materials.
 
 ## Theses
 Lab member dissertation and thesis materials.
+Directories are organized by author lastname_firstname.
