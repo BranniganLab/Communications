@@ -1,8 +1,5 @@
 # Asim Dave - Posters and Presentations
 
-This folder contains posters and presentations by Asim Dave from the Brannigan Lab.
+This folder contains posters and presentations by Asim Dave.
 
-Files should be organized by:
-- Conference or event name
-- Year
 
