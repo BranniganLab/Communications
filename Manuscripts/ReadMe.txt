@@ -1,4 +1,4 @@
-Manuscript_name:
+[first author last name]_[year published]:
 - Latex file
 - PDF file
 - Supplementary documents
